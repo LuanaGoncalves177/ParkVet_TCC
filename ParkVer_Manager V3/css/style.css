@@ -32,6 +32,11 @@ main {
 .cabecalho__titulo {
  font-weight: 800;
 }
+.login {
+  font-size: 40px;
+  color: #557220;
+  font-weight: 800;
+}
 .formulario {
   padding: 5%;
   background-image: url("../imagens/Fundo.png");
@@ -56,9 +61,10 @@ main {
   font-size: 25px;
   margin-top: 20px;
   margin-left: 50px;
-
   background-color: #E5FE96;
   border: none;
+  width: 130px;
+  padding: 10px;
 }
 .formulario__button a {
   color: #557220;
