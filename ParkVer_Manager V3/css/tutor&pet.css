@@ -103,7 +103,7 @@ button {
 .input__pet,
 .input__pet-raca,
 .input__caracteristicas {
-  color: #e5fe96;
+  color: black;
   padding: 10px;
   font-size: 20px;
   margin-bottom: 10px;
@@ -121,7 +121,7 @@ button {
 .input__id {
   background-color: #b5d453;
   width: 100px;
-  color: rgb(104, 73, 73);
+  color: rgb(247, 238, 238);
   text-align: center;
   border: none;
 }
