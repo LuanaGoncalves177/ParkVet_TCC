@@ -2,12 +2,14 @@
 Trabalho do TCC do ParkVet - Manager
 Criação de reservatório no dia 11/10/2021 para a relização do trabalho do ParkVet do TCC
 com as seguintes páinas já criadas: 
-1. Login - Completa - 10/10/21
-2. Cliente - Tutor (cadastro) - Completa 11/10/21
-3. Cliente - Tutor Atualizar (cadastro) - completa 12/10/21 - mesma página de cadastro.
-4. Pet (cadastro) - Completa - 12/10/21
-5. 
+1. Login (Index)- Completa - 10/10/21
+2. Cliente - Tutor (cadastrar) - Completa 11/10/21
+3. Cliente - Tutor (Atualizar) - completa 12/10/21 - com algums alterações para se encaizar com o layout Figma
+4. Cliente - tutor (cadastrado) - 
+5. Pet (cadastrar-pet) - Completa - 12/10/21
+6. 
 
 Autores: 
-Franciane Ferreira 
+Franciane Ferreira,  
 Luana dos Santos Gonçalves 
+Figma Layout -> https://www.figma.com/file/SpTeeCCMJ9dzjZ3f4T7VLZ/Parkvet2?node-id=224%3A6
