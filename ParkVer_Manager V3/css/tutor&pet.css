@@ -72,16 +72,12 @@ button {
 #campo__id-tutor {
   margin-left: 30px;
 }
-<<<<<<< HEAD
 
 #campo__endereco-tutor div {
   display: flex;
 }
 
 #formulario__label, #autorizacao{
-=======
-#label__nome, #label__id, #label__endereco{
->>>>>>> 8ef7ddba1ea2e3781f22477fccec0d27b0d502a1
   color:#557220;
   font-size: 25px;
 }
@@ -131,15 +127,10 @@ button {
 #pesquisa {
   width: 50px;
 }
-<<<<<<< HEAD
 #campo__botao {
   margin-left: 300px;
 }
 #campo__botao > button {
   width: 200px;
 margin-bottom: 20px;
-=======
-#campo__endereco-tutor div {
-  display: flex;
->>>>>>> 8ef7ddba1ea2e3781f22477fccec0d27b0d502a1
 }
