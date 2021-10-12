@@ -183,12 +183,10 @@ button {
 }
 #botoes {
   margin-top: 50px;
-  margin-left: 200px;
+  display: flex;
+  justify-content: space-around;
 }
-#botao-grande {
-  width: 300px;
-  margin-left: 210px;
-}
+
 /*pagina Cadastrados dados do pets*/
 #pets-cadastatos__cabecalho {
   background-color: #ECFDB8;
