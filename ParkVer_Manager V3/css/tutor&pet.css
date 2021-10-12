@@ -34,9 +34,9 @@ button {
   border-style: none;
   color: #557220;
 }
-.pesquisa__button a {
+.pesquisa__button a,button a  {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   color: #557220;
 }
 
@@ -176,6 +176,6 @@ button {
   margin-left: 200px;
 }
 #botao-grande {
-  width: 250px;
+  width: 300px;
   margin-left: 210px;
 }
