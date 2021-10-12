@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,11 +18,11 @@
         alt="Logo do ParkVet"
         />
         <div>
-        <h1 class="cabecalho_principal">PetVet Manager</h1>
+        <h1 class="cabecalho_principal">ParkVet Manager</h1>
         <p class="cabecalho__subtitulo">
-          O administrador inteligente do seu Pet Shop
-        <p class="cabecalho__titulo">PetVet - Funcionário</p>
-        </p>
+          O administrador inteligente do seu Pet Shop</p>
+        <p class="cabecalho__titulo">ParkVet - Funcionário</p>
+        
       </div>
     </header>
 
@@ -37,7 +37,7 @@
     </nav>
 
     <section class="pesquisa">
-        <h2 class="pesquisa__titulo">O cliente possui Cadastro?</h2>
+        <h2 class="pesquisa__titulo">O Cliente possui Cadastro?</h2>
         <div class="pesquisa__cliente">
           <label for="nome-tutor" class="pesquisa__label">Nome do Tutor:</label><br>
           <input type="text" id="nome-tutor" class="pesquisa__input">
@@ -54,24 +54,45 @@
 
         <div class ="campo__nome-id"> 
           <div id="campo__nome-tutor">
-            <label for="tutor-nome" id="label__nome">Nome do Tutor</label><br>
+            <label for="tutor-nome" id="formulario__label">Nome do Tutor</label><br>
             <input type="text"id="tutor-nome" placeholder=" Agusto de Oliverira Souza" class="input__nome">
           </div>
   
           <div id="campo__id-tutor">
-            <label for="tutor-id" id="label__id">ID Tutor</label><br>
+            <label for="tutor-id" id="formulario__label">ID Tutor</label><br>
             <input type="number"id="tutor-id" placeholder="001" class="input__id">
           </div><br>
         </div>
 
         <div id="campo__endereco-tutor">
-          <label for="tutor-endereco" id="label__endereco">Nome do Tutor</label><br>
+          <label for="tutor-endereco" id="formulario__label">Nome do Tutor</label><br>
           <div>
             <input type="text"id="tutor-endereco" placeholder=" Agusto de Oliverira Souza" class="input__endereco">
             <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
           </div>
         </div>
-        
+        <div>
+          <label for="tutor-endereco" id="formulario__label">E-mail</label><br>
+          <input type="email"id="tutor-email" placeholder=" AgustoOliverira@exemplo.com.br" class="input__email">
+        </div>
+        <div id="campo__telefones">
+          <div>
+            <label for="tutor-whatsapp" id="formulario__label">WhatsApp</label><br>
+            <input type="text"id="tutor-whatsapp" placeholder="(61) 99999-9999" class="input__whatsapp">
+          </div>
+          <div id="telefone">
+            <label for="tutor-telefone" id="formulario__label">Telefone Fixo</label><br>
+            <input type="text"id="tutor-telefone" placeholder="(61) 3333-3333" class="input__telefone">
+          </div>
+        </div>
+        <div id="campo__autorizacao">
+            <input type="radio" name="autorizacao" id="autorizacao">
+            <label for="autorizacao" id="autorizacao">Autorizo receber informações sobre<br> serviços, 
+              pacotes e produtos da Parkvet </label>
+        </div>
+        <div id="campo__botao">
+          <button><a>Cadastrar Pet</a></button>
+        </div>
 
 
 
