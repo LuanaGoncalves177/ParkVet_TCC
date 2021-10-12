@@ -1,0 +1,114 @@
+/*estiliza a página de login*/
+main {
+  text-align: center;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#cabecalho__logo {
+  width: 13%;
+  height: auto;
+  margin-right: 10px;
+}
+.cabecalho_principal{
+  font-size: 50px;
+  color: #958e3a;
+  margin: 8px;
+}
+.cabecalho__subtitulo, .cabecalho__titulo {
+  font-size: 25px;
+  color: #557220;
+  margin: 10px 0; 
+  text-align: center;
+}
+.cabecalho__titulo {
+ font-weight: 800;
+}
+.formulario {
+  padding: 5%;
+  background-image: url("../imagens/Fundo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+}
+.formulario__img {
+  width: 50%;
+}
+
+.formulario__login{
+  padding: 10px;
+  margin-top: 40px;
+}
+.formulario__label{
+  font-size: 30px;
+  color: #557220;
+  
+}
+.formulario__button {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 50px;
+
+  background-color: #E5FE96;
+  border: none;
+}
+.formulario__button a {
+  color: #557220;
+  text-decoration: none;
+}
+.formulario__input {
+  padding: 17px;
+  background-color: #E5FE96; 
+  border: none;
+}
+.formulario__label-input {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: rgba(199, 233, 91, 0.5);
+  padding: 2%;
+  text-align: center;
+}
+.footer__titulo {
+  font-size: 15px;
+  margin-bottom: 2%;
+}
+.footer__subtitulo {
+  font-size: 20px;
+}
+.footer__subtitulo,
+.footer__titulo {
+  color: #585424;
+}
+.footer__logo {
+  width: 7%;
+}
+/* Menu de navegação das páginas */ 
+.navegacao {
+  margin-bottom: 4%;
+  background-color: rgba(199, 233, 91, 0.5);
+  padding: 10px;
+}
+.navegacao li {
+  display: inline;
+  padding: 40px;
+  font-size: 25px;
+}
+.navegacao li a {
+  text-decoration: none;
+  color: #557220;
+}
+.navegacao li:hover {
+  font-weight: 600;
+}
+

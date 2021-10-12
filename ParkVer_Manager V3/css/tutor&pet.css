@@ -1,0 +1,87 @@
+/* estiliza a página de clientes e pets - pesquisa*/
+.pesquisa {
+  padding: 10px;
+  margin: 50px;
+}
+.pesquisa__titulo {
+  color: #557220;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 0;
+}
+.pesquisa__cliente {
+  text-align: left;
+}
+.pesquisa__label {
+  color: #557220;
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+.pesquisa__input {
+  font-size: 20px;
+  padding: 10px;
+  width: 70%;
+  border: none;
+  background-color: #ecfdb8;
+  margin-right: 5%;
+}
+button {
+  width: 20%;
+  padding: 1.5%;
+  font-size: 25px;
+  background-color: #e5fe96;
+  border-style: none;
+ }
+.pesquisa__button a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #557220;
+}
+
+/*-----------------------------------------------------------------------------*/
+.formulario__cadastro {
+  text-align: center;
+  background-image: url(../imagens/Cadastro_fundo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px 50px; 
+ 
+
+  }
+.formulario__titulo {
+  font-size: 30px;
+  margin-top: 20px;
+ display: grid (4 1fr)
+}
+.formulario__cliente {
+  text-align: left;
+  margin: 0 20px;
+}
+.campo__nome-id {
+   display: flex;
+}
+#campo__nome-tutor, #campo__id-tutor{
+  display: block;
+}
+#campo__id-tutor {
+  margin-left: 30px;
+}
+#label__nome, #label__id, #label__endereco{
+  color:#557220;
+  font-size: 25px;
+}
+.input__nome, .input__id, .input__endereco{
+  color: #e5fe96;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 700px;
+}
+.input__endereco {
+  width: 800px
+}
+.input__id {
+  background-color: blueviolet;
+  width: 100px;
+}

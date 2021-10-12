@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./imagens/LogoPetVet.png" />
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/tutor&pet.css"/>
+  </head>
+  <body>
+    <main>
+
+      <header class="cabecalho">
+        <img
+        id="cabecalho__logo"
+        src="./imagens/LogoPetVet.png"
+        alt="Logo do ParkVet"
+        />
+        <div>
+        <h1 class="cabecalho_principal">PetVet Manager</h1>
+        <p class="cabecalho__subtitulo">
+          O administrador inteligente do seu Pet Shop
+        <p class="cabecalho__titulo">PetVet - Funcionário</p>
+        </p>
+      </div>
+    </header>
+
+    <nav >
+      <ul class="navegacao">
+        <li><a href="#">Cadastro</a></li>
+        <li><a href="pets.html">Adicionar pet </a></li>
+        <li><a href="#">Serviços & Pacotes</a></li>
+        <li><a href="#">Agendamento</a</li>
+          <li><a href="#">Caixa</a></li>
+      </ul>
+    </nav>
+
+    <section class="pesquisa">
+        <h2 class="pesquisa__titulo">O cliente possui Cadastro?</h2>
+        <div class="pesquisa__cliente">
+          <label for="nome-tutor" class="pesquisa__label">Nome do Tutor:</label><br>
+          <input type="text" id="nome-tutor" class="pesquisa__input">
+          <button class="pesquisa__button"><a href="#">Consultar</a></button>
+        <br>
+          <span>mensagem</span>
+        </div>
+    </section>
+
+    <section class="formulario__cadastro">
+      <h2 class="formulario__titulo">Cadastro de Tutores</h2>
+
+      <form action="#" class="formulario__cliente">
+
+        <div class ="campo__nome-id"> 
+          <div id="campo__nome-tutor">
+            <label for="tutor-nome" id="label__nome">Nome do Tutor</label><br>
+            <input type="text"id="tutor-nome" placeholder=" Agusto de Oliverira Souza" class="input__nome">
+          </div>
+  
+          <div id="campo__id-tutor">
+            <label for="tutor-id" id="label__id">ID Tutor</label><br>
+            <input type="number"id="tutor-id" placeholder="001" class="input__id">
+          </div><br>
+        </div>
+
+        <div id="campo__endereco-tutor">
+          <label for="tutor-endereco" id="label__endereco">Nome do Tutor</label><br>
+          <input type="text"id="tutor-endereco" placeholder=" Agusto de Oliverira Souza" class="input__endereco">
+          <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço"></a>
+        </div>
+        
+
+
+
+      </form>
+    </section> 
+  
+    <footer>
+      <img class="footer__logo" src="./imagens/LogoPetVet.png" alt="" />
+      <p classs="footer__titulo">PetVet Manager 2021</p>
+      <p class="footer__subtitulo">&copy; All rights reserved</p>
+    </footer>
+  </main>
+  </body>
+</html>

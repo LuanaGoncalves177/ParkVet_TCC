@@ -1,0 +1,14 @@
+/* pagina de cadastro*/
+.cliente-cadastrado {
+  display: block;
+  text-align: left;
+}
+.dados-pesquisa {
+  text-align: left;
+}
+
+.input-pesquisa {
+    width: 60%;
+    background-color: #ECFDB8;
+}
+
