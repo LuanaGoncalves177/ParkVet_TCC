@@ -67,6 +67,9 @@ button {
 #campo__id-tutor {
   margin-left: 30px;
 }
+#campo__endereco-tutor div {
+  display: flex;
+}
 #label__nome, #label__id, #label__endereco{
   color:#557220;
   font-size: 25px;
@@ -84,4 +87,7 @@ button {
 .input__id {
   background-color: blueviolet;
   width: 100px;
+}
+#pesquisa {
+  width: 50px;
 }
