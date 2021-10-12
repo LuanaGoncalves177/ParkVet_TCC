@@ -172,6 +172,7 @@ button {
 #campo__botao > button {
   width: 200px;
   margin-bottom: 20px;
+  
 }
 #id-pet {
   margin-left: 40px;
@@ -188,5 +189,33 @@ button {
   width: 300px;
   margin-left: 210px;
 }
-/*pagina Cadastrado*/
+/*pagina Cadastrados dados do pets*/
+#pets-cadastatos__cabecalho {
+  background-color: #ECFDB8;
+  text-align: center;
+}
+.pets-cadastrados__colunas{
+  color: #557220;
+  font-size: 22px;
+  padding: 10px 30px;
+  text-align: center;
+}
+#pets-cadastrados {
+  margin-bottom: 20px;
+  width: 1000px;
+}
+.pets-cadastrados__dados {
+  background-color: #F6FFDC;
+  font-size: 20px;
+  color: black;
+}
+#imagem_tabela-editar, #imagem_tabela-excluir {
+  width: 50px;
+}
+#pets-cadastrados__total {
+  display: inline;
+  background-color: #F6FFDC;
+  padding: 20px 100px;
+}
+
 

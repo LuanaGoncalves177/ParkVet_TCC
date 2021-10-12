@@ -28,7 +28,7 @@
 
     <nav >
       <ul class="navegacao">
-        <li><a href="#">Cadastro</a></li>
+        <li><a href="cadastrar.html">Cadastro</a></li>
         <li><a href="cadastrar-pets.html">Adicionar pet </a></li>
         <li><a href="#">Serviços & Pacotes</a></li>
         <li><a href="#">Agendamento</a</li>
@@ -70,7 +70,7 @@
             <input type="text"id="tutor-dados-endereco" placeholder="Quadra 307 Bloco B Apartamento 102" class="input__dados-tutor">
           </div>
           <div id="contato">
-            <label for="tutor-whatsapp" id="formulario__label">WhatsApp</label><br>
+            <label for="tutor-whatsapp" id="formulario__label">Contato</label><br>
             <input type="text"id="tutor-whatsapp" placeholder="(61) 99999-9999" class="input__whatsapp">
           </div>
         </div>
@@ -81,6 +81,34 @@
       </form>
       <div class="pets-cadastrados ">
         <h2 class="formulario__titulo">Pets Cadastrados</h2>
+        <table id="pets-cadastrados">
+          <thead id="pets-cadastatos__cabecalho">
+            <tr>
+              <td class ="pets-cadastrados__colunas">Nome do Pet</td>
+              <td class ="pets-cadastrados__colunas">ID do pet</td>
+              <td class ="pets-cadastrados__colunas">serviços</td>
+              <td class ="pets-cadastrados__colunas">Pacotes</td>
+              <td class ="pets-cadastrados__colunas">Total</td>
+              <td class ="pets-cadastrados__colunas"></td>
+              <td class ="pets-cadastrados__colunas"></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class ="pets-cadastrados__dados">bolinha</td>
+              <td class ="pets-cadastrados__dados">001-01</td>
+              <td class ="pets-cadastrados__dados">Tosa</td>
+              <td class ="pets-cadastrados__dados">P1</td>
+              <td class ="pets-cadastrados__dados">R$250.00</td>
+              <td class ="pets-cadastrados__dados"><img id ="imagem_tabela-editar" src="./imagens/Editar.png" ></td>
+              <td class ="pets-cadastrados__dados"><img id ="imagem_tabela-excluir" src="./imagens/excluir.png" ></td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="pets-cadastrados__total"> 
+          <label for="pets-cadastrados-total" id="formulario__label">Total a pagar: </label>
+          <span id="formulario__label">250,00</span>
+        </div>
 
       </div>
     </section> 
