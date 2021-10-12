@@ -60,14 +60,20 @@ button {
   text-align: left;
   margin: 0 20px;
 }
-.formulario__cliente > #campo__dados-pet {
-  display: flex;
-}
 
 .campo__nome-id,
-.campo__nome-pet__id-tutor {
+.formulario__cliente > #campo__dados-pet, 
+.campo__nome-pet__id-tutor, 
+.campo__dados-tutor {
   display: flex;
 }
+.campo__dados-tutor {
+  margin-bottom: 50px;
+}
+.campo__dados-tutor > #contato {
+  margin-left: 100px;
+}
+
 
 #campo__nome-tutor,
 #campo__id-tutor {
@@ -102,7 +108,8 @@ button {
 .input__telefone,
 .input__pet,
 .input__pet-raca,
-.input__caracteristicas {
+.input__caracteristicas, 
+.input__dados-tutor{
   color: black;
   padding: 10px;
   font-size: 20px;
@@ -129,6 +136,10 @@ button {
 .input__telefone {
   width: 200px;
 }
+.input__dados-tutor {
+  width: 600px;
+}
+
 /* imputs dos pets */
 
 .input__pet-raca, .input__pet {
@@ -177,3 +188,5 @@ button {
   width: 300px;
   margin-left: 210px;
 }
+/*pagina Cadastrado*/
+
