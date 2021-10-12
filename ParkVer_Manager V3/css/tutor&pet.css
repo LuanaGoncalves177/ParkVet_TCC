@@ -61,11 +61,11 @@ button {
   margin: 0 20px;
 }
 
-.campo__nome-id {
+.campo__nome-id, .campo__nome-pet__id-tutor{
    display: flex;
 }
 
-#campo__nome-tutor, #campo__id-tutor{
+#campo__nome-tutor, #campo__id-tutor, #campo_raca-pet{
   display: block;
 }
 
@@ -73,7 +73,7 @@ button {
   margin-left: 30px;
 }
 
-#campo__endereco-tutor div {
+#campo__endereco-tutor div  {
   display: flex;
 }
 
@@ -89,8 +89,8 @@ button {
 }
 
 .input__nome, .input__id, .input__endereco, 
-.input__email, .input__whatsapp,
-.input__telefone{
+.input__email, .input__whatsapp,.input__telefone, 
+.input__pet, .input__pet-raca{
   color: #e5fe96;
   padding: 10px;
   font-size: 20px;
@@ -116,6 +116,19 @@ button {
 .input__whatsapp, .input__telefone{
   width: 300px;
 }
+/* imputs dos pets */
+.input__pet {
+  width: 500px;
+}
+.input__pet-raca {
+  width: 450px;
+}
+#pesquisa-id-tutor {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  align-self:center;
+}
 #campo__telefones {
   display: flex;
   margin-bottom: 20px;
@@ -128,9 +141,9 @@ button {
   width: 50px;
 }
 #campo__botao {
-  margin-left: 300px;
+  margin-left: 400px;
 }
 #campo__botao > button {
   width: 200px;
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }

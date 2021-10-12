@@ -44,21 +44,36 @@
       </section>
         
     <section class="formulario__cadastro">
-      <h2 class="cadastro__principal">Cadastro de Pets </h2>
-      <form class="formulario_cadastro">
-        <label for="nome_pet" class="cadastro_label">Nome do Pet </label><br>
-        <input type="text" class="cadastro_input" id="nome-pet">
+      <h2 class="formulario__titulo">Cadastro de Pets </h2>
+      
+      <form class="formulario__cliente">
+        <div class="campo__nome-pet__id-tutor">
+          <div id="campo__nome-pet">
+            <label for="tutor-nome" id="formulario__label">Nome do Tutor</label><br>
+            <input type="text"id="pet-nome" placeholder=" Agusto de Oliverira Souza" class="input__pet">
+          </div>
+  
+          <div id="campo__id-tutor">
+            <label for="tutor-id" id="formulario__label">ID Tutor</label><br>
+            <input type="number"id="tutor-id" placeholder="001" class="input__id"><br>
+          </div>
+          <img src="./imagens/lupa.png" id="pesquisa-id-tutor" alt="ppesquisar o ID do Tutor">
         
-        <label for="id_pet"class="cadastro_label_id">ID</label>
-        <input type="text" class="cadastro_input2" id="id-pet"><br>
-        
-        <label for="endereco_tutor"class="cadastro_label">Raça </label><br>
-        <div class ="label_imagem">
-          <input type="text" class="cadastro_input3" id="endereco-tutor">
-          <a href="#"><img src="./imagens/btn_pesquisar.png" id="button_validar" alt="validar o endereço"></a>
         </div><br>
-        <button><a href="#" class="button_cadastrar">Agendar</a></button>
-        <button><a href="#" class="button_cadastrar">Adicionar Pet</a></button>
+        <div id="campo__dados-pet">
+          <div id="campo_raca-pet">
+            <label for="pet__raca" id="formulario__label">E-mail</label><br>
+            <div>
+             <input type="email"id="" placeholder="Bulldog" class="input__pet-raca">
+            <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
+            </div>
+          </div><br>
+          <div>
+            <label for="tutor-id" id="formulario__label">ID Tutor</label><br>
+            <input type="text"id="tutor-id" placeholder="001-01" class="input__id"><br>
+          </div>
+      
+        </div>
       </form>
     </section>
     
