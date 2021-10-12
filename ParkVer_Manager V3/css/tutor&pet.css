@@ -130,11 +130,9 @@ button {
   width: 200px;
 }
 /* imputs dos pets */
-.input__pet {
-  width: 500px;
-}
-.input__pet-raca {
-  width: 500px;
+
+.input__pet-raca, .input__pet {
+  width: 700px;
 }
 .input__caracteristicas {
   width: 250px;
