@@ -5,9 +5,10 @@ com as seguintes páinas já criadas:
 1. Login (Index)- Completa - 10/10/21
 2. Cliente - Tutor (cadastrar) - Completa 11/10/21
 3. Cliente - Tutor (Atualizar) - completa 12/10/21 - com algums alterações para se encaizar com o layout Figma
-4. Cliente - tutor (cadastrado) - 
+4. Cliente  e pet - tutor (cadastrado) - 
 5. Pet (cadastrar-pet) - Completa - 12/10/21
-6. 
+6. pet ( adicionar) adiciona novo pet - 12/10/2021
+7. Pet (editat) edita pet já cadastrado - 12/10/2021
 
 Autores: 
 Franciane Ferreira,  
