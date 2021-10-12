@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./imagens/LogoPetVet.png" />
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/tutor&pet.css"/>
+  </head>
+
+  <body>
+    <main>
+      <header class="cabecalho">
+        <img
+        id="cabecalho__logo"
+        src="./imagens/LogoPetVet.png"
+        alt="Logo do ParkVet"
+        />
+        <div>
+        <h1 class="cabecalho_principal">ParkVet Manager</h1>
+        <p class="cabecalho__subtitulo">
+          O administrador inteligente do seu Pet Shop</p>
+        <p class="cabecalho__titulo">ParkVet - Funcionário</p>
+      </div>
+    </header>
+    <nav >
+      <ul class="navegacao">
+        <li><a href="./cadastrar-tutor.html">Cadastro</a></li>
+        <li><a href="./adicionar-pets.html">Adicionar pet </a></li>
+        <li><a href="#">Serviços & Pacotes</a></li>
+        <li><a href="#">Agendamento</a</li>
+        <li><a href="#">Caixa</a></li>
+      </ul>
+    </nav>
+    <section class="pesquisa">
+        <h2 class="pesquisa__titulo">O Pet possui Cadastro?</h2>
+        <div class="pesquisa__cliente">
+          <label for="nome-pet" class="pesquisa__label">Nome do Pet:</label><br>
+          <input type="text" id="nome-pet" class="pesquisa__input">
+          <button class="pesquisa__button"><a href="#">Consultar</a></button>
+          <br>
+          <span>mensagem</span>
+        </div>
+      </section>
+        
+    <section class="formulario__cadastro">
+      <h2 class="formulario__titulo">Cadastro de Pets </h2>
+      
+      <form class="formulario__cliente">
+        <div class="campo__nome-pet__id-tutor">
+          <div id="campo__nome-pet">
+            <label for="tutor-nome" id="formulario__label">Nome do Pet</label><br>
+            <input type="text"id="pet-nome" placeholder="Bolinha" class="input__pet">
+          </div>
+  
+          <div id="campo__id-tutor">
+            <label for="tutor-id" id="formulario__label">ID Tutor</label><br>
+            <input type="number"id="tutor-id" placeholder="001" class="input__id"><br>
+          </div>
+          <img src="./imagens/lupa.png" id="pesquisa-id-tutor" alt="ppesquisar o ID do Tutor">
+        
+        </div><br>
+        <div id="campo__dados-pet">
+          <div id="campo__label-pesquisa">
+            <label for="pet__raca" id="formulario__label">Raça</label><br>
+              <div>
+                <input type="text"id="" placeholder="Bulldog" class="input__pet-raca">
+                <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
+              </div>
+            </div>
+            <div id="id-pet">
+            <label for="tutor-id" id="formulario__label">ID Pet</label><br>
+            <input type="text"id="tutor-id" placeholder="001-01" class="input__id"><br>
+          </div>
+          </div>
+        </div><br>
+
+        <div id="campo__caracteristicas-pet">
+          <div>
+            <div id="campo__label-pesquisa">
+              <label for="pet-especie" id="formulario__label">Espécie</label><br>
+              <div>
+                <input type="text"id="pet-especie" placeholder="canino" class="input__caracteristicas">
+                <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
+              </div>
+            </div>
+            <div id="campo__label-pesquisa">
+              <label for="pet-pelo" id="formulario__label">Pelo</label><br>
+              <div>
+                <input type="text"id="pet-pelo" placeholder="curto" class="input__caracteristicas">
+                <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div id="campo__label-pesquisa">
+              <label for="pet-porte" id="formulario__label">Porte</label><br>
+              <div>
+                <input type="text"id="pet-porte" placeholder="pequeno" class="input__caracteristicas">
+                <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
+              </div>
+            </div>
+            <div id="campo__label-pesquisa">
+              <label for="pet-sexo" id="formulario__label">Sexo</label><br>
+              <div>
+                <input type="text"id="pet-pelo" placeholder="masculino" class="input__caracteristicas">
+                <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="botoes">
+          <button><a href="./atualizar-tutor.html"> voltar</a></button>
+          <button><a>Salvar e Agendar</a></button>
+          <button><a href="./adicionar-pets.html">Novo Pet</a></button>
+        </div>
+      </form>
+    </section>
+    
+    <footer>
+      <img class="footer__logo" src="./imagens/LogoPetVet.png" alt="" />
+      <p classs="footer__titulo">PetVet Manager 2021</p>
+      <p class="footer__subtitulo">&copy; All rights reserved</p>
+    </footer>
+    
+  </main>
+  </body>
+</html>

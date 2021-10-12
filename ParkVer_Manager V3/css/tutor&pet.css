@@ -33,10 +33,10 @@ button {
   background-color: #e5fe96;
   border-style: none;
   color: #557220;
- }
-.pesquisa__button a {
+}
+.pesquisa__button a,button a  {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   color: #557220;
 }
 
@@ -46,14 +46,14 @@ button {
   background-image: url(../imagens/Cadastro_fundo.png);
   background-repeat: no-repeat;
   background-position: center;
-  margin: 100px; 
+  margin: 20px 100px;
   padding: 50px;
-  }
-  
+}
+
 .formulario__titulo {
   font-size: 30px;
   margin-top: 20px;
-  color: #557220
+  color: #557220;
 }
 
 .formulario__cliente {
@@ -61,11 +61,22 @@ button {
   margin: 0 20px;
 }
 
-.campo__nome-id {
-   display: flex;
+.campo__nome-id,
+.formulario__cliente > #campo__dados-pet, 
+.campo__nome-pet__id-tutor, 
+.campo__dados-tutor {
+  display: flex;
+}
+.campo__dados-tutor {
+  margin-bottom: 50px;
+}
+.campo__dados-tutor > #contato {
+  margin-left: 100px;
 }
 
-#campo__nome-tutor, #campo__id-tutor{
+
+#campo__nome-tutor,
+#campo__id-tutor {
   display: block;
 }
 
@@ -73,12 +84,13 @@ button {
   margin-left: 30px;
 }
 
-#campo__endereco-tutor div {
+#campo__label-pesquisa div {
   display: flex;
 }
 
-#formulario__label, #autorizacao{
-  color:#557220;
+#formulario__label,
+#autorizacao {
+  color: #557220;
   font-size: 25px;
 }
 #autorizacao {
@@ -88,10 +100,17 @@ button {
   margin-bottom: 20px;
 }
 
-.input__nome, .input__id, .input__endereco, 
-.input__email, .input__whatsapp,
-.input__telefone{
-  color: #e5fe96;
+.input__nome,
+.input__id,
+.input__endereco,
+.input__email,
+.input__whatsapp,
+.input__telefone,
+.input__pet,
+.input__pet-raca,
+.input__caracteristicas, 
+.input__dados-tutor{
+  color: black;
   padding: 10px;
   font-size: 20px;
   margin-bottom: 10px;
@@ -101,20 +120,39 @@ button {
 }
 
 .input__endereco {
-  width: 800px
+  width: 800px;
 }
 .input__email {
-  width:850px ;
+  width: 850px;
 }
 .input__id {
-  background-color:#B5D453;
+  background-color: #b5d453;
   width: 100px;
-  color: rgb(104, 73, 73);
+  color: rgb(247, 238, 238);
   text-align: center;
   border: none;
 }
-.input__whatsapp, .input__telefone{
-  width: 300px;
+.input__whatsapp,
+.input__telefone {
+  width: 200px;
+}
+.input__dados-tutor {
+  width: 600px;
+}
+
+/* imputs dos pets */
+
+.input__pet-raca, .input__pet {
+  width: 700px;
+}
+.input__caracteristicas {
+  width: 250px;
+}
+#pesquisa-id-tutor {
+  width: 40px;
+  height: auto;
+  margin-left: 10px;
+  align-self: center;
 }
 #campo__telefones {
   display: flex;
@@ -126,11 +164,54 @@ button {
 
 #pesquisa {
   width: 50px;
+  flex-wrap: wrap;
 }
 #campo__botao {
-  margin-left: 300px;
+  margin-left: 400px;
 }
 #campo__botao > button {
   width: 200px;
-margin-bottom: 20px;
+  margin-bottom: 20px;
+  
+}
+#id-pet {
+  margin-left: 40px;
+}
+#campo__caracteristicas-pet > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+#botoes {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*pagina Cadastrados dados do pets*/
+#pets-cadastatos__cabecalho {
+  background-color: #ECFDB8;
+  text-align: center;
+}
+.pets-cadastrados__colunas{
+  color: #557220;
+  font-size: 22px;
+  padding: 10px 30px;
+  text-align: center;
+}
+#pets-cadastrados {
+  margin-bottom: 20px;
+  width: 1000px;
+}
+.pets-cadastrados__dados {
+  background-color: #F6FFDC;
+  font-size: 20px;
+  color: black;
+}
+#imagem_tabela-editar, #imagem_tabela-excluir {
+  width: 50px;
+}
+#pets-cadastrados__total {
+  display: inline;
+  background-color: #F6FFDC;
+  padding: 20px 100px;
 }
