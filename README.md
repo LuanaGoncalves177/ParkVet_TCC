@@ -9,6 +9,8 @@ com as seguintes páinas já criadas:
 5. Pet (cadastrar-pet) - Completa - 12/10/21
 6. pet ( adicionar) adiciona novo pet - 12/10/2021
 7. Pet (editat) edita pet já cadastrado - 12/10/2021
+8. Agendamentos (Agendamentos) página inical de agendamentos - 12/10/2021 
+9. básico - Página que já contém o HTML e Css do projeto (apagar futuramente) 
 
 Autores: 
 Franciane Ferreira,  
