@@ -45,29 +45,61 @@
       
               <div class ="campo__nome-id"> 
                 <div id="campo__nome-tutor">
-                  <label for="tutor-nome" id="formulario__label">Nome do Tutor</label><br>
+                  <label for="tutor-nome" id="formulario__label">Nome do Tutor:</label><br>
                   <input type="text"id="tutor-nome" placeholder="Agusto de Oliverira Souza" class="input__nome">
                 </div>
         
                 <div id="campo__id-tutor">
-                  <label for="tutor-id" id="formulario__label">ID Tutor</label><br>
+                  <label for="tutor-id" id="formulario__label">ID Tutor:</label><br>
                   <input type="number"id="tutor-id" placeholder="001" class="input__id">
                 </div><br>
               </div>
 
              <div class="campo__pet-nome-id">
                 <div id="campo__dados-pet">
-                    <label for="pet_nome" id="formulario__label">Nome do Pet</label><br>
+                    <label for="pet_nome" id="formulario__label">Nome do Pet:</label><br>
                     <input type="text" id="pet-nome" placeholder="princesa" class="input__pet">
                 </div>
         
                 <div id="id-pet">
-                    <label for="pet-id" id="formulario__label">ID Pet</label><br>
+                    <label for="pet-id" id="formulario__label">ID Pet:</label><br>
                     <input type="number" id="pet-id" placeholder="01-001" class="input__id">
                 </div>
               </div><br>
 
-              
+              <div>
+                <div id="campo__servico">
+                  <label for="servico_realizar" id="formulario__label">Serviço a ser contratado:</label><br>
+                  <div>
+                    <input list="servicos_disponiveis" id="servico-opcao" />
+                    <datalist id="servicos_disponiveis">
+                        <option value="Banho">
+                        <option value="Tosa Higienica">
+                    </datalist>
+                    
+                  </div>
+                </div>
+                <div id="campo__servico">
+                  <label for="data_servico" id="formulario__label">Data:</label><br>
+                  <div>
+                    <input type="date" id="data_servico">
+                  </div>
+
+
+                <div id="campo__servico">
+                  <label for="hora_servico" id="formulario__label">Hora:</label><br>
+                  <div>
+                    <input type="time" id="horario_servico">
+                </div>
+              </div>
+
+              <div class= "valor_preco">
+                  <label for="total_preco" id="formulario__label">Total:</label>
+                  <div>
+                        <input type="number">
+                  </div>
+
+              </div>
               
              <div id="botoes">
                 <button><a href="#">Confirmar</a></button>
