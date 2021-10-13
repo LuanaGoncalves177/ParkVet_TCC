@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./imagens/LogoPetVet.png" />
-    <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/tutor&pet.css"/>
+    <title>ParkVet - Cliente Cadastrar Pets</title>
+    <link rel="icon" href="../imagens/LogoPetVet.png" />
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/tutor&pet.css"/>
   </head>
 
   <body>
@@ -14,7 +15,7 @@
       <header class="cabecalho">
         <img
         id="cabecalho__logo"
-        src="./imagens/LogoPetVet.png"
+        src="../imagens/LogoPetVet.png"
         alt="Logo do ParkVet"
         />
         <div>
@@ -58,17 +59,24 @@
             <label for="tutor-id" id="formulario__label">ID Tutor</label><br>
             <input type="number"id="tutor-id" placeholder="001" class="input__id"><br>
           </div>
-          <img src="./imagens/lupa.png" id="pesquisa-id-tutor" alt="ppesquisar o ID do Tutor">
+          <img src="../imagens/lupa.png" id="pesquisa-id-tutor" alt="ppesquisar o ID do Tutor">
         
         </div><br>
+        
         <div id="campo__dados-pet">
           <div id="campo__label-pesquisa">
             <label for="pet__raca" id="formulario__label">Raça</label><br>
               <div>
-                <input type="text"id="" placeholder="Bulldog" class="input__pet-raca">
-                <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
+                <input list="raca" id="pet__raca" placeholder="Bulldog" class="input__pet-raca">
+                <datalist id="raca">
+                  <option value= "Bulldog">
+                  <option value= "Pintcher">
+                  <option value= "Pitbull">
+                  <option value= "Poodle">
+                </datalist>
               </div>
             </div>
+
             <div id="id-pet">
             <label for="tutor-id" id="formulario__label">ID Pet</label><br>
             <input type="text"id="tutor-id" placeholder="001-01" class="input__id"><br>
@@ -81,20 +89,17 @@
             <div id="campo__label-pesquisa">
               <label for="pet-especie" id="formulario__label">Espécie</label><br>
               <div>
-                <input list="especie"id="pet-especie" class="input__caracteristicas">
+                <input list="especie"id="pet-especie" class="input__caracteristicas" placeholder="Canino">
                 <datalist id="especie">
-                  <option value= "Selecionar">
-                  <option value= "Shih Tzu">
-                  <option value= "lhasa apso">
-                  <option value= "SRD - Sem Raça Definida">
-                  <optin value= "Pinscher">  
+                  <option value= "Canino">
+                  <option value= "Felino">
                 </datalist>
               </div>
             </div>
             <div id="campo__label-pesquisa">
               <label for="pet-pelo" id="formulario__label">Pelo</label><br>
               <div>
-                <input list="pelagem"id="pet-pelo" class="input__caracteristicas">
+                <input list="pelagem"id="pet-pelo" class="input__caracteristicas" placeholder="Curto">
                 <datalist id="pelagem">
                   <option value= "Selecionar">
                   <option value="Curto">
@@ -109,7 +114,7 @@
             <div id="campo__label-pesquisa">
               <label for="pet-porte" id="formulario__label">Porte</label><br>
               <div>
-                <input list="portes"id="pet-porte" class="input__caracteristicas">
+                <input list="portes"id="pet-porte" class="input__caracteristicas" placeholder="Pequeno">
                   <datalist id="portes">
                     <option value= "Selecionar">
                     <option value="Pequeno">
@@ -121,7 +126,7 @@
             <div id="campo__label-pesquisa">
               <label for="pet-sexo" id="formulario__label">Sexo</label><br>
               <div>
-                <input list="sexos"id="pet-pelo" class="input__caracteristicas">
+                <input list="sexos"id="pet-pelo" class="input__caracteristicas" placeholder="Macho">
                 <datalist id="sexos">
                   <option value= "Selecionar">
                   <option value="Macho">
@@ -140,7 +145,7 @@
     </section>
     
     <footer>
-      <img class="footer__logo" src="./imagens/LogoPetVet.png" alt="" />
+      <img class="footer__logo" src="../imagens/LogoPetVet.png" alt="" />
       <p classs="footer__titulo">PetVet Manager 2021</p>
       <p class="footer__subtitulo">&copy; All rights reserved</p>
     </footer>

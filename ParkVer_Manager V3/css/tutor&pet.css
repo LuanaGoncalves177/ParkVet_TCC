@@ -64,7 +64,7 @@ button {
 .campo__nome-id,
 .formulario__cliente > #campo__dados-pet, 
 .campo__nome-pet__id-tutor, 
-.campo__dados-tuto,.campo__pet-nome-id {
+.campo__dados-tutor,.campo__pet-nome-id {
   display: flex;
 }
 .campo__dados-tutor {
