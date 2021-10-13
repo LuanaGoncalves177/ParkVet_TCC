@@ -181,10 +181,17 @@ button {
   display: flex;
   justify-content: space-evenly;
 }
-#botoes {
+#botoes, #botoes__centralizados{
   margin-top: 50px;
   display: flex;
+  
+}
+#botoes {
   justify-content: space-around;
+}
+#botoes__centralizados {
+  justify-content:space-evenly;
+  margin-bottom: 50px;
 }
 
 /*pagina Cadastrados dados do pets*/
@@ -214,4 +221,10 @@ button {
   display: inline;
   background-color: #F6FFDC;
   padding: 20px 100px;
+}
+/* Agendamentos */
+#imagem__agendamentos {
+  width: 800px;
+  height: auto;
+  text-align: center;
 }
