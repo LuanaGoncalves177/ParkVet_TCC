@@ -81,15 +81,26 @@
             <div id="campo__label-pesquisa">
               <label for="pet-especie" id="formulario__label">Espécie</label><br>
               <div>
-                <input type="text"id="pet-especie" placeholder="canino" class="input__caracteristicas">
-                <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
+                <input list="especie"id="pet-especie" class="input__caracteristicas">
+                <datalist id="especie">
+                  <option value= "Selecionar">
+                  <option value= "Shih Tzu">
+                  <option value= "lhasa apso">
+                  <option value= "SRD - Sem Raça Definida">
+                  <optin value= "Pinscher">  
+                </datalist>
               </div>
             </div>
             <div id="campo__label-pesquisa">
               <label for="pet-pelo" id="formulario__label">Pelo</label><br>
               <div>
-                <input type="text"id="pet-pelo" placeholder="curto" class="input__caracteristicas">
-                <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
+                <input list="pelagem"id="pet-pelo" class="input__caracteristicas">
+                <datalist id="pelagem">
+                  <option value= "Selecionar">
+                  <option value="Curto">
+                  <option value="Médio">
+                  <option value="Longo">  
+                </datalist>
               </div>
             </div>
           </div>
@@ -98,15 +109,24 @@
             <div id="campo__label-pesquisa">
               <label for="pet-porte" id="formulario__label">Porte</label><br>
               <div>
-                <input type="text"id="pet-porte" placeholder="pequeno" class="input__caracteristicas">
-                <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
+                <input list="portes"id="pet-porte" class="input__caracteristicas">
+                  <datalist id="portes">
+                    <option value= "Selecionar">
+                    <option value="Pequeno">
+                    <option value="Médio">
+                    <option value="Grande">  
+                  </datalist>
               </div>
             </div>
             <div id="campo__label-pesquisa">
               <label for="pet-sexo" id="formulario__label">Sexo</label><br>
               <div>
-                <input type="text"id="pet-pelo" placeholder="masculino" class="input__caracteristicas">
-                <a href="#"><img src="./imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
+                <input list="sexos"id="pet-pelo" class="input__caracteristicas">
+                <datalist id="sexos">
+                  <option value= "Selecionar">
+                  <option value="Macho">
+                  <option value="Fêmia"> 
+                </datalist>
               </div>
             </div>
           </div>
