@@ -58,28 +58,37 @@
                 </div>
               </div><br>
 
-              <div >
-                  <label for="servico_realizar" id="formulario__label">Serviço a ser contratado:</label><br>
-                  <div id="campo__servico">
-                    <input list="servicos_disponiveis" id="servico-opcao" />
-                    <datalist id="servicos_disponiveis">
-                        <option value="Banho">
-                        <option value="Tosa Higienica">
-                    </datalist>
-                  </div>
-              </div>
-              <div id="campo__horario">
-                  <div>
-                    <label for="data_servico" id="formulario__label">Data:</label><br>
-                    <div>
+              <div class= "campo-servico-horario">
+                <div id="campo__servico">
+                    <div >
+                      <label for="servico_realizar" id="formulario__label">Serviço a ser contratado:</label><br>
+                      <input list="servicos_disponiveis" id="servico-opcao"/>
+                        <datalist id="servicos_disponiveis">
+                            <option value="Banho">
+                            <option value="Tosa Higienica">
+                        </datalist>
+                    </div>
+                </div>
+                <div id="campo__horario">
+                    <div id="agendar-servicos">
+                      <label for="data_servico" id="formulario__label">Data:</label><br>
                       <input type="date" id="data_servico">
-                  </div>
-                  <div>
-                    <label for="hora_servico" id="formulario__label">Hora:</label><br>
-                    <div>
+                    </div>
+                    <div >
+                      <label for="hora_servico" id="formulario__label">Hora:</label><br> 
                       <input type="time" id="horario_servico">
-                  </div>
+                    </div>
+                </div>
+                <div id="campo__valor">
+                  <label for="total_preco" id="formulario__label">Total:</label>
+                  <input type="number" id="input_valor">
               </div>
+              <div id="botoes">
+                <button><a href="./servicosEpacotes.html">Voltar</a></button>
+                <button><a href="#">Salvar</a></button>
+              </div>
+              </div>
+       
        
             </form> 
             

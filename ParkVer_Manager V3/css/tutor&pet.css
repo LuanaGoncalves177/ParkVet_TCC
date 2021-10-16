@@ -89,7 +89,9 @@ button {
 .campo__nome-id,
 .formulario__cliente > #campo__dados-pet, 
 .campo__nome-pet__id-tutor, 
-.campo__dados-tutor,.campo__pet-nome-id, #campo__label-pesquisa div, #campo__servico, #campo__horario{
+.campo__dados-tutor,.campo__pet-nome-id, 
+#campo__label-pesquisa div, #campo__servico,
+#campo__horario, #campo__valor{
   display: flex;
 }
 /*6.  Individualidades dos Campos*/
@@ -134,9 +136,26 @@ button {
   display: flex;
   justify-content: space-evenly;
 }
+
+/* campos da página serviços*/
+.campo-servico-horario {
+  margin: 0 150px ;
+}
 #campo__servico{
   justify-content: space-evenly;
 }
+#campo__horario, #campo__servico, #campo__valor{
+  margin-bottom: 20px;
+}
+#campo__horario{
+ 
+  justify-content: space-evenly;
+}
+#campo__valor {
+  justify-content: center;
+  margin-top: 50px;
+}
+
 
 /* 7. Campo de autorização do Cadastro*/ 
 #autorizacao {
@@ -184,6 +203,9 @@ button {
 }
 .input__dados-tutor {
   width: 600px;
+}
+#input_valor {
+  padding: 10px;
 }
 
 /* 9.1. imputs dos pets */
