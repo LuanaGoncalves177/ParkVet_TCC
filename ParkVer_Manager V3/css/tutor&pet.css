@@ -13,7 +13,7 @@
 }
 .pagina-titulo {
   font-size: 40px;
-  margin: 100px 0;
+  margin: 100px 0
 }
 .pesquisa__cliente {
   text-align: left;
@@ -242,13 +242,20 @@ button {
   text-align: center;
 }
 /* Servicos e pacotes */
-.serviçosEpacotes {
+.serviçosEpacotes, .pacotes {
   margin: 50px 0; 
 } 
+.serviçosEpacotes > div, .pacotes > div{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 #imagens__servicosEpacotes {
   width: 500px;
 }
 #imagens__servicosEpacotes a:hover {
   border: #557220;
+}
+#imagens__pacotes{
+  width: 500px;
 }
