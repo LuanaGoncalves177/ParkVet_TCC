@@ -1,0 +1,12 @@
+ <div id="botoes">
+                <button><a href="./servicosEpacotes.html">Voltar</a></button>
+                <button><a href="#">Salvar</a></button>
+              </div>
+              
+              <div class= "valor_preco">
+                  <label for="total_preco" id="formulario__label">Total:</label>
+                  <div>
+                        <input type="number">
+                  </div>
+
+              </div>

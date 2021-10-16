@@ -89,7 +89,7 @@ button {
 .campo__nome-id,
 .formulario__cliente > #campo__dados-pet, 
 .campo__nome-pet__id-tutor, 
-.campo__dados-tutor,.campo__pet-nome-id, #campo__label-pesquisa div {
+.campo__dados-tutor,.campo__pet-nome-id, #campo__label-pesquisa div, #campo__servico, #campo__horario{
   display: flex;
 }
 /*6.  Individualidades dos Campos*/
@@ -132,6 +132,9 @@ button {
 }
 #campo__caracteristicas-pet > div {
   display: flex;
+  justify-content: space-evenly;
+}
+#campo__servico{
   justify-content: space-evenly;
 }
 
@@ -191,6 +194,17 @@ button {
 .input__caracteristicas {
   width: 250px;
 }
+/* inputs da página de serviços*/ 
+ #servico-opcao{
+   width: 500px;
+   padding: 10px;
+ }
+ #data_servico, #horario_servico {
+   width: 200px;
+   padding: 10px;
+ }
+
+/* Pesquisas das páginas */ 
 #pesquisa-id-tutor {
   width: 40px;
   height: auto;
