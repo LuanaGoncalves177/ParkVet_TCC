@@ -1,0 +1,10 @@
+.formulario__titulo {
+    text-align: start;
+}
+#pacotes {
+    margin-top: 100px;
+}
+#botao-agendar {
+    display: flex;
+    justify-content: start;
+}
