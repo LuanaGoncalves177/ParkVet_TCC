@@ -228,3 +228,18 @@ button {
   height: auto;
   text-align: center;
 }
+/* Servicos e pacotes */
+.serviçosEpacotes {
+  margin: 50px 0; 
+} 
+.serviçosEpacotes > div {
+  margin-top: 100px
+}
+
+#imagens__servicosEpacotes {
+  width: 500px;
+}
+#imagens__servicosEpacotes a:hover {
+  border: #557220;
+}
+
