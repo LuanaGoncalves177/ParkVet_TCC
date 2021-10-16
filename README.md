@@ -12,6 +12,9 @@ com as seguintes páinas já criadas:
 8. Agendamentos (Agendamentos) página inical de agendamentos - 12/10/2021 
 9. básico - Página que já contém o HTML e Css do projeto (apagar futuramente) 
 
+
+Falta as páginas dos pacotes
+
 Autores: 
 Franciane Ferreira,  
 Luana dos Santos Gonçalves 
