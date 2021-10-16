@@ -5,11 +5,15 @@
   padding: 10px;
   margin: 50px;
 }
-.pesquisa__titulo {
+.pesquisa__titulo, .pagina-titulo {
   color: #557220;
   margin-bottom: 20px;
   font-size: 30px;
   margin-top: 0;
+}
+.pagina-titulo {
+  font-size: 40px;
+  margin: 100px 0;
 }
 .pesquisa__cliente {
   text-align: left;
@@ -241,9 +245,6 @@ button {
 .serviçosEpacotes {
   margin: 50px 0; 
 } 
-.serviçosEpacotes > div {
-  margin-top: 100px
-}
 
 #imagens__servicosEpacotes {
   width: 500px;
@@ -251,8 +252,3 @@ button {
 #imagens__servicosEpacotes a:hover {
   border: #557220;
 }
-.agenda-subtitulo {
-
-
-}
-
