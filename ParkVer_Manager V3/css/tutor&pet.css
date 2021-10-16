@@ -2,8 +2,9 @@
 
 /* 1. Css para as pesquisas da página */ 
 .pesquisa {
-  padding: 10px;
+  padding: 20px;
   margin: 50px;
+  background-color: whitesmoke;
 }
 .pesquisa__titulo, .pagina-titulo {
   color: #557220;
@@ -272,6 +273,9 @@ button {
   padding: 20px 100px;
 }
 /* Agendamentos */
+.agendamentos {
+  margin: 0 200px;
+}
 #imagem__agendamentos {
   width: 800px;
   height: auto;
