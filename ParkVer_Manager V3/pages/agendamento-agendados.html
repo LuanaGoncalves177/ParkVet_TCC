@@ -25,22 +25,14 @@
           <p class="cabecalho__titulo">ParkVet - Funcionário</p>
         </div>
       </header>
-      
-      <nav >
-        <ul class="navegacao">
-          <li><a href="#">Cadastro</a></li>
-          <li><a href="cadastrar-pets.html">Adicionar pet </a></li>
-          <li><a href="#">Serviços & Pacotes</a></li>
-          <li><a href="agendamentos.html">Agendamento</a</li>
-            <li><a href="#">Caixa</a></li>
-        </ul>
-      </nav>
 
-      <section class="a-definir">
-        <div class="Agenda ">
-            <h2 class="formulario__titulo">Agenda</h2>
+      <section class="formulario__cadastro">
+        <h2 class="formulario__titulo">Agenda</h2>
+        <h3> Serviços Agendados</h3>
+        <div class="formulario__subtitulo" id="seviços">
+          <h3> Serviços Agendados</h3>
             <table id="agenda">
-              <thead id="agendados">
+              <thead id="agendados__cabecalho">
                 <tr>
                   <td class ="agenda__colunas">DATA</td>
                   <td class ="agenda__colunas">HORÁRIO</td>
@@ -48,6 +40,7 @@
                   <td class ="agenda__colunas">NOME DO TUTOR</td>
                   <td class ="agenda__colunas">SERVIÇO</td>
                   <td class ="agenda__colunas">PAGO</td>
+                  <td class ="agenda__colunas"></td>
                 </tr>
               </thead>
               <tbody>
@@ -58,17 +51,15 @@
                   <td class ="agenda__dados">Luiza</td>
                   <td class ="agenda__dados">Banho</td>
                   <td class ="agenda__dados">OK!</td>
-                  <td class ="agenda__dados"><a href="./editar-pet.html"><img id ="imagem_tabela-editar" src="../imagens/Editar.png" ></a></td>
                   <td class ="agenda__dados"><img id ="imagem_tabela-excluir" src="../imagens/excluir.png"></td>
                 </tr>
               </tbody>
-              
             </table>
         </div>
         
         <div id="botoes">
-            <button><a href="./cadastrar-tutor.html">voltar</a></button>
-            <button><a href="./adicionar-pets.html">Agendar Novo</a></button>
+            <button><a href="./agendamentos.html">voltar</a></button>
+            <button><a href="#">Agendar Novo</a></button>
          </div>
         </section> 
       

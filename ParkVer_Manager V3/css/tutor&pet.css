@@ -1,4 +1,6 @@
-/* estiliza a página de clientes e pets - pesquisa*/
+/* estiliza  todas as páginas do sites */
+
+/* 1. Css para as pesquisas da página */ 
 .pesquisa {
   padding: 10px;
   margin: 50px;
@@ -26,6 +28,14 @@
   background-color: #ecfdb8;
   margin-right: 5%;
 }
+
+.pesquisa__button a,button a  {
+  text-decoration: none;
+  font-weight: 600;
+  color: #557220;
+}
+
+/* 2. Css para todos os botões*/ 
 button {
   width: 20%;
   padding: 1.5%;
@@ -34,13 +44,21 @@ button {
   border-style: none;
   color: #557220;
 }
-.pesquisa__button a,button a  {
-  text-decoration: none;
-  font-weight: 600;
-  color: #557220;
+#botoes, #botoes__centralizados{
+  margin-top: 50px;
+  display: flex;
+}
+#botoes {
+  justify-content: space-around;
+}
+#botoes__centralizados {
+  justify-content:space-evenly;
+  margin-bottom: 50px;
 }
 
 /*-----------------------------------------------------------------------------*/
+/* 3. fundo da páginas*/ 
+
 .formulario__cadastro {
   text-align: center;
   background-image: url(../imagens/Cadastro_fundo.png);
@@ -49,6 +67,8 @@ button {
   margin: 20px 100px;
   padding: 50px;
 }
+
+/*4. Formulários*/ 
 
 .formulario__titulo {
   font-size: 30px;
@@ -61,19 +81,20 @@ button {
   margin: 0 20px;
 }
 
+/* 5. Campos das páginas */
 .campo__nome-id,
 .formulario__cliente > #campo__dados-pet, 
 .campo__nome-pet__id-tutor, 
-.campo__dados-tutor,.campo__pet-nome-id {
+.campo__dados-tutor,.campo__pet-nome-id, #campo__label-pesquisa div {
   display: flex;
 }
+/*6.  Individualidades dos Campos*/
 .campo__dados-tutor {
   margin-bottom: 50px;
 }
 .campo__dados-tutor > #contato {
   margin-left: 100px;
 }
-
 
 #campo__nome-tutor,
 #campo__id-tutor {
@@ -83,23 +104,39 @@ button {
 #campo__id-tutor {
   margin-left: 30px;
 }
-
-#campo__label-pesquisa div {
-  display: flex;
-}
-
 #formulario__label,
 #autorizacao {
   color: #557220;
   font-size: 25px;
 }
-#autorizacao {
-  font-size: 20px;
+#campo__telefones {
+  display: flex;
+  margin-bottom: 20px;
+}
+#campo__telefones > #telefone {
+  margin-left: 50px;
+}
+#campo__botao {
+  margin-left: 400px;
+}
+#campo__botao > button {
+  width: 200px;
+  margin-bottom: 20px;
 }
 #campo__autorizacao {
   margin-bottom: 20px;
 }
+#campo__caracteristicas-pet > div {
+  display: flex;
+  justify-content: space-evenly;
+}
 
+/* 7. Campo de autorização do Cadastro*/ 
+#autorizacao {
+  font-size: 20px;
+}
+
+/* 8. Todos os inputs das páginas */ 
 .input__nome,
 .input__id,
 .input__endereco,
@@ -115,6 +152,8 @@ button {
   font-size: 20px;
   margin-bottom: 10px;
 }
+
+/* 9. Pecularidades dos inputs */ 
 .input__nome {
   width: 700px;
 }
@@ -140,7 +179,7 @@ button {
   width: 600px;
 }
 
-/* imputs dos pets */
+/* 9.1. imputs dos pets */
 
 .input__pet-raca, .input__pet {
   width: 700px;
@@ -154,62 +193,32 @@ button {
   margin-left: 10px;
   align-self: center;
 }
-#campo__telefones {
-  display: flex;
-  margin-bottom: 20px;
-}
-#campo__telefones > #telefone {
-  margin-left: 50px;
-}
 
 #pesquisa {
   width: 50px;
   flex-wrap: wrap;
 }
-#campo__botao {
-  margin-left: 400px;
-}
-#campo__botao > button {
-  width: 200px;
-  margin-bottom: 20px;
-  
-}
+
 #id-pet {
   margin-left: 40px;
 }
-#campo__caracteristicas-pet > div {
-  display: flex;
-  justify-content: space-evenly;
-}
-#botoes, #botoes__centralizados{
-  margin-top: 50px;
-  display: flex;
-  
-}
-#botoes {
-  justify-content: space-around;
-}
-#botoes__centralizados {
-  justify-content:space-evenly;
-  margin-bottom: 50px;
-}
 
 /*pagina Cadastrados dados do pets*/
-#pets-cadastatos__cabecalho {
+#pets-cadastatos__cabecalho, #agendados__cabecalho {
   background-color: #ECFDB8;
   text-align: center;
 }
-.pets-cadastrados__colunas{
+.pets-cadastrados__colunas, .agenda__colunas{
   color: #557220;
   font-size: 22px;
   padding: 10px 30px;
   text-align: center;
 }
-#pets-cadastrados {
+#pets-cadastrados, #agenda  {
   margin-bottom: 20px;
   width: 1000px;
 }
-.pets-cadastrados__dados {
+.pets-cadastrados__dados, .agenda__dados {
   background-color: #F6FFDC;
   font-size: 20px;
   color: black;
@@ -241,5 +250,9 @@ button {
 }
 #imagens__servicosEpacotes a:hover {
   border: #557220;
+}
+.agenda-subtitulo {
+
+
 }
 
