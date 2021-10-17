@@ -277,7 +277,7 @@ button {
   margin: 0 200px;
 }
 #imagem__agendamentos {
-  width: 800px;
+  width: 600px;
   height: auto;
   text-align: center;
 }
@@ -291,11 +291,11 @@ button {
 }
 
 #imagens__servicosEpacotes {
-  width: 500px;
+  width: 450px;
 }
 #imagens__servicosEpacotes a:hover {
   border: #557220;
 }
 #imagens__pacotes{
-  width: 500px;
+  width: 350px;
 }
