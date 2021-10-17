@@ -47,6 +47,9 @@ main {
 .formulario__img {
   width: 50%;
 }
+#imagem-login {
+  width: 400px;
+}
 
 .formulario__login{
   padding: 10px;
