@@ -39,16 +39,19 @@ main {
 }
 .formulario {
   padding: 5%;
-  background-image: url("../imagens/Fundo.png");
   background-repeat: no-repeat;
-  background-position: center;
-  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 0 200px;
 }
 .formulario__img {
   width: 50%;
+ 
 }
 #imagem-login {
-  width: 400px;
+  width: 450px; 
+  
 }
 
 .formulario__login{
