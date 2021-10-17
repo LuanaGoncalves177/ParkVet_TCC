@@ -191,7 +191,10 @@ button {
 .input__pet,
 .input__pet-raca,
 .input__caracteristicas, 
-.input__dados-tutor{
+.input__dados-tutor,
+#input_valor,
+#servico-cadastrado,
+#forma_pagamento {
   color: black;
   padding: 10px;
   font-size: 20px;
@@ -225,6 +228,7 @@ button {
 }
 #input_valor {
   padding: 10px;
+ 
 }
 
 /* 9.1. imputs dos pets */
