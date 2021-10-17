@@ -66,6 +66,7 @@ button {
 .formulario__cadastro, .formulario__pagamento {
   text-align: center;
   background-image: url(../imagens/Cadastro_fundo.png);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   margin: 20px 100px;
@@ -321,3 +322,4 @@ button {
 #imagens__pacotes{
   width: 350px;
 }
+/* Administrativo*/

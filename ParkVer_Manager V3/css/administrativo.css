@@ -1,0 +1,14 @@
+.pagina-titulo {
+    margin: 50px 0;
+    background-color: rgba(199, 233, 91, 0.5);
+}
+#imagem-login-administrador{
+    width: auto;
+    height: auto;
+  }
+.formulario {
+    background-image: url(../imagens/Fundo.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
