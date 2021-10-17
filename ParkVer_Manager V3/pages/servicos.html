@@ -1,104 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ParkVet - Serviços</title>
-        <link rel="icon" href="../imagens/LogoPetVet.png" />
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/tutor&pet.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParkVet - Serviços</title>
+    <link rel="icon" href="../imagens/LogoPetVet.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/tutor&pet.css" />
+  </head>
 
-   </head>
-
-   <body>
+  <body>
     <main>
-        <header class="cabecalho">
-          <img
-            id="cabecalho__logo"
-            src="../imagens/LogoPetVet.png"
-            alt="Logo do ParkVet"
-          />
-          <div>
-            <h1 class="cabecalho_principal">ParkVet Manager</h1>
-            <p class="cabecalho__subtitulo">
-              O administrador inteligente do seu Pet Shop
-            </p>
-            <p class="cabecalho__titulo">Parkvet - Funcionário</p>
+      <header class="cabecalho">
+        <img
+          id="cabecalho__logo"
+          src="../imagens/LogoPetVet.png"
+          alt="Logo do ParkVet"
+        />
+        <div>
+          <h1 class="cabecalho_principal">ParkVet Manager</h1>
+          <p class="cabecalho__subtitulo">
+            O administrador inteligente do seu Pet Shop
+          </p>
+          <p class="cabecalho__titulo">Parkvet - Funcionário</p>
+        </div>
+      </header>
+
+      <section class="formulario__cadastro">
+        <h2 class="formulario__titulo">Serviços</h2>
+
+        <form action="#" class="formulario__cliente">
+          <div class="campo__nome-id">
+            <div id="campo__nome-tutor">
+              <label for="tutor-nome" id="formulario__label"
+                >Nome do Tutor:</label
+              ><br />
+              <input
+                type="text"
+                id="tutor-nome"
+                placeholder="Agusto de Oliverira Souza"
+                class="input__nome"
+              />
+            </div>
+
+            <div id="campo__id-tutor">
+              <label for="tutor-id" id="formulario__label">ID Tutor:</label
+              ><br />
+              <input
+                type="number"
+                id="tutor-id"
+                placeholder="001"
+                class="input__id"
+              />
+            </div>
+            <br />
           </div>
-        </header>
 
-        
-          <section class="formulario__cadastro">
-            <h2 class="formulario__titulo">Serviços</h2>
-      
-            <form action="#" class="formulario__cliente">
-      
-              <div class ="campo__nome-id"> 
-                <div id="campo__nome-tutor">
-                  <label for="tutor-nome" id="formulario__label">Nome do Tutor:</label><br>
-                  <input type="text"id="tutor-nome" placeholder="Agusto de Oliverira Souza" class="input__nome">
-                </div>
-        
-                <div id="campo__id-tutor">
-                  <label for="tutor-id" id="formulario__label">ID Tutor:</label><br>
-                  <input type="number"id="tutor-id" placeholder="001" class="input__id">
-                </div><br>
-              </div>
+          <div class="campo__pet-nome-id">
+            <div id="campo__dados-pet">
+              <label for="pet_nome" id="formulario__label">Nome do Pet:</label
+              ><br />
+              <input
+                type="text"
+                id="pet-nome"
+                placeholder="princesa"
+                class="input__pet"
+              />
+            </div>
 
-             <div class="campo__pet-nome-id">
-                <div id="campo__dados-pet">
-                    <label for="pet_nome" id="formulario__label">Nome do Pet:</label><br>
-                    <input type="text" id="pet-nome" placeholder="princesa" class="input__pet">
-                </div>
-        
-                <div id="id-pet">
-                    <label for="pet-id" id="formulario__label">ID Pet:</label><br>
-                    <input type="number" id="pet-id" placeholder="01-001" class="input__id">
-                </div>
-              </div><br>
+            <div id="id-pet">
+              <label for="pet-id" id="formulario__label">ID Pet:</label><br />
+              <input
+                type="number"
+                id="pet-id"
+                placeholder="01-001"
+                class="input__id"
+              />
+            </div>
+          </div>
+          <br />
 
-              <div class= "campo-servico-horario">
-                <div id="campo__servico">
-                    <div >
-                      <label for="servico_realizar" id="formulario__label">Serviço a ser contratado:</label><br>
-                      <input list="servicos_disponiveis" id="servico-opcao"/>
-                        <datalist id="servicos_disponiveis">
-                            <option value="Banho">
-                            <option value="Tosa Higienica">
-                        </datalist>
-                    </div>
-                </div>
-                <div id="campo__horario">
-                    <div id="agendar-servicos">
-                      <label for="data_servico" id="formulario__label">Data:</label><br>
-                      <input type="date" id="data_servico">
-                    </div>
-                    <div >
-                      <label for="hora_servico" id="formulario__label">Hora:</label><br> 
-                      <input type="time" id="horario_servico">
-                    </div>
-                </div>
-                <div id="campo__valor">
-                  <label for="total_preco" id="formulario__label">Total:</label>
-                  <input type="number" id="input_valor">
+          <div class="campo-servico-horario">
+            <div id="campo__servico">
+              <div>
+                <label for="servico_realizar" id="formulario__label"
+                  >Serviço a ser contratado:</label
+                ><br />
+                <input list="servicos_disponiveis" id="servico-opcao" />
+                <datalist id="servicos_disponiveis">
+                  <option value="Banho"></option>
+                  <option value="Tosa Higienica"></option>
+                </datalist>
               </div>
-              <div id="botoes">
-                <button><a href="./servicosEpacotes.html">Voltar</a></button>
-                <button><a href="./agendamento-agendados.html">Salvar</a></button>
+            </div>
+            <div id="campo__horario">
+              <div id="agendar-servicos">
+                <label for="data_servico" id="formulario__label">Data:</label
+                ><br />
+                <input type="date" id="data_servico" />
               </div>
+              <div>
+                <label for="hora_servico" id="formulario__label">Hora:</label
+                ><br />
+                <input type="time" id="horario_servico" />
               </div>
-       
-       
-            </form> 
-            
-           
-          </section> 
-          <footer>
-            <img class="footer__logo" src="../imagens/LogoPetVet.png" alt="" />
-            <p classs="footer__titulo">PetVet Manager 2021</p>
-            <p class="footer__subtitulo">&copy; All rights reserved</p>
-          </footer>
+            </div>
+            <div id="campo__valor">
+              <label for="total_preco" id="formulario__label">Total:</label>
+              <input type="number" id="input_valor" />
+            </div>
+            <div id="botoes">
+              <button><a href="./servicosEpacotes.html">Voltar</a></button>
+              <button><a href="./agendamento-agendados.html">Salvar</a></button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        <img class="footer__logo" src="../imagens/LogoPetVet.png" alt="" />
+        <p classs="footer__titulo">PetVet Manager 2021</p>
+        <p class="footer__subtitulo">&copy; All rights reserved</p>
+      </footer>
     </main>
-   </body>
+  </body>
 </html>
