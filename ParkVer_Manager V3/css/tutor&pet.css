@@ -39,6 +39,18 @@
   font-weight: 600;
   color: #557220;
 }
+#agendar-servicos {
+  display: inline-flex;
+}
+#pesquisa__horario{
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+
+#imagem-lupa {
+  width: 55px;
+}
 
 /*2. Css para todos os botões*/
 .btn-botoes, #btn-voltar, .pesquisa__button{
