@@ -13,7 +13,7 @@ main {
   text-align: center;
   margin-bottom: 10px;
 }
-#cabecalho__logo {
+#cabecalho__logo a{
   width: 13%;
   height: auto;
   margin-right: 10px;
