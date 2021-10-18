@@ -19,7 +19,10 @@
     display: flex;
     justify-content: space-evenly;
 }
-#relatorios,#atualização-conteudo,#atualização-conteudo,#imagem__despesa {
+.relatorios,.atualizacao,.funcionario,.despesas {
+    margin-bottom: 100px;
+}
+#relatorios,#atualizacao-conteudo,#funcionario-conteudo,.despesas >img {
     margin-bottom: 100px;
 }
 #imagem__relatorios {
