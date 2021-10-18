@@ -176,8 +176,13 @@
   display: flex;
   justify-content: start;
 }
-#campo__total{
+#campo__preco{
   margin-left: 30px;
+}
+#campo__total{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 #servico-cadastrado, #forma_pagamento {
   width: 700px;
@@ -201,7 +206,7 @@
 .input__pet-raca,
 .input__caracteristicas, 
 .input__dados-tutor,
-#input_valor,
+.input_valor,
 #servico-cadastrado,
 #forma_pagamento {
   color: black;
@@ -235,7 +240,7 @@
 .input__dados-tutor {
   width: 600px;
 }
-#input_valor {
+.input_valor {
   padding: 10px;
  
 }
