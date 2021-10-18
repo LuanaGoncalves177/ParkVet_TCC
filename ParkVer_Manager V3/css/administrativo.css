@@ -15,3 +15,23 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+#relatorios, #atualização-conteudo{
+    display: flex;
+    justify-content: space-evenly;
+}
+#relatorios,#atualização-conteudo,#atualização-conteudo,#imagem__despesa {
+    margin-bottom: 100px;
+}
+#imagem__relatorios {
+    width: 20%;
+}
+.atualizacao-conteudo {
+    margin: 1%;
+
+}
+#imagem__servicosEpacotes{
+    width: 30%;
+}
+#imagem__funcionario, #imagem__despesa{
+    width: 50%;
+}
