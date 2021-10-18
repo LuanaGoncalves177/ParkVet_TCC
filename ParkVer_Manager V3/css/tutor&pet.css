@@ -41,7 +41,7 @@
 }
 
 /*2. Css para todos os botões*/
-.btn-botoes, #btn-voltar {
+.btn-botoes, #btn-voltar, .pesquisa__button{
   width: 20%;
   padding: 1.5%;
   font-size: 25px;

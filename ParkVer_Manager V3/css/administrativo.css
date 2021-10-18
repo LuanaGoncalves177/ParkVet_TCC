@@ -1,6 +1,9 @@
 .pagina-titulo {
     margin: 50px 0;
-    background-color: rgba(199, 233, 91, 0.5);
+    /*background-color: rgba(199, 233, 91, 0.5);*/
+    background-color: 557220;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 #imagem-login-administrador{
     width: auto;
