@@ -14,7 +14,7 @@
 }
 .pagina-titulo {
   font-size: 40px;
-  margin: 100px 0
+  margin: 70px 0
 }
 .pesquisa__cliente {
   text-align: left;
@@ -324,10 +324,13 @@
 /* Servicos e pacotes */
 .serviçosEpacotes, .pacotes {
   margin: 50px 0; 
-} 
-.serviçosEpacotes > div, .pacotes > div{
+}
+
+.serviçosEpacotes-conteudo > div{
   display: flex;
   justify-content: space-evenly;
+  width: 65%;
+  margin: 0 250px;
 }
 
 #imagens__servicosEpacotes {
