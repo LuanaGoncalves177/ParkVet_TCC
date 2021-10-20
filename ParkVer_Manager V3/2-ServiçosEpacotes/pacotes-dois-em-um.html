@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParkVet - Cadastro de Pacote</title>
+    <link rel="icon" href="../imagens/LogoPetVet.png" />
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/tutor&pet.css">
+  </head>
+  <body>
+    <main>
+      <header class="cabecalho">
+        <img
+          id="cabecalho__logo"
+          src="../imagens/LogoPetVet.png"
+          alt="Logo do ParkVet"
+        />
+        <div>
+          <h1 class="cabecalho_principal">ParkVet Manager</h1>
+          <p class="cabecalho__subtitulo">
+            O administrador inteligente do seu Pet Shop
+          </p>
+          <p class="cabecalho__titulo">ParkVet - Funcionário</p>
+        </div>
+      </header>
+      
+      <section class="pesquisa">
+        <h2 class="pesquisa__titulo">Cadastro de Pacotes</h2>
+        <div class="pesquisa__cliente">
+          <label for="nome-pet" class="pesquisa__label">Buscar:</label><br>
+          <input type="text" id="nome-pet" class="pesquisa__input">
+          <input list="filtro", id="filtro-busca">
+          <datalist id="filtro">
+              <option value= "Nome do Cliente">
+              <option value= "Nome do Pet">
+          </datalist>
+          <button class="pesquisa__button"><a href="#">Buscar</a></button>
+          <br>
+
+          <span>
+            <div id="pacote-cadastro">
+                <h4 class="formulario__titulo">Dados:</h4>
+                <h4 class="dados-cliente">Nome do Tutor: João Vitor</h4>
+                <h4 class="dados-cliente">Id: 001</h4>
+                <table id="pacote">
+                  <thead id="pacote__cabecalho">
+                    <tr>
+                      <td class="pacote__colunas"> </td>
+                      <td class="pacote__colunas">nome do pet </td>
+                      <td class="pacote__colunas">Porte</td>
+                      <td class="pacote__colunas">Raça</td>
+                      <td class="pacote__colunas">Especie</td>
+                      <td class="pacote__colunas"> </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="pacote__dados"><input type="checkbox"/></td>
+                      <td class="pacote__dados">Bolinha</td>
+                      <td class="pacote__dados">Pequeno</td>
+                      <td class="pacote__dados">Shitzu</td>
+                      <td class="pacote__dados">Canina</td>
+                      <td class="pacote__dados">icone de alterar</td>
+                  </tbody>
+                </table>
+               </div>
+          </span>
+        
+        </div>
+        <div>
+            <br>
+            <button class="pesquisa__button"><a href="#">Contratar Pacote Individual</a></button>
+            <button class="pesquisa__button"><a href="#">Contratar Pacote Compartilhado</a></button>
+        </div>
+      </section>
+    
+
+      <footer>
+        <img class="footer__logo" src="../imagens/LogoPetVet.png" alt="" />
+        <p classs="footer__titulo">PetVet Manager 2021</p>
+        <p class="footer__subtitulo">&copy; All rights reserved</p>
+      </footer>
+    </main>
+  </body>
+</html>
