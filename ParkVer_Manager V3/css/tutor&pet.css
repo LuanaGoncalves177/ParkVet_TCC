@@ -328,7 +328,7 @@
 .agendamentos {
   margin: 0 200px;
 }
-#imagem__agendamentos {
+#imagem__agendamentos, #imagem-venda {
   width: 600px;
   height: auto;
   text-align: center;
@@ -345,7 +345,7 @@
   margin: 0 250px;
 }
 
-#imagens__servicosEpacotes {
+#imagens__servicosEpacotes{
   width: 300px;
 }
 #imagens__servicosEpacotes a:hover {
