@@ -6,7 +6,7 @@ campoFiltro.addEventListener("input", function(event){
     //var dataEscolhida = this.value;
     var clientesAgendados = document.querySelectorAll(".clientes-agendados");
     
-    //if (this.value != "dd/mm/aaaa"){
+    if (this.value != "dd/mm/aaaa"){
         for(var i; i < clientesAgendados.length; i++){
 
             var clienteAgendado = clientesAgendados[i];
@@ -20,11 +20,11 @@ campoFiltro.addEventListener("input", function(event){
                 clienteAgendado.classList.remove("invisivel");
             }
         }
-    //}else{
-    //    for (var i = 0; i < clientesAgendados.length; i++){
-    //        var clienteAgendado =  clientesAgendados[i];
-    //        clienteAgendado.classList.remove("invisivel");
-    //    }
-   // }
+    }else{
+        for (var i = 0; i < clientesAgendados.length; i++){
+            var clienteAgendado =  clientesAgendados[i];
+           clienteAgendado.classList.remove("invisivel");
+        }
+    }
 
 });
