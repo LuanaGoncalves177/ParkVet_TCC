@@ -328,8 +328,14 @@
 .agendamentos {
   margin: 0 200px;
 }
-#imagem__agendamentos, #imagem-venda {
-  width: 600px;
+#imagem__agendamentos {
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
+
+#imagem-venda{
+  width: 350px;
   height: auto;
   text-align: center;
 }
@@ -346,12 +352,12 @@
 }
 
 #imagens__servicosEpacotes{
-  width: 300px;
+  width: 250px;
 }
 #imagens__servicosEpacotes a:hover {
   border: #557220;
 }
 #imagens__pacotes{
-  width: 350px;
+  width: 200px;
 }
 /* Administrativo*/
