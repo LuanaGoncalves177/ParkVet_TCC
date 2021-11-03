@@ -370,9 +370,20 @@ button a {
 .agendamentos {
   margin: 0 200px;
 }
+<<<<<<< HEAD
 #imagem__agendamentos,
 #imagem-venda {
   width: 600px;
+=======
+#imagem__agendamentos {
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
+
+#imagem-venda{
+  width: 350px;
+>>>>>>> 2d077e8fafcc0c24e02a379295312cfdbee5c5dd
   height: auto;
   text-align: center;
 }
@@ -389,14 +400,24 @@ button a {
   margin: 0 250px;
 }
 
+<<<<<<< HEAD
 #imagens__servicosEpacotes {
   width: 300px;
+=======
+#imagens__servicosEpacotes{
+  width: 250px;
+>>>>>>> 2d077e8fafcc0c24e02a379295312cfdbee5c5dd
 }
 #imagens__servicosEpacotes a:hover {
   border: #557220;
 }
+<<<<<<< HEAD
 #imagens__pacotes {
   width: 350px;
+=======
+#imagens__pacotes{
+  width: 200px;
+>>>>>>> 2d077e8fafcc0c24e02a379295312cfdbee5c5dd
 }
 /* Administrativo*/
 .tfoot__dados,

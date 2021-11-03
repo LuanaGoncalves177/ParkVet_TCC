@@ -48,7 +48,7 @@
           <h3 class="formulario__titulo">Serviços Agendados</h3>
           <table id="agenda">
             <thead id="agendados__cabecalho">
-              <tr>
+              <tr class="clientes-agendados">
                 <td class="agenda__colunas">data</td>
                 <td class="agenda__colunas">horário</td>
                 <td class="agenda__colunas">nome do pet </td>
@@ -59,28 +59,28 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="agenda__dados">27/05/2021</td>
-                <td class="agenda__dados">14:30</td>
-                <td class="agenda__dados">Bob</td>
-                <td class="agenda__dados">Luiza</td>
-                <td class="agenda__dados">Banho</td>
-                <td class="agenda__dados">OK!</td>
-                <td class="agenda__dados">
+              <tr class="clientes-agendados">
+                <td class="agenda__data" >02/11/2021</td>
+                <td class="agenda__horario">14:30</td>
+                <td class="agenda__nomePet">Bob</td>
+                <td class="agenda__nomeCliente">Luiza</td>
+                <td class="agenda__servico">Banho</td>
+                <td class="agenda__pagamento">OK!</td>
+                <td class="agenda__excluir">
                   <img
                     id="imagem_tabela-excluir"
                     src="../imagens/excluir.png"
                   />
                 </td>
               </tr>
-              <tr>
-                <td class="agenda__dados">27/05/2021</td>
-                <td class="agenda__dados">14:30</td>
-                <td class="agenda__dados">Belinha</td>
-                <td class="agenda__dados">Cláudio</td>
-                <td class="agenda__dados">P1 - 2</td>
-                <td class="agenda__dados">pct</td>
-                <td class="agenda__dados">
+              <tr class="clientes-agendados">
+                <td class="agenda__data">17/11/2021</td>
+                <td class="agenda__horario">14:30</td>
+                <td class="agenda__nomePet">Belinha</td>
+                <td class="agenda__nomeCliente">Cláudio</td>
+                <td class="agenda__servico">P1 - 2</td>
+                <td class="agenda__pagamento">pct</td>
+                <td class="agenda__excluir">
                   <img
                     id="imagem_tabela-excluir"
                     src="../imagens/excluir.png"
@@ -88,15 +88,15 @@
                 </td>
               </tr>
             </tr>
-            <tr>
-              <td class="agenda__dados">27/05/2021</td>
-              <td class="agenda__dados">15:30</td>
-              <td class="agenda__dados">Faísca</td>
-              <td class="agenda__dados">Eduardo</td>
-              <td class="agenda__dados">-</td>
-              <td class="agenda__dados"><a href="../2-ServiçosEpacotes/pagamento-pendente.html">Pend</a></td>
+            <tr class="clientes-agendados">
+              <td class="agenda__data">27/11/2021</td>
+              <td class="agenda__horario">15:30</td>
+              <td class="agenda__nomePet">Faísca</td>
+              <td class="agenda__nomeCliente">Eduardo</td>
+              <td class="agenda__servico">-</td>
+              <td class="agenda__pagamento"><a href="../2-ServiçosEpacotes/pagamento-pendente.html">Pend</a></td>
               
-              <td class="agenda__dados">
+              <td class="agenda__excluir">
                 <img
                   id="imagem_tabela-excluir"
                   src="../imagens/excluir.png"
@@ -121,5 +121,7 @@
         <p class="footer__subtitulo">&copy; All rights reserved</p>
       </footer>
     </main>
+
+    <script src="\js\3-AgendamentosJS\agendamentos-agendados.js"></script>
   </body>
 </html>
