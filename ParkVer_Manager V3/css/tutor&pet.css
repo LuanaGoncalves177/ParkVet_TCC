@@ -232,7 +232,7 @@ button a {
 .input__preco, 
 .input__salario, 
 .input__funcao, 
-#input_valor,
+.input_valor,
 #servico-cadastrado,
 #forma_pagamento {
   color: black;
@@ -367,7 +367,8 @@ button a {
 .vendas__unitario,
 .vendas__total, 
 .pacote__nome, 
-.pacote__id {
+.pacote__id,
+.administrativo__botoes {
   background-color: #f6ffdc;
   font-size: 20px;
   color: black;
@@ -385,21 +386,13 @@ button a {
 .agendamentos {
   margin: 0 200px;
 }
-#imagem-venda {
-  width: 600px;
-}
-#imagem__agendamentos{
-  height: auto;
-  text-align: center;
-}
 
-#imagem-venda{
-  width: 350px;
-  height: auto;
+#imagem__agendamentos, #imagem-venda {
+  height: 300px;
   text-align: center;
+}
 
 /* Servicos e pacotes */
-}
 .serviçosEpacotes,
 .pacotes {
   margin: 50px 0;
