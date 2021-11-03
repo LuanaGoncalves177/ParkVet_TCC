@@ -41,9 +41,6 @@ button a {
   font-weight: 600;
   color: #557220;
 }
-#agendar-servicos {
-  display: inline-flex;
-}
 #pesquisa__horario {
   text-align: left;
   margin-bottom: 50px;
@@ -119,7 +116,8 @@ button a {
 #campo__label-pesquisa div,
 #campo__servico,
 #campo__horario,
-#campo__valor {
+#campo__valor, 
+#campo__despesas{
   display: flex;
 }
 /*6.  Individualidades dos Campos*/
@@ -184,7 +182,9 @@ button a {
   justify-content: center;
   margin-top: 50px;
 }
-
+#campo__despesas {
+  width: 90%;
+}
 /* Pagamentos em geral 
 
 .formulario__pagamento {
@@ -228,7 +228,9 @@ button a {
 .input__pet-raca,
 .input__caracteristicas,
 .input__dados-tutor,
-.input_valor,
+.input__despesa,
+.input__preco, 
+#input_valor,
 #servico-cadastrado,
 #forma_pagamento {
   color: black;
@@ -262,10 +264,6 @@ button a {
 .input__dados-tutor {
   width: 600px;
 }
-.input_valor {
-  padding: 10px;
-}
-
 /* 9.1. imputs dos pets */
 
 .input__pet-raca,
@@ -279,6 +277,12 @@ button a {
 #servico-opcao {
   width: 500px;
   padding: 10px;
+}
+.input__despesa{
+  width: 100%;
+}
+.input__preco{
+  width: 50%;
 }
 #data_servico,
 #horario_servico {
@@ -317,6 +321,7 @@ button a {
   font-size: 22px;
   padding: 10px 30px;
   text-align: center;
+  background-color: #e5fe96;
 }
 .agenda__colunas {
   text-transform: uppercase;
@@ -328,7 +333,13 @@ button a {
   width: 1000px;
 }
 .pets-cadastrados__dados,
-.agenda__dados,
+.agenda__data,
+.agenda__horario,
+.agenda__nomePet,
+.agenda__nomeCliente,
+.agenda__pagamento,
+.agenda__servico,
+.agenda__excluir,
 .tfoot__label,
 .tfoot__dados,
 .despesa__nome,
@@ -415,4 +426,7 @@ button a {
 .tfoot__label {
   color: #557220;
   background-color: #ecfdb8;
+}
+#adicionar__campo {
+  text-align: left;
 }
