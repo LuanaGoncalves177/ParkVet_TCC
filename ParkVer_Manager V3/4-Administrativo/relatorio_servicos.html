@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParkVet - Manager</title>
+    <link rel="icon" href="../imagens/LogoPetVet.png" />
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/tutor&pet.css">
+  </head>
+  <body>
+    <main>
+      <header class="cabecalho">
+        <img
+          id="cabecalho__logo"
+          src="../imagens/LogoPetVet.png"
+          alt="Logo do ParkVet"
+        />
+        <div>
+          <h1 class="cabecalho_principal">ParkVet Manager</h1>
+          <p class="cabecalho__subtitulo">
+            O administrador inteligente do seu Pet Shop
+          </p>
+          <p class="cabecalho__titulo">ParkVet - Administrativo</p>
+        </div>
+      </header>
+      <div id="relatório">
+        <div class="formulario__cadastro"> 
+
+          <h3 class="formulario__titulo">Serviços Contratados</h3>
+          
+          <div id="pesquisa__horario">
+            <label for="data_servico" id="formulario__label">Data:</label><br />
+            <div id="agendar-servicos">
+                
+              <input type="date" id="data_servico"/>
+              <div>
+                <img src="../imagens/lupa.png" id="imagem-lupa" alt="">
+              </div>
+            </div> 
+            </div>
+            <table id="administrativo">
+              <thead id="administrativo__cabecalho">
+                <tr>
+                  <td class="administrativo__colunas">Pet Cliente</td>
+                  <td class="administrativo__colunas">Serviço</td>
+                  <td class="administrativo__colunas">ID Serviço</td>
+                  <td class="administrativo__colunas">Valor</td>
+                  <td class="administrativo__colunas">Data</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="servico__pet">Cacau</td>
+                  <td class="servico__nome">Banho</td>
+                  <td class="servico__id">1</td>
+                  <td class="servico__total">25,00</td>
+                  <td class="servico__data">01/10/2021</td>
+                    
+                </tr>
+                <tr>
+                  <td class="servico__pet">Joquinha</td>
+                  <td class="servico__nome">Tosa</td>
+                  <td class="servico__id">2</td>
+                  <td class="servico__total">20,00</td>
+                  <td class="servico__data">08/10/2021</td>
+                </tr>
+                <tr>
+                  <td class="servico__pet">bolinha</td>
+                  <td class="servico__nome">Taxi-Dog</td>
+                  <td class="servico__id">3</td>
+                  <td class="servico__total">25,00</td>
+                  <td class="servico__data">05/10/2021</td>
+                </tr>
+                <tfoot>
+                    <td class="tfoot__label">Total: </td>
+                    <td class="tfoot__dados">70,00</00td>
+                </tfoot>
+              </tbody>
+            </table>
+            
+              
+            <div id="botoes">
+              <button id="btn-voltar"><a href="./1-relatorios.html" >voltar</a></button>
+            </div>
+        </div>  
+      </div>
+
+      <footer>
+          <img class="footer__logo" src="../imagens/LogoPetVet.png" alt="" />
+          <p classs="footer__titulo">PetVet Manager 2021</p>
+          <p class="footer__subtitulo">&copy; All rights reserved</p>
+      </footer>
+    </main>
+  </body>
+</html>

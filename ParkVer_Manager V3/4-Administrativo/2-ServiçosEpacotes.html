@@ -30,26 +30,69 @@
       <nav >
         <ul class="navegacao">
           <li><a href="./1-relatorios.html">Relatórios</a></li>
-          <li><a href="./2-ServiçosEpacotes.html">Serviços e Pacores</a></li>
+          <li><a href="./2-ServiçosEpacotes.html">Serviços e Pacotes</a></li>
           <li><a href="./3-funcionario.html">Funcionários</a</li>
           <li><a href="./4-despesas.html">Despesas</a></li>
         </ul>
       </nav>
     
       <section class="atualizacao">
-        <section class="serviçosEpacotes">
-          <h2 class="pagina-titulo">Serviços & Pacotes</h2>
-          <div class="serviçosEpacotes-conteudo">
-            <div>
-                 <img src="../imagens/servicos.png" alt="Veterinária examinando um canhorro" id="imagens__servicosEpacotes">
-                 <img src="../imagens/Pacotes.png" alt=" Cachorrinho contente detro de uma caixa" id="imagens__servicosEpacotes">
-            </div>
-          </div>
-        </section>
-        <div id="botoes">
-          <button id="btn-voltar"><a href="./administrativo-login.html" >Sair</a></butto> <!--
-            <button class="btn-botoes"><a href="#">Cadastrar</a></button>
-            <button class="btn-botoes"><a href="#">Serviços & Pacotes</a></button>-->
+        
+        <div class="formulario__cadastro">  
+          <h3 class="formulario__titulo">Serviços Oferecidos</h3>
+          <table id="administrativo">
+            <thead id="administrativo__cabecalho">
+              <tr>
+                <td class="administrativo__colunas">Serviço</td>
+                <td class="administrativo__colunas">ID Serviço</td>
+              </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                  <td class="servico__nome">Banho</td>
+                  <td class="servico__id">1</td>
+                  </tr>
+                  <tr>
+                  <td class="servico__nome">Tosa</td>
+                  <td class="servico__id">2</td>
+                  </tr>
+                  <tr>
+                  <td class="servico__nome">Taxi-Dog</td>
+                  <td class="servico__id">3</td>
+                  </tr>
+                  <tfoot>
+                      <td class="tfoot__label">Total de Serviços: </td>
+                      <td class="tfoot__dados">3</00td>
+                  </tfoot>
+            </tbody>
+          </table>
+          <a href="#" id="btn-adicionar"><img src="../imagens/adicao.png" alt=""></a>
+          
+          <h3 class="formulario__titulo">Serviços Oferecidos</h3>
+          <table id="administrativo">
+            <thead id="administrativo__cabecalho">
+              <tr>
+                <td class="administrativo__colunas">Pacote</td>
+                <td class="administrativo__colunas">ID Pacote</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="pacote__nome">Individual</td>
+                <td class="pacote__id">P1</td>
+              </tr>
+              <tr>
+                <td class="pacote__nome">Compartilhado</td>
+                <td class="pacote__id">P2</td>
+              </tr>
+              <tfoot>
+                <td class="tfoot__label">Total de Serviços: </td>
+                <td class="tfoot__dados">2</00td>
+                </tfoot>
+              </tbody>
+          </table>
+          <a href="#"><img src="../imagens/adicao.png" alt="" id="btn-adicionar"></a>
+
         </div>
       </section>
 

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParkVet - Manager</title>
+    <link rel="icon" href="../imagens/LogoPetVet.png" />
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/tutor&pet.css">
+  </head>
+  <body>
+    <main>
+        <header class="cabecalho">
+          <img
+            id="cabecalho__logo"
+            src="../imagens/LogoPetVet.png"
+            alt="Logo do ParkVet"
+          />
+          <div>
+            <h1 class="cabecalho_principal">ParkVet Manager</h1>
+            <p class="cabecalho__subtitulo">
+              O administrador inteligente do seu Pet Shop
+            </p>
+            <p class="cabecalho__titulo">ParkVet - Administrativo</p>
+          </div>
+        </header>
+        
+      
+      <div id="relatório">
+        <div class="formulario__cadastro">  
+          <h3 class="formulario__titulo">Relatório de Despesa</h3>
+          <table id="administrativo">
+            <thead id="administrativo__cabecalho">
+              <tr>
+                <td class="administrativo__colunas">Descrição</td>
+                <td class="administrativo__colunas">ID Despesa</td>
+                <td class="administrativo__colunas">Valor</td>
+                <td class="administrativo__colunas">Data do Pagamento</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="despesa__nome">Aluguel da Loja </td>
+                <td class="despesa__id">10</td>
+                <td class="despesa__valor">3.000,00</td>
+                <td class="despesa__data">05/11/2021</td>
+              </tr>
+              <tr>
+                <td class="despesa__nome">Conta de Luz</td>
+                <td class="despesa__id">11</td>
+                <td class="despesa__valor">1.000,00</td>
+                <td class="despesa__data">10/11/2021</td>
+
+              </tr>
+              <tr>
+                <td class="despesa__nome">Conta de Água</td>
+                <td class="despesa__id">12</td>
+                <td class="despesa__valor">1.500,00</td>
+                <td class="despesa__data">15/11/2021</td>
+              </tr>
+              <tr>
+                <td class="despesa__nome">Funcionários</td>
+                <td class="despesa__id">13</td>
+                <td class="despesa__valor">5.200,00</td>
+                <td class="despesa__data">08/11/2021</td>
+              </tr>
+              <tfoot>
+                  <td class="tfoot__label">Total de Despesa: </td>
+                  <td class="tfoot__dados">10.700,</00td>
+              </tfoot>
+            </tbody>
+          </table>
+          <div id="botoes">
+            <button id="btn-voltar"><a href="./1-relatorios.html" >voltar</a></button>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <img class="footer__logo" src="../imagens/LogoPetVet.png" alt="" />
+        <p classs="footer__titulo">PetVet Manager 2021</p>
+        <p class="footer__subtitulo">&copy; All rights reserved</p>
+      </footer>
+    </main>
+  </body>
+</html>

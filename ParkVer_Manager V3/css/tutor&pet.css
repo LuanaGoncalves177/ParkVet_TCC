@@ -1,12 +1,13 @@
 /* estiliza  todas as páginas do sites */
 
-/* 1. Css para as pesquisas da página */ 
+/* 1. Css para as pesquisas da página */
 .pesquisa {
   padding: 20px;
   margin: 50px;
   background-color: whitesmoke;
 }
-.pesquisa__titulo, .pagina-titulo {
+.pesquisa__titulo,
+.pagina-titulo {
   color: #557220;
   margin-bottom: 20px;
   font-size: 30px;
@@ -14,7 +15,7 @@
 }
 .pagina-titulo {
   font-size: 40px;
-  margin: 70px 0
+  margin: 70px 0;
 }
 .pesquisa__cliente {
   text-align: left;
@@ -34,7 +35,8 @@
   margin-right: 5%;
 }
 
-.pesquisa__button a,button a  {
+.pesquisa__button a,
+button a {
   text-decoration: none;
   font-weight: 600;
   color: #557220;
@@ -42,18 +44,19 @@
 #agendar-servicos {
   display: inline-flex;
 }
-#pesquisa__horario{
+#pesquisa__horario {
   text-align: left;
   margin-bottom: 50px;
 }
-
 
 #imagem-lupa {
   width: 55px;
 }
 
 /*2. Css para todos os botões*/
-.btn-botoes, #btn-voltar, .pesquisa__button{
+.btn-botoes,
+#btn-voltar,
+.pesquisa__button {
   width: 20%;
   padding: 1.5%;
   font-size: 25px;
@@ -61,7 +64,8 @@
   border-style: none;
   color: #557220;
 }
-#botoes, #botoes__centralizados{
+#botoes,
+#botoes__centralizados {
   margin-top: 50px;
   display: flex;
 }
@@ -69,21 +73,21 @@
   justify-content: space-around;
 }
 #botoes__centralizados {
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   margin-bottom: 50px;
 }
 #btn-voltar {
   background-color: #557220;
- 
 }
 #btn-voltar a {
- color: #e5fe96;
+  color: #e5fe96;
 }
 
 /*-----------------------------------------------------------------------------*/
-/* 3. fundo da páginas*/ 
+/* 3. fundo da páginas*/
 
-.formulario__cadastro, .formulario__pagamento {
+.formulario__cadastro,
+.formulario__pagamento {
   text-align: center;
   background-image: url(../imagens/Cadastro_fundo.png);
   background-size: 100%;
@@ -93,7 +97,7 @@
   padding: 50px;
 }
 
-/*4. Formulários*/ 
+/*4. Formulários*/
 
 .formulario__titulo {
   font-size: 30px;
@@ -108,11 +112,14 @@
 
 /* 5. Campos das páginas */
 .campo__nome-id,
-.formulario__cliente > #campo__dados-pet, 
-.campo__nome-pet__id-tutor, 
-.campo__dados-tutor,.campo__pet-nome-id, 
-#campo__label-pesquisa div, #campo__servico,
-#campo__horario, #campo__valor{
+.formulario__cliente > #campo__dados-pet,
+.campo__nome-pet__id-tutor,
+.campo__dados-tutor,
+.campo__pet-nome-id,
+#campo__label-pesquisa div,
+#campo__servico,
+#campo__horario,
+#campo__valor {
   display: flex;
 }
 /*6.  Individualidades dos Campos*/
@@ -160,16 +167,17 @@
 
 /* campos da página serviços*/
 .campo-servico-horario {
-  margin: 0 150px ;
+  margin: 0 150px;
 }
-#campo__servico{
+#campo__servico {
   justify-content: space-evenly;
 }
-#campo__horario, #campo__servico, #campo__valor{
+#campo__horario,
+#campo__servico,
+#campo__valor {
   margin-bottom: 20px;
 }
-#campo__horario{
- 
+#campo__horario {
   justify-content: space-evenly;
 }
 #campo__valor {
@@ -184,30 +192,32 @@
   margin: 20px 100px;
   padding: 50px;
 } */
-#campo__servico-contratado, #campo__forma-de-pagamento {
+#campo__servico-contratado,
+#campo__forma-de-pagamento {
   display: flex;
   justify-content: start;
 }
-#campo__preco{
+#campo__preco {
   margin-left: 30px;
 }
-#campo__total{
+#campo__total {
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
-#servico-cadastrado, #forma_pagamento {
+#servico-cadastrado,
+#forma_pagamento {
   width: 700px;
   padding: 10px;
   font-family: 20px;
 }
 
-/* 7. Campo de autorização do Cadastro*/ 
+/* 7. Campo de autorização do Cadastro*/
 #autorizacao {
   font-size: 20px;
 }
 
-/* 8. Todos os inputs das páginas */ 
+/* 8. Todos os inputs das páginas */
 .input__nome,
 .input__id,
 .input__endereco,
@@ -216,7 +226,7 @@
 .input__telefone,
 .input__pet,
 .input__pet-raca,
-.input__caracteristicas, 
+.input__caracteristicas,
 .input__dados-tutor,
 .input_valor,
 #servico-cadastrado,
@@ -227,7 +237,7 @@
   margin-bottom: 10px;
 }
 
-/* 9. Pecularidades dos inputs */ 
+/* 9. Pecularidades dos inputs */
 .input__nome {
   width: 700px;
 }
@@ -254,28 +264,29 @@
 }
 .input_valor {
   padding: 10px;
- 
 }
 
 /* 9.1. imputs dos pets */
 
-.input__pet-raca, .input__pet {
+.input__pet-raca,
+.input__pet {
   width: 700px;
 }
 .input__caracteristicas {
   width: 250px;
 }
-/* inputs da página de serviços*/ 
- #servico-opcao{
-   width: 500px;
-   padding: 10px;
- }
- #data_servico, #horario_servico {
-   width: 200px;
-   padding: 10px;
- }
+/* inputs da página de serviços*/
+#servico-opcao {
+  width: 500px;
+  padding: 10px;
+}
+#data_servico,
+#horario_servico {
+  width: 200px;
+  padding: 10px;
+}
 
-/* Pesquisas das páginas */ 
+/* Pesquisas das páginas */
 #pesquisa-id-tutor {
   width: 40px;
   height: auto;
@@ -293,65 +304,103 @@
 }
 
 /*pagina Cadastrados dados do pets*/
-#pets-cadastatos__cabecalho, #agendados__cabecalho {
-  background-color: #ECFDB8;
+#pets-cadastatos__cabecalho,
+#agendados__cabecalh,
+#administrativo__cabecalho {
+  background-color: #ecfdb8;
   text-align: center;
 }
-.pets-cadastrados__colunas, .agenda__colunas{
+.pets-cadastrados__colunas,
+.agenda__colunas,
+.administrativo__colunas {
   color: #557220;
   font-size: 22px;
   padding: 10px 30px;
   text-align: center;
-  
 }
 .agenda__colunas {
   text-transform: uppercase;
 }
-#pets-cadastrados, #agenda  {
-  margin-bottom: 20px;
+#pets-cadastrados,
+#agenda,
+#administrativo {
+  margin-bottom: 30px;
   width: 1000px;
 }
-.pets-cadastrados__dados, .agenda__dados {
-  background-color: #F6FFDC;
+.pets-cadastrados__dados,
+.agenda__dados,
+.tfoot__label,
+.tfoot__dados,
+.despesa__nome,
+.despesa__id,
+.despesa__valor,
+.despesa__data,
+.servico__data,
+.funcionario__nome,
+.funcionario__id,
+.funcionario__cargo,
+.funcionario__salario,
+.servico__total,
+.funcionario__inicio,
+.servico__nome,
+.servico__id,
+.vendas__nome,
+.vendas__produto,
+.servico__pet,
+.vendas__data,
+.vendas__quantidade,
+.vendas__unitario,
+.vendas__total, 
+.pacote__nome, 
+.pacote__id {
+  background-color: #f6ffdc;
   font-size: 20px;
   color: black;
 }
-#imagem_tabela-editar, #imagem_tabela-excluir {
+#imagem_tabela-editar,
+#imagem_tabela-excluir {
   width: 50px;
 }
 #pets-cadastrados__total {
   display: inline;
-  background-color: #F6FFDC;
+  background-color: #f6ffdc;
   padding: 20px 100px;
 }
 /* Agendamentos */
 .agendamentos {
   margin: 0 200px;
 }
-#imagem__agendamentos, #imagem-venda {
+#imagem__agendamentos,
+#imagem-venda {
   width: 600px;
   height: auto;
   text-align: center;
 }
 /* Servicos e pacotes */
-.serviçosEpacotes, .pacotes {
-  margin: 50px 0; 
+.serviçosEpacotes,
+.pacotes {
+  margin: 50px 0;
 }
 
-.serviçosEpacotes-conteudo > div{
+.serviçosEpacotes-conteudo > div {
   display: flex;
   justify-content: space-evenly;
   width: 65%;
   margin: 0 250px;
 }
 
-#imagens__servicosEpacotes{
+#imagens__servicosEpacotes {
   width: 300px;
 }
 #imagens__servicosEpacotes a:hover {
   border: #557220;
 }
-#imagens__pacotes{
+#imagens__pacotes {
   width: 350px;
 }
 /* Administrativo*/
+.tfoot__dados,
+.tfoot__label {
+  color: #557220;
+  background-color: #ecfdb8;
+}
