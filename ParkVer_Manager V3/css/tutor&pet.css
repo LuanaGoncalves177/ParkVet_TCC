@@ -382,10 +382,10 @@ button a {
   background-color: #f6ffdc;
   padding: 20px 100px;
 }
-/* Agendamentos */
-.agendamentos {
-  margin: 0 200px;
+.venda {
+  margin-bottom: 50px;
 }
+/* Agendamentos */
 
 #imagem__agendamentos, #imagem-venda {
   height: 300px;

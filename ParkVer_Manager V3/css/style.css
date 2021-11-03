@@ -90,6 +90,7 @@ footer {
   background-color: rgba(199, 233, 91, 0.5);
   padding: 2%;
   text-align: center;
+  margin-top: 50px;
 }
 .footer__titulo {
   font-size: 15px;
