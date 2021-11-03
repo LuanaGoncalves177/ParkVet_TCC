@@ -117,7 +117,7 @@ button a {
 #campo__servico,
 #campo__horario,
 #campo__valor, 
-#campo__despesas{
+.campo_funcao{
   display: flex;
 }
 /*6.  Individualidades dos Campos*/
@@ -230,6 +230,8 @@ button a {
 .input__dados-tutor,
 .input__despesa,
 .input__preco, 
+.input__salario, 
+.input__funcao, 
 #input_valor,
 #servico-cadastrado,
 #forma_pagamento {
@@ -284,6 +286,8 @@ button a {
 .input__preco{
   width: 50%;
 }
+
+
 #data_servico,
 #horario_servico {
   width: 200px;
@@ -421,6 +425,10 @@ button a {
 #imagens__pacotes {
   width: 350px;
 }
+.pacotes__conteudo{
+  display: flex;
+  justify-content: space-evenly;
+}
 /* Administrativo*/
 .tfoot__dados,
 .tfoot__label {
@@ -429,4 +437,7 @@ button a {
 }
 #adicionar__campo {
   text-align: left;
+}
+#funao_conteudo {
+  display: inline-block;
 }
