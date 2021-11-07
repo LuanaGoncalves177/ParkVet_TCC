@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./imagens/LogoPetVet.png" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>ParkVet - Manager</title>
+    <link rel="icon" href="../imagens/cadeado.png" />
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/tutor&pet.css">
+    <link rel="stylesheet" href="../css/administrativo.css">
+    <title>ParkVet - Administrativo - Login</title>
   </head>
   <body>
     <main>
       <header class="cabecalho">
-        <a href="./index.html"><img
+        <a href="../index.html">  <img
           id="cabecalho__logo"
-          src="./imagens/LogoPetVet.png"
+          src="../imagens/LogoPetVet.png"
           alt="Logo do ParkVet"
         /></a>
         <div>
@@ -21,19 +23,18 @@
           <p class="cabecalho__subtitulo">
             O administrador inteligente do seu Pet Shop
           </p>
+          <p class="cabecalho__titulo">ParkVet - Administrador</p>
         </div>
-        <a href="./4-Administrativo/administrativo-login-index.html"><img
-          id="cabecalho__logo2"
-          src="./imagens/cadeado.png"
-          alt="Logo do ParkVet"
-        /></a>
       </header>
+      
+      <h2 class="pagina-titulo"> Administrativo</h2>
 
       <section class="formulario">
-           <img id="imagem-login"
-            src="./imagens/imagem_login.png"
+           <img id="imagem-login-administrador"
+            src="../imagens/cadeado.png"
             alt="Gato e cachorro - imagem de login do PetVet Manager " id="formulario__img"
             />
+        </div>
         <div>
           <div>
             <h2 class="login">Log in</h2>
@@ -47,26 +48,19 @@
 
             <div class= "formulario__label-input2">
               <label class="formulario__label" for="senha">Senha</label>
-              <input class ="formulario__input" type="password" id="senha">
+              <input class ="formulario__input" type="text" id="senha">
             </div>
-            
-            <ul id="mensagens-de-erro">
 
-            </ul>
-            
-            <button class="formulario__button">Entrar</a></button>
+            <button class="formulario__button"><a href="./1-relatorios.html">Entrar</a></button>
           </div>
         </div>
       </section>
 
       <footer>
-        <img class="footer__logo" src="./imagens/LogoPetVet.png" alt="" />
+        <img class="footer__logo" src="../imagens/LogoPetVet.png" alt="" />
         <p classs="footer__titulo">PetVet Manager 2021</p>
         <p class="footer__subtitulo">&copy; All rights reserved</p>
       </footer>
     </main>
-
-    <script src="js/0-LoginJS/login.js"></script>
-
   </body>
 </html>
