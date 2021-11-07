@@ -16,6 +16,9 @@ main {
 #cabecalho__logo {
   width: 50%;
 }
+#cabecalho__logo2{
+  width: 15%;
+}
 
 #cabecalho__logo a{
   height: auto;
