@@ -32,12 +32,12 @@
     <section class="formulario__cadastro">
       <h2 class="formulario__titulo">Cadastro de Tutores</h2>
 
-      <form action="#" class="formulario__cliente">
+      <form action="#" class="formulario__cliente" id="formulario-tutor">
 
         <div class ="campo__nome-id"> 
           <div id="campo__nome-tutor">
             <label for="tutor-nome" id="formulario__label">Nome do Tutor</label><br>
-            <input type="text"id="tutor-nome" placeholder=" Agusto de Oliverira Souza" class="input__nome">
+            <input type="text"id="tutor-nome" name="nomeTutor" placeholder=" Agusto de Oliverira Souza" class="input__nome">
           </div>
   
           <div id="campo__id-tutor">
@@ -49,34 +49,36 @@
         <div id="campo__label-pesquisa">
           <label for="tutor-endereco" id="formulario__label">Endereço</label><br>
           <div>
-            <input type="text"id="tutor-endereco" placeholder="Quadra 307 Bloco B Apartamento 102" class="input__endereco">
+            <input type="text"id="tutor-endereco" name ="enderecoTutor" placeholder="Quadra 307 Bloco B Apartamento 102" class="input__endereco">
             <a href="#"><img src="../imagens/btn_pesquisar.png" alt="Valida o endereço" id="pesquisa"></a>
           </div>
         </div>
 
         <div>
           <label for="tutor-endereco" id="formulario__label">E-mail</label><br>
-          <input type="email"id="tutor-email" placeholder=" AgustoOliverira@exemplo.com.br" class="input__email">
+          <input type="email"id="tutor-email" name ="emailTutor"placeholder=" AgustoOliverira@exemplo.com.br" class="input__email">
         </div>
 
         <div id="campo__telefones">
           <div>
             <label for="tutor-whatsapp" id="formulario__label">WhatsApp</label><br>
-            <input type="text"id="tutor-whatsapp" placeholder="(61) 99999-9999" class="input__whatsapp">
+            <input type="text"id="tutor-whatsapp" name="whatsappTutor" placeholder="(61) 99999-9999" class="input__whatsapp">
           </div>
           <div id="telefone">
             <label for="tutor-telefone" id="formulario__label">Telefone Fixo</label><br>
-            <input type="text"id="tutor-telefone" placeholder="(61) 3333-3333" class="input__telefone">
+            <input type="text"id="tutor-telefone" name="telefoneTutor" placeholder="(61) 3333-3333" class="input__telefone">
           </div>
         </div>
         <div id="campo__autorizacao">
             <input type="radio" name="autorizacao" id="autorizacao">
-            <label for="autorizacao" id="autorizacao">Autorizo receber informações sobre<br> serviços, 
+            <label for="autorizacao" name = "autorizacaoTutor" id="autorizacao">Autorizo receber informações sobre<br> serviços, 
               pacotes e produtos da Parkvet </label>
         </div>
         <div id="botoes">
           <button id="btn-voltar"><a href="./cadastro.html" >Voltar</a></button>
-          <button class="btn-botoes"><a href="cadastrar-pets.html">Cadastrar Pet</a></button>
+          <button class="btn-botoes" id ='botao-cadastrar-pet'>Cadastrar Pet</a></button>
+          
+          <ul id="mensagem-de-erro-tutor"></ul>
         </div>
       </form>
     </section> 
@@ -87,5 +89,8 @@
       <p class="footer__subtitulo">&copy; All rights reserved</p>
     </footer>
   </main>
+
+  <script src="js/1-CadastroJS/cadastroTutor.js"></script>
+
   </body>
 </html>
