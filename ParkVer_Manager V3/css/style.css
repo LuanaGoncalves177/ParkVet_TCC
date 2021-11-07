@@ -9,22 +9,25 @@ main {
 .cabecalho {
   display: flex;
   justify-content: center;
-  padding: 10px;
-  text-align: center;
   margin-bottom: 10px;
+  width: 100%;
+  height: auto;
 }
+#cabecalho__logo {
+  width: 50%;
+}
+
 #cabecalho__logo a{
-  width: 13%;
   height: auto;
   margin-right: 10px;
 }
 .cabecalho_principal{
-  font-size: 50px;
+  font-size: 30px;
   color: #958e3a;
   margin: 8px;
 }
 .cabecalho__subtitulo, .cabecalho__titulo {
-  font-size: 25px;
+  font-size: 15px;
   color: #557220;
   margin: 10px 0; 
   text-align: center;
