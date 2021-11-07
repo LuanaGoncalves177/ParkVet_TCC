@@ -3,14 +3,15 @@ var botao_cadastrar = document.querySelector("#botao-cadastrar-pet");
 botao_cadastrar.addEventListener("click", function(event){
     event.preventDefault();
 
-    var formularioCliente = document.querySelector('formulario-tutor');
-    tutor = obtemInformacoesDoForm(formularioCliente);
+    var formularioCliente = document.querySelector(".formulario__cliente");
+
+    var tutor = obtemInformacoesDoForm(formularioCliente);
+    
     erros = validaDados(tutor);
 
     if (erros.length == 0){
-        location.href = "cadastrar-pets.html";
-        tutor = new Tutor(1,tutor.nome,tutor.endereco, tutor.email,
-            tutor.whatsapp,tutor.telefone,tutor.autorizacao_mensagens);
+        location.href = "./cadastrar-pets.html";
+        //tutor = new Tutor(1,tutor.nome,tutor.endereco, tutor.email, tutor.whatsapp,tutor.telefone,tutor.autorizacao_mensagens);
     }else{
         exibeErroTutor();
         return;
@@ -23,11 +24,11 @@ function obtemInformacoesDoForm(formularioCliente){
     var tutor = {
         nome: formularioCliente.nomeTutor.value,
         endereco: formularioCliente.enderecoTutor.value,
-        email: formularioCliente.email.value,
-        whatsapp: formularioCliente.whatsapp.value,
-        telefone: formularioCliente.telefoneFixo.value,
-        autorizacao_mensagens: formularioCliente.autorizacaoMensagens.value
-    };
+        email: formularioCliente.emailTutor.value,
+        whatsapp: formularioCliente.whatsappTutor.value,
+        telefone: formularioCliente.telefoneTutor.value,
+        autorizacaoMensagens: formularioCliente.autorizacaoTutor.value
+    }
     return tutor;
 }
 
