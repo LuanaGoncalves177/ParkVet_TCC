@@ -4,14 +4,14 @@ class Servico {
         this.idServico = idServico
         this.descricao = descricao
         this.valorServico = valorServico
-        this.taxidog = taxidog
+        
 
 
         adicionarServico(this)
         deletarServico(this)
         alterarServico(this)
         exibirInfoServico(this)
-        contratarTaxidog(this.taxidog)
+        
     }
 }
 
