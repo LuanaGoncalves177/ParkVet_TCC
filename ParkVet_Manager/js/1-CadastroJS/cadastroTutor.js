@@ -3,16 +3,19 @@ var botao_cadastrar = document.querySelector("#botao-cadastrar-pet");
 botao_cadastrar.addEventListener("click", function(event){
     event.preventDefault();
 
-    var tutor = obtemInformacoesDoForm();
+    var tutor = obtemInformacoesDoForm()
+    
     var erros = validaDados(tutor);
- 
+    
     
     if (erros.length == 0){
-        console.log(tutor)
-        //tutor = new Tutor(1,tutor.nome,tutor.endereco, tutor.email, tutor.whatsapp,tutor.telefone,tutor.autorizacao_mensagens);
+        console.log(tutorJSON)
+        
+        Armazena.armazenaCliente(new Tutor(tutor));
         //location.href = "./cadastrar-pets.html";
     }else{
         //exibeErro(erros);
+        
         console.log(erros)
         
         return;
@@ -23,7 +26,7 @@ botao_cadastrar.addEventListener("click", function(event){
 
 function obtemInformacoesDoForm(){
     var tutor = {
-        nome: document.querySelector('#tutor-nome').value,
+        nomeTutor: document.querySelector('#tutor-nome').value,
         endereco: document.querySelector('#tutor-endereco').value,
         email: document.querySelector('#tutor-email').value,
         whatsapp: document.querySelector('#tutor-whatsapp').value,

@@ -1,14 +1,13 @@
 class Tutor {
 
-    constructor(idTutor,nomeTutor, endereco, email, whatsapp, telefone_fixo, autorizacao_mensagens){
+    constructor(tutor){
         
-        this.idTutor = idTutor
-        this.nomeTutor = nomeTutor
-        this.endereco = endereco
-        this.email = email
-        this.whatsapp = whatsapp
-        this.telefone_fixo = telefone_fixo
-        this.autorizacao_mensagens = autorizacao_mensagens
+        this.nomeTutor = tutor.nomeTutor
+        this.endereco = tutor.endereco
+        this.email = tutor.email
+        this.whatsapp = tutor.whatsapp
+        this.telefone_fixo = tutor.telefone
+        this.autorizacao_mensagens = tutor.autorizacaoMensagens
 
         deletaTutor(this)
         salvarTutor(this)
