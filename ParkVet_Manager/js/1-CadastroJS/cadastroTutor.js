@@ -3,33 +3,35 @@ var botao_cadastrar = document.querySelector("#botao-cadastrar-pet");
 botao_cadastrar.addEventListener("click", function(event){
     event.preventDefault();
 
-    var formularioCliente = document.querySelector(".formulario__cliente");
-
-    var tutor = obtemInformacoesDoForm(formularioCliente);
+    var tutor = obtemInformacoesDoForm();
+    var erros = validaDados(tutor);
+ 
     
-    erros = validaDados(tutor);
-
     if (erros.length == 0){
-        location.href = "./cadastrar-pets.html";
+        console.log(tutor)
         //tutor = new Tutor(1,tutor.nome,tutor.endereco, tutor.email, tutor.whatsapp,tutor.telefone,tutor.autorizacao_mensagens);
+        //location.href = "./cadastrar-pets.html";
     }else{
-        exibeErroTutor();
+        //exibeErro(erros);
+        console.log(erros)
+        
         return;
     }
 
     
 });
 
-function obtemInformacoesDoForm(formularioCliente){
+function obtemInformacoesDoForm(){
     var tutor = {
-        nome: formularioCliente.nomeTutor.value,
-        endereco: formularioCliente.enderecoTutor.value,
-        email: formularioCliente.emailTutor.value,
-        whatsapp: formularioCliente.whatsappTutor.value,
-        telefone: formularioCliente.telefoneTutor.value,
-        autorizacaoMensagens: formularioCliente.autorizacaoTutor.value
+        nome: document.querySelector('#tutor-nome').value,
+        endereco: document.querySelector('#tutor-endereco').value,
+        email: document.querySelector('#tutor-email').value,
+        whatsapp: document.querySelector('#tutor-whatsapp').value,
+        telefone: document.querySelector('#tutor-telefone').value,
+        autorizacaoMensagens: document.querySelector('#autorizacao').value
     }
-    return tutor;
+    return tutor
+
 }
 
 function validaDados(tutor){
@@ -45,7 +47,7 @@ function validaDados(tutor){
         erros.push("Erros Email");
     }
     if(!validaWhatsapp(tutor.whatsapp)){
-        erros.push("Erros Whasapp");
+        erros.push("Erros Whatsapp");
     }
     if(!validaTelefone(tutor.telefone)){
         erros.push("Erro Telefone");
@@ -58,16 +60,16 @@ function validaDados(tutor){
 
 //Validações do Tutor
 function validaNome(nomeTutor){
-    if(nomeTutor == "" || nomeTutor.isNumber() ){
+    if(nomeTutor == ""  ){
         return false;
     }
     return true;
 }
 
 function validaEndereco(enderecoTutor){
-    if(enderecoTutor.isNumber() ){
-        return false;
-    }
+    //if(enderecoTutor.isNumber() ){
+    //    return false;
+    //}
     return true;
 }
 
@@ -76,17 +78,17 @@ function validaEmail(email){
     return true;
 }
 function validaWhatsapp(whatsapp){
-    if(whatsapp == "" || !whatsapp.isNumber() ){
+    if(whatsapp == ""){
         return false;
     }
     return true;
 }
 
 function validaTelefone(telefone){
-    if (!telefone.isNumber()) return false;
+    //if (!telefone.isNumber()) return false;
     return true;
 }
-
+/*
 function exibeErro(erros){
     var ul = document.querySelector("#mensagens-de-erro-tutor");
     ul.innerHTML= "";
@@ -96,5 +98,4 @@ function exibeErro(erros){
         ul.appendChild(li);
     });
 
-    return ;
-}
+}*/
