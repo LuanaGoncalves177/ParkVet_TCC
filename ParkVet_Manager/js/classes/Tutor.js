@@ -35,3 +35,4 @@ function enviarInfomacaoDeServicos(autorizacao_mensagens){
         //Enviar mensagens sobre pacotes, pagamentos, servicos e agendamento
     }
 }
+
