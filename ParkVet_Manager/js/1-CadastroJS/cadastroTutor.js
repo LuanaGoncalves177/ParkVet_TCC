@@ -4,15 +4,12 @@ botao_cadastrar.addEventListener("click", function(event){
     event.preventDefault();
 
     var tutor = obtemInformacoesDoForm()
-    
     var erros = validaDados(tutor);
     
     
     if (erros.length == 0){
-        console.log(tutorJSON)
-        
-        Armazena.armazenaCliente(new Tutor(tutor));
-        //location.href = "./cadastrar-pets.html";
+        //Armazena.armazenaCliente(new Tutor(tutor));
+        location.href = "./cadastrar-pets.html";
     }else{
         //exibeErro(erros);
         
