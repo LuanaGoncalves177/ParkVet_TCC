@@ -250,7 +250,8 @@ pesquisa__cadastro {
 .input__preco, 
 .input__salario, 
 .input__funcao, 
-.input_valor,
+.input-valor-total,
+#input-pet-nome,
 #servico-cadastrado,
 #forma_pagamento {
   color: black;
@@ -260,7 +261,7 @@ pesquisa__cadastro {
 }
 
 /* 9. Pecularidades dos inputs */
-.input__nome {
+.input__nome, #input-pet-nome{
   width: 700px;
 }
 
