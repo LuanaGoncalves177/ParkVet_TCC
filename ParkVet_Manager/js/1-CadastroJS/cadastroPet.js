@@ -1,4 +1,5 @@
 var botao_servicosEpacotes = document.querySelector("#servicos-pacotes");
+var botao_novoPet = document.querySelector('#novo-pet')
 
 botao_servicosEpacotes.addEventListener("click", function(event){
 event.preventDefault();
@@ -17,6 +18,28 @@ if (erros.length == 0){
 }
 
 
+});
+
+botao_novoPet.addEventListener("click", function(event){
+    event.preventDefault();
+
+    //Salvar informações do primeiro pet
+    
+    limparInformacoes();
+    var pet = obtemInformacoesDoFormPet();
+    var erros = validaDadosPet(pet);
+
+if (erros.length == 0){
+    alert("Deu")
+    return
+    //console.log(pet)
+}else{
+    //exibeErrosPet(erros)
+    console.log(pet)
+    console.log(erros)
+    alert(erros)
+    return;
+}
 });
 
 function obtemInformacoesDoFormPet(){
@@ -87,3 +110,12 @@ function validaSexo(sexo){
     return false
 }
 
+function limparInformacoes(){
+    document.querySelector('#pet-nome').value = "Digite nome do Pet"
+    document.querySelector('#pet__raca').value = "Digite raca"
+    document.querySelector('#pet-especie').value = "Digite especie"
+    document.querySelector('#pet-pelo').value = "Selecione pelo"
+    document.querySelector('#pet-porte').value = "Selecione porte"
+    document.querySelector('#pet-sexo').value = "Selecione porte"
+
+}
