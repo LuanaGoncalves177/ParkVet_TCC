@@ -7,13 +7,11 @@ var pet = obtemInformacoesDoFormPet();
 var erros = validaDadosPet(pet);
 
 if (erros.length == 0){
-    //location.href = "../2-ServiçosEpacotes/servicosEpacotes.html"
-    console.log(pet)
+    location.href = "../2-ServiçosEpacotes/servicosEpacotes.html"
+    //console.log(pet)
 }else{
     //exibeErrosPet(erros)
-    
     console.log(erros)
-    console.log(pet)
     alert(erros)
     return;
 }
@@ -23,12 +21,12 @@ if (erros.length == 0){
 
 function obtemInformacoesDoFormPet(){
     var pet = {
-        nomePet: document.querySelector('#tutor-nome').value,
+        nomePet: document.querySelector('#pet-nome').value,
         raca: document.querySelector('#pet__raca').value,
         especie: document.querySelector('#pet-especie').value,
         pelo: document.querySelector('#pet-pelo').value,
         porte: document.querySelector('#pet-porte').value,
-        sexo: document.querySelector('#pet-pelo').value    
+        sexo: document.querySelector('#pet-sexo').value    
     }
     return pet
 
@@ -36,7 +34,7 @@ function obtemInformacoesDoFormPet(){
 function validaDadosPet(pet){
     var erros = [];
 
-    if (!validaNome(pet.nome)){
+    if (!validaNomePet(pet.nomePet)){
         erros.push("Erro: Nome");
     }
     if (!validaRaca(pet.raca)){
@@ -57,7 +55,7 @@ function validaDadosPet(pet){
 
 
 //Validações do Tutor
-function validaPet(nomePet){
+function validaNomePet(nomePet){
     if(nomePet == ""  ){
         return false;
     }
@@ -83,9 +81,9 @@ function validaPorte(porte){
     return true
 }
 function validaSexo(sexo){
-    if (sexo != "Macho" || sexo != "Fêmia"){
-        return false
+    if (sexo == "Macho" || sexo == "Fêmia"){
+        return true
     }
-    return true
+    return false
 }
 

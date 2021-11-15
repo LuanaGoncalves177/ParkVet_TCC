@@ -12,8 +12,7 @@ botao_cadastrar.addEventListener("click", function(event){
         location.href = "./cadastrar-pets.html";
     }else{
         //exibeErro(erros);
-        
-        console.log(erros)
+        alert(erros)
         
         return;
     }
