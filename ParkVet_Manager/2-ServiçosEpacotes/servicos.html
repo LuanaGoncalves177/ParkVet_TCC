@@ -62,10 +62,10 @@
               <label for="pet_nome" id="formulario__label">Nome do Pet:</label
               ><br />
               <input
-                type="text"
-                id="pet-nome"
-                placeholder="princesa"
-                class="input__pet"
+                list="nomes-dos-pets" id="pet-nome"
+                />
+                <datalist id="nomes-dos-pets">
+                <option value="Bob"></option>
               />
             </div>
 
@@ -112,7 +112,9 @@
             </div>
             <div id="botoes">
               <button id="btn-voltar"><a href="./servicosEpacotes.html">Voltar</a></button>
-              <button class="btn-botoes"><a href="../3-Agendamentos/agendamento-agendados.html">Salvar</a></button>
+              <button class="btn-botoes" id="adicionar-servico-novo-pet">Adicionar para Pet</button>
+              <button class="btn-botoes" id="botao-salvar">Salvar</button>
+              
             </div>
           </div>
         </form>
@@ -124,5 +126,7 @@
         <p class="footer__subtitulo">&copy; All rights reserved</p>
       </footer>
     </main>
+
+    <script src="../js/2-ServicosEpacotesJS/servicos.js"></script>
   </body>
 </html>

@@ -3,24 +3,24 @@ var botao_cadastrar = document.querySelector("#botao-cadastrar-pet");
 botao_cadastrar.addEventListener("click", function(event){
     event.preventDefault();
 
-    var tutor = obtemInformacoesDoForm()
-    var erros = validaDados(tutor);
+    var tutor = obtemInformacoesDoFormTutor()
+    var erros = validaDadosTutor(tutor);
     
     
     if (erros.length == 0){
         //Armazena.armazenaCliente(new Tutor(tutor));
-        location.href = "./cadastrar-pets.html";
+        console.log(erros)
+        //location.href = "./cadastrar-pets.html";
     }else{
         //exibeErro(erros);
         alert(erros)
-        
         return;
     }
 
     
 });
 
-function obtemInformacoesDoForm(){
+function obtemInformacoesDoFormTutor(){
     var tutor = {
         nomeTutor: document.querySelector('#tutor-nome').value,
         endereco: document.querySelector('#tutor-endereco').value,
@@ -33,10 +33,10 @@ function obtemInformacoesDoForm(){
 
 }
 
-function validaDados(tutor){
+function validaDadosTutor(tutor){
     var erros = [];
 
-    if (!validaNome(tutor.nome)){
+    if (!validaNome(tutor.nomeTutor)){
         erros.push("Erro Nome");
     }
     if (!validaEndereco(tutor.endereco)){
