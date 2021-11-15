@@ -10,7 +10,7 @@ botao_cadastrar.addEventListener("click", function(event){
     if (erros.length == 0){
         //Armazena.armazenaCliente(new Tutor(tutor));
         console.log(erros)
-        //location.href = "./cadastrar-pets.html";
+        location.href = "./cadastrar-pets.html";
     }else{
         //exibeErro(erros);
         alert(erros)
@@ -43,10 +43,10 @@ function validaDadosTutor(tutor){
         erros.push("Erro Endereço");
     }
     if (!validaEmail(tutor.email)){
-        erros.push("Erros Email");
+        erros.push("Erro Email");
     }
     if(!validaWhatsapp(tutor.whatsapp)){
-        erros.push("Erros Whatsapp");
+        erros.push("Erro Whatsapp");
     }
     if(!validaTelefone(tutor.telefone)){
         erros.push("Erro Telefone");
