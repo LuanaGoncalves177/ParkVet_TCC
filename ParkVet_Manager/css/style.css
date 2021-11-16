@@ -137,7 +137,24 @@ footer {
 	font-weight: bold;	
 	color: red;
 }
-
+.logins {
+  display: flex;
+  justify-content: center;
+}
 .invisivel{
   display: none;
+}
+.pesquisa__titulo,
+.pagina-titulo {
+  color: #557220;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 0;
+}
+.pagina-titulo {
+  font-size: 40px;
+  margin: 20px 0;
+}
+#index-administrativo {
+  width: 75%;
 }

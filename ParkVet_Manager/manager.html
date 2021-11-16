@@ -22,22 +22,41 @@
             O administrador inteligente do seu Pet Shop
           </p>
         </div>
+        <a href="./4-Administrativo/administrativo-login-index.html"><img
+          id="cabecalho__logo2"
+          src="./imagens/cadeado.png"
+          alt="Logo do ParkVet"
+        /></a>
       </header>
 
-      <section class="logins">
-        <div>
-          <a href="./manager.html"><img id="imagem-login"
+      <section class="formulario">
+           <img id="imagem-login"
             src="./imagens/imagem_login.png"
             alt="Gato e cachorro - imagem de login do PetVet Manager " id="formulario__img"
-            /></a>
-            <h2 class="pagina-titulo"> Funcionário</h2>
+            />
+        <div>
+          <div>
+            <h2 class="login">Log in</h2>
         </div>
         <div>
-          <a href="./4-Administrativo/administrativo-login-index.html"><img src="./imagens/administrador-login.png" id="index-administrativo" alt=" Logo do ParkVet no Cadeado acesso ao sistema manager" ></a>
-          <h2 class="pagina-titulo">Administrativo</h2>
+            <div class ="formulario__login">
+            <div class= "formulario__label-input">
+              <label class="formulario__label" for="id">ID</label>
+              <input class ="formulario__input" type="text" id="id">
+            </div>
+
+            <div class= "formulario__label-input2">
+              <label class="formulario__label" for="senha">Senha</label>
+              <input class ="formulario__input" type="password" id="senha">
+            </div>
+            
+            <ul id="mensagens-de-erro">
+
+            </ul>
+            
+            <button class="formulario__button">Entrar</a></button>
+          </div>
         </div>
-        
-               
       </section>
 
       <footer>
@@ -47,6 +66,7 @@
       </footer>
     </main>
 
+    <script src="js/0-LoginJS/login.js"></script>
 
   </body>
 </html>

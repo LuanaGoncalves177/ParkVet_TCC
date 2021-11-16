@@ -12,17 +12,7 @@
 .pesquisa__pet {
   width: 70%;
 }
-.pesquisa__titulo,
-.pagina-titulo {
-  color: #557220;
-  margin-bottom: 20px;
-  font-size: 30px;
-  margin-top: 0;
-}
-.pagina-titulo {
-  font-size: 40px;
-  margin: 70px 0;
-}
+
 .pesquisa__cliente {
   text-align: left;
 }
@@ -39,6 +29,10 @@
   border: none;
   background-color: #ecfdb8;
   margin-right: 5%;
+}
+.pagina-titulo {
+  font-size: 40px;
+  margin: 70px 0;
 }
 
 .pesquisa__button a,
