@@ -59,33 +59,33 @@ function validaDadosTutor(tutor){
 
 //Validações do Tutor
 function validaNome(nomeTutor){
-    if(nomeTutor == ""  ){
+    if(nomeTutor == "" || typeof nomeTutor == "number"){
         return false;
     }
     return true;
 }
 
 function validaEndereco(enderecoTutor){
-    //if(enderecoTutor.isNumber() ){
-    //    return false;
-    //}
-    return true;
+    if(typeof enderecoTutor == "number" || enderecoTutor == ""){
+        return true;
+    }
+    return false;
 }
 
 function validaEmail(email){
-
+    
     return true;
 }
 function validaWhatsapp(whatsapp){
-    if(whatsapp == ""){
-        return false;
+    if(typeof whatsapp == "number" || !whatsapp == ""){
+       return true;
     }
-    return true;
+    return false;
 }
 
 function validaTelefone(telefone){
-    //if (!telefone.isNumber()) return false;
-    return true;
+    if (typeof telefone == "number" || telefone == "") return true;
+    return false;
 }
 /*
 function exibeErro(erros){
