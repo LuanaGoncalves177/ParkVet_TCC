@@ -23,20 +23,19 @@ if (erros.length == 0){
 
 botao_novoPet.addEventListener("click", function(event){
     event.preventDefault();
-    limparInformacoes();
-    //Salvar informações do primeiro pet
+   
+    var pet = obtemInformacoesDoFormPet();
+    var erros = validaDadosPet(pet);
     
+if (erros.length == 0){
+    //Salvar informações do primeiro pet
+    console.log(pet)
     nPets = nPets + 1
     
     var labelPets = document.querySelector("#formulario__label")
     labelPets.textContent = "Nome do Pet " + nPets + ":"
-    
-    
-    var pet = obtemInformacoesDoFormPet();
-    var erros = validaDadosPet(pet);
 
-if (erros.length == 0){
-    
+    limparInformacoes();
     return
     //console.log(pet)
 }else{
@@ -46,6 +45,7 @@ if (erros.length == 0){
     alert(erros)
     return;
 }
+
 });
 
 function obtemInformacoesDoFormPet(){
@@ -75,7 +75,7 @@ function validaDadosPet(pet){
     if(!validaPorte(pet.porte)){
         erros.push("Erro: Porte Invalido")
     }
-    if (validaSexo(pet.sexo)){
+    if (!validaSexo(pet.sexo)){
         erros.push("Erro: Sexo Invalido")
     }
 

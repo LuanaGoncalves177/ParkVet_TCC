@@ -1,4 +1,14 @@
 var botao_salvar = document.querySelector("#botao-salvar")
+var bota_adiciona = document.querySelector("#adiciona")
+
+bota_adiciona.addEventListener("click", function(event){
+    var div = document.querySelector("#campo__servico")
+
+    div.innerHTML = '<input list="servicos_disponiveis"/>'
+
+})
+
+
 
 botao_salvar.addEventListener("click", function(event){
     event.preventDefault();
