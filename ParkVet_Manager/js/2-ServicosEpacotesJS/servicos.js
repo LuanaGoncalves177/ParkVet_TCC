@@ -4,8 +4,10 @@ var bota_adiciona = document.querySelector("#adiciona")
 bota_adiciona.addEventListener("click", function(event){
     var div = document.querySelector("#campo__servico")
 
-    div.innerHTML = '<input list="servicos_disponiveis"/>'
-
+    var listServicos = document.createElement('input')
+    listServicos.setAttribute("list", "servicos_disponiveis")
+    listServicos.classList.add("campo__servico")
+    div.appendChild(listServicos)
 })
 
 
