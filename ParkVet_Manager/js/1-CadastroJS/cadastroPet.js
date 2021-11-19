@@ -1,5 +1,6 @@
 var botao_servicosEpacotes = document.querySelector("#servicos-pacotes");
 var botao_novoPet = document.querySelector('#novo-pet')
+var nPets = 1
 
 botao_servicosEpacotes.addEventListener("click", function(event){
 event.preventDefault();
@@ -9,9 +10,9 @@ var erros = validaDadosPet(pet);
 
 if (erros.length == 0){
     location.href = "../2-ServiçosEpacotes/servicosEpacotes.html"
-    //console.log(pet)
+    
 }else{
-    //exibeErrosPet(erros)
+    
     console.log(erros)
     alert(erros)
     return;
@@ -22,15 +23,20 @@ if (erros.length == 0){
 
 botao_novoPet.addEventListener("click", function(event){
     event.preventDefault();
-
+    limparInformacoes();
     //Salvar informações do primeiro pet
     
-    limparInformacoes();
+    nPets = nPets + 1
+    
+    var labelPets = document.querySelector("#formulario__label")
+    labelPets.textContent = "Nome do Pet " + nPets + ":"
+    
+    
     var pet = obtemInformacoesDoFormPet();
     var erros = validaDadosPet(pet);
 
 if (erros.length == 0){
-    alert("Deu")
+    
     return
     //console.log(pet)
 }else{
@@ -69,7 +75,7 @@ function validaDadosPet(pet){
     if(!validaPorte(pet.porte)){
         erros.push("Erro: Porte Invalido")
     }
-    if (!validaSexo(pet.sexo)){
+    if (validaSexo(pet.sexo)){
         erros.push("Erro: Sexo Invalido")
     }
 
@@ -111,11 +117,11 @@ function validaSexo(sexo){
 }
 
 function limparInformacoes(){
-    document.querySelector('#pet-nome').value = "Digite nome do Pet"
-    document.querySelector('#pet__raca').value = "Digite raca"
-    document.querySelector('#pet-especie').value = "Digite especie"
-    document.querySelector('#pet-pelo').value = "Selecione pelo"
-    document.querySelector('#pet-porte').value = "Selecione porte"
-    document.querySelector('#pet-sexo').value = "Selecione porte"
+    document.querySelector('#pet-nome').value = ""
+    document.querySelector('#pet__raca').value = ""
+    document.querySelector('#pet-especie').value = ""
+    document.querySelector('#pet-pelo').value = ""
+    document.querySelector('#pet-porte').value = ""
+    document.querySelector('#pet-sexo').value = ""
 
 }
