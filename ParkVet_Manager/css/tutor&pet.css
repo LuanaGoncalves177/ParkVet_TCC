@@ -121,6 +121,7 @@ pesquisa__cadastro {
 .campo__dados-tutor,
 .campo__pet-nome-id,
 .campo_funcao,
+.campo__servico,
 #campo__estoque,
 #campo__label-pesquisa div,
 #campo__servico,
@@ -244,6 +245,7 @@ pesquisa__cadastro {
 .input__quantidade, 
 .input__valor, 
 .input__total,
+#input__servico, 
 #input-pet-nome,
 #servico-cadastrado,
 #forma_pagamento {
@@ -270,12 +272,13 @@ pesquisa__cadastro {
   color: rgb(247, 238, 238);
   text-align: center;
   border: none;
+  margin-left: 20px;
 }
 .input__whatsapp,
 .input__telefone {
   width: 200px;
 }
-.input__dados-tutor {
+.input__dados-tutor, #input__servico {
   width: 600px;
 }
 /* 9.1. inputs dos pets */
@@ -423,11 +426,12 @@ pesquisa__cadastro {
 }
 /* Agendamentos */
 
-#imagem__agendamentos, #imagem-venda, #imagem__estoque {
+#imagem__agendamentos, #imagem-venda, #imagem__estoque{
   height: 300px;
   text-align: center;
 }
-#imagem__cadastro {
+
+#imagem__cadastro, #imagem_serviçosEpacotes{
   width: 40%;
 }
 
