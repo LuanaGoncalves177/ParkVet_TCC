@@ -19,6 +19,10 @@ main {
 #cabecalho__logo2{
   width: 15%;
 }
+#cabecalho__logo__administrador {
+  width: 5%;
+  height: auto;
+}
 
 #cabecalho__logo a{
   height: auto;
