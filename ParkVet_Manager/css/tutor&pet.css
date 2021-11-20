@@ -120,18 +120,19 @@ pesquisa__cadastro {
 .campo__nome-pet__id-tutor,
 .campo__dados-tutor,
 .campo__pet-nome-id,
+.campo_funcao,
+#campo__estoque,
 #campo__label-pesquisa div,
 #campo__servico,
 #campo__horario,
-#campo__valor, 
-.campo_funcao{
+#campo__valor {
   display: flex;
 }
 /*6.  Individualidades dos Campos*/
 .campo__dados-tutor {
   margin-bottom: 50px;
 }
-.campo__dados-tutor > #contato {
+.campos, .campo__dados-tutor > #contato  {
   margin-left: 100px;
 }
 
@@ -162,9 +163,6 @@ pesquisa__cadastro {
   width: 200px;
   margin-bottom: 20px;
 }
-#campo__autorizacao {
-  margin-bottom: 20px;
-}
 #campo__caracteristicas-pet > div {
   display: flex;
   justify-content: space-evenly;
@@ -174,15 +172,13 @@ pesquisa__cadastro {
 .campo-servico-horario {
   margin: 0 150px;
 }
-#campo__servico {
-  justify-content: space-evenly;
-}
 #campo__horario,
 #campo__servico,
-#campo__valor {
+#campo__valor, 
+#campo__autorizacao{
   margin-bottom: 20px;
 }
-#campo__horario {
+#campo__horario,  #campo__servico{
   justify-content: space-evenly;
 }
 #campo__valor {
@@ -245,6 +241,9 @@ pesquisa__cadastro {
 .input__salario, 
 .input__funcao, 
 .input-valor-total,
+.input__quantidade, 
+.input__valor, 
+.input__total,
 #input-pet-nome,
 #servico-cadastrado,
 #forma_pagamento {
@@ -279,7 +278,7 @@ pesquisa__cadastro {
 .input__dados-tutor {
   width: 600px;
 }
-/* 9.1. imputs dos pets */
+/* 9.1. inputs dos pets */
 
 .input__pet-raca,
 .input__pet {
@@ -298,6 +297,9 @@ pesquisa__cadastro {
 }
 .input__preco{
   width: 50%;
+}
+.input__quantidade, .input__valor {
+  width: 100%;
 }
 #data_servico,
 #horario_servico {
@@ -421,7 +423,7 @@ pesquisa__cadastro {
 }
 /* Agendamentos */
 
-#imagem__agendamentos, #imagem-venda {
+#imagem__agendamentos, #imagem-venda, #imagem__estoque {
   height: 300px;
   text-align: center;
 }
