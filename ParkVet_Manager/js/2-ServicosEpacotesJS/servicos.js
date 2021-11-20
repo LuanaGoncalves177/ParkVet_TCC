@@ -1,4 +1,4 @@
-var botao_salvar = document.querySelector("#botao-salvar")
+var botao_pagamento = document.querySelector("#botao-pagamento")
 var bota_adiciona = document.querySelector("#adiciona")
 
 bota_adiciona.addEventListener("click", function(event){
@@ -12,7 +12,7 @@ bota_adiciona.addEventListener("click", function(event){
 
 
 
-botao_salvar.addEventListener("click", function(event){
+botao_pagamento.addEventListener("click", function(event){
     event.preventDefault();
 
     var servicoPet = obtemInformacoesDoFormServicos()
@@ -24,6 +24,7 @@ botao_salvar.addEventListener("click", function(event){
             //console.log(servicoPet)
         }else{
             alert(erros)
+            console.log(servicoPet)
             return;
         }
 })
@@ -31,11 +32,11 @@ botao_salvar.addEventListener("click", function(event){
 function obtemInformacoesDoFormServicos(){
     var servico = {
         nomeTutor: document.querySelector("#tutor-nome").value,
-        nomePet: document.querySelector("#pet-nome").value,
+        nomePet: document.querySelector("#input-pet-nome").value,
         servicoSelecionado: document.querySelector("#servico-opcao").value,
         dataServico: document.querySelector("#data_servico").value,
         horaServico: document.querySelector("#horario_servico").value,
-        valorTotal: document.querySelector("#input_valor").value
+        valorTotal: document.querySelector("#input-valor-total").value
     }
 
     return servico
