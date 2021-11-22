@@ -1,6 +1,7 @@
 var campoFiltro = document.querySelector("#data-servico");
 
 campoFiltro.addEventListener("input", function(event){
+    event.defaultPrevented()
     //var dataEscolhida = this.value;
     var clientesAgendados = document.querySelectorAll(".clientes-agendados");
     

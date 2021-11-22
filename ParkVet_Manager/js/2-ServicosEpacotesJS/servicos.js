@@ -1,7 +1,8 @@
 var botao_pagamento = document.querySelector("#botao-pagamento")
-var bota_adiciona = document.querySelector("#adiciona")
+var botao_adiciona = document.querySelector("#adiciona")
 
-bota_adiciona.addEventListener("click", function(event){
+botao_adiciona.addEventListener("click", function(event){
+    event.preventDefault()
     var div = document.querySelector("#campo__servico")
 
     var listServicos = document.createElement('input')
