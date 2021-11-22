@@ -1,17 +1,17 @@
 var campoFiltro = document.querySelector("#data-servico");
 
 campoFiltro.addEventListener("input", function(event){
-    event.defaultPrevented()
+   
     //var dataEscolhida = this.value;
     var clientesAgendados = document.querySelectorAll(".clientes-agendados");
     
-    if (this.value != "dd/mm/aaaa"){
-        for(var i; i < clientesAgendados.length; i++){
+    if (this.value.length != 0){
+        for(var i=0; i < clientesAgendados.length; i++){
 
             var clienteAgendado = clientesAgendados[i];
             var tdData = clienteAgendado.querySelector(".info-data");
             var dataAgendada = tdData.textContent;
-            var expressao = new RegExp(this.value)
+            var expressao = new RegExp(this.value, "i")
             
             if(!expressao.test(dataAgendada)){
                 clienteAgendado.classList.add("invisivel");

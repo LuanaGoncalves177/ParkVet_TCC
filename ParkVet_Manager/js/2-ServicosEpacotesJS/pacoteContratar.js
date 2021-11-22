@@ -17,6 +17,8 @@ botao_buscar.addEventListener("click", function(event){
     }
 })
 
+//link dos buttons para uso de pacotes
+
 function validaFiltro(filtro){
     if(filtro == "Nome do Cliente" || filtro == "Nome do Pet"){
         return false
