@@ -8,3 +8,10 @@
     display: flex;
     justify-content: start;
 }
+.invisivel{
+	display: none;
+}
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
