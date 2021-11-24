@@ -1,5 +1,5 @@
 var botaoFiltro = document.querySelector("#botao-filtrar");
-var imgExcluir = document.querySelector("#agenda")
+var tabela = document.querySelector("#agenda")
 
 botaoFiltro.addEventListener("click", function(event){
     event.preventDefault()
@@ -27,11 +27,22 @@ botaoFiltro.addEventListener("click", function(event){
     }
 
 });
+var excluir = document.querySelectorAll(".agenda__excluir")
 
-imgExcluir.addEventListener("click", function(event){
-    event.target.parentNode.classList.add("fadeOut")
-    setTimeout(function(){
-        event.target.parentNode.remove();
-    }, 500);
+tabela.addEventListener("click", function(event){
+    var elemento = event.target
+    var comparaX = document.querySelector("#imagem_tabela-excluir") 
+    var comparaT = document.querySelector(".agenda__excluir").parentNode
+
+    console.log(elemento)
+    console.log(comparaX)
+    console.log(comparaT)
+    
+    if (elemento == comparaX){
+        comparaT.classList.add("fadeOut")
+        setTimeout(function(){
+            comparaT.remove();
+        }, 500);
+    }
 
 })
