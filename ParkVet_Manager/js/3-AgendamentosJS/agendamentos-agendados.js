@@ -32,7 +32,7 @@ var excluir = document.querySelectorAll(".agenda__excluir")
 tabela.addEventListener("click", function(event){
     var elemento = event.target
     var comparaX = document.querySelector("#imagem_tabela-excluir") 
-    var comparaT = document.querySelector(".agenda__excluir").parentNode
+    var comparaT = document.querySelector("#imagem_tabela-excluir").parentNode
 
     console.log(elemento)
     console.log(comparaX)
@@ -41,7 +41,7 @@ tabela.addEventListener("click", function(event){
     if (elemento == comparaX){
         comparaT.classList.add("fadeOut")
         setTimeout(function(){
-            comparaT.remove();
+            comparaT.parentNode.remove();
         }, 500);
     }
 
