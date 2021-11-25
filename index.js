@@ -10,9 +10,6 @@ conexao.connect(erro => {
 
         const app = customExpress()
         app.listen(4000,() => console.log("Deu Certo"))
-        
 
-        
-    
     }
 })
