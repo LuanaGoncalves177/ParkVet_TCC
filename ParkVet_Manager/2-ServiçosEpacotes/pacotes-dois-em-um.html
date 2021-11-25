@@ -30,13 +30,13 @@
         <h2 class="pesquisa__titulo">Cadastro de Pacotes</h2>
         <div class="pesquisa__cliente">
           <label for="nome-pet" class="pesquisa__label">Buscar:</label><br>
-          <input type="text" id="nome-pet" class="pesquisa__input">
+          <input type="text" id="nome-busca" class="pesquisa__input">
           <input list="filtro", id="filtro-busca">
           <datalist id="filtro">
               <option value= "Nome do Cliente">
               <option value= "Nome do Pet">
           </datalist>
-          <button class="pesquisa__button"><a href="#">Buscar</a></button>
+          <button class="pesquisa__button" id="buscar">Buscar</a></button>
           <br>
 
           <span>
@@ -71,6 +71,7 @@
         </div>
         <div>
             <br>
+            <button class="pesquisa__button" id="voltar"><a href="../2-ServiçosEpacotes/servicosEpacotes.html"> Voltar</a></button>
             <button class="pesquisa__button"><a href="#">Contratar Pacote Individual</a></button>
             <button class="pesquisa__button"><a href="#">Contratar Pacote Compartilhado</a></button>
         </div>
@@ -83,5 +84,7 @@
         <p class="footer__subtitulo">&copy; All rights reserved</p>
       </footer>
     </main>
+
+    <script src="../js/2-ServicosEpacotesJS/pacoteContratar.js"></script>
   </body>
 </html>

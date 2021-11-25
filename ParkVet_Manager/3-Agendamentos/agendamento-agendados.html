@@ -32,12 +32,13 @@
 
       <form class="formulario__cadastro">
         <h2 class="pagina-titulo">Agenda</h2>
-        <h3 class="formulario__titulo">Pesquisa</h3>
+        
 
         <div id="pesquisa__horario">
-          <label for="data_servico" id="formulario__label">Data:</label><br />
+          <label for="data_servico" id="formulario__label">Filtrar por data:</label><br />
           <div id="agendar-servicos">
             <input type="date" id="data_servico"/>
+            <button id="botao-filtrar" class="btn-botoes">Filtrar</button>
           </div> 
           
         </div>
@@ -46,7 +47,7 @@
           <h3 class="formulario__titulo">Serviços Agendados</h3>
           <table id="agenda">
             <thead id="agendados__cabecalho">
-              <tr class="clientes-agendados">
+              <tr>
                 <td class="agenda__colunas">data</td>
                 <td class="agenda__colunas">horário</td>
                 <td class="agenda__colunas">nome do pet </td>
@@ -58,7 +59,7 @@
             </thead>
             <tbody>
               <tr class="clientes-agendados">
-                <td class="agenda__data" >02/11/2021</td>
+                <td class="agenda__data" >02/12/2021</td>
                 <td class="agenda__horario">14:30</td>
                 <td class="agenda__nomePet">Bob</td>
                 <td class="agenda__nomeCliente">Luiza</td>
@@ -106,9 +107,11 @@
          </div>
          <div id="botao-agendar">
           <button class="btn-botoes"><a href="../2-ServiçosEpacotes/servicosEpacotes.html">Agendar</a></button>
+          <button class="btn-botoes" id="botao-atualizar">Atualizar</button>
+
         </div>
         <div id="botoes">
-          <button id="btn-voltar"><a href="./agendamentos.html" >voltar</a></button>
+          <button id="btn-voltar"><a href="./agendamentos.html" >Voltar</a></button>
         </div>
       </div>
        </div>
