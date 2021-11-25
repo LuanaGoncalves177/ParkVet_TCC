@@ -1,10 +1,18 @@
-const express = require('express')
+const customExpress = require('./ParkVet_Manager/Servidor/config/customExpress')
+const conexao = require('./ParkVet_Manager/Servidor/infraestrutura/conexao')
 
-const app = express()
 
-app.listen(4000,() => console.log("Deu Certo"))
-app.use(express.static(__dirname + "/ParkVet_Manager"));
+conexao.connect(erro => {
+    if(erro){
+        console.log("ERRO:" + erro)
+    }else{
+        console.log("Conectado com sucesso")
 
-app.get('/', (req, res) => res.sendFile(__dirname + "/ParkVet_Manager/index.html"))
+        const app = customExpress()
+        app.listen(4000,() => console.log("Deu Certo"))
+        
+
+        
     
-
+    }
+})
