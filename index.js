@@ -1,5 +1,5 @@
-const customExpress = require('./ParkVet_Manager/Servidor/config/customExpress')
-const conexao = require('./ParkVet_Manager/Servidor/infraestrutura/conexao')
+const customExpress = require('./config/customExpress')
+const conexao = require('./infraestrutura/conexao')
 
 
 conexao.connect(erro => {

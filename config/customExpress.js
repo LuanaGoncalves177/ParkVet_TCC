@@ -8,7 +8,7 @@ module.exports = () => {
     app.use(express.urlencoded({ extended: true}))
  
     consign()
-        .include('./ParkVet_Manager/Servidor/controllers')
+        .include('controllers')
         .into(app)
  
  return app
