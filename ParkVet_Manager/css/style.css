@@ -117,17 +117,23 @@ footer {
   width: 7%;
 }
 /* Menu de navegação das páginas */ 
-.navegacao {
-  margin-bottom: 4%;
+.navegacao, .nav_produtos {
   background-color: rgba(199, 233, 91, 0.5);
-  padding: 10px;
 }
-.navegacao li {
+.navegacao {
+  padding: 10px;
+  margin-bottom: 4%;
+}
+.navegacao li, .nav_produtos li {
+  padding-left: 40px;
   display: inline;
-  padding: 40px;
+
   font-size: 25px;
 }
-.navegacao li a {
+.navegacao li {
+  padding: 40px;
+}
+.navegacao li a, .nav_produtos li a{
   text-decoration: none;
   color: #557220;
 }
