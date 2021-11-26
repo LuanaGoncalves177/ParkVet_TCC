@@ -124,7 +124,6 @@ pesquisa__cadastro {
 .campo__servico,
 #campo__estoque,
 #campo__label-pesquisa div,
-#campo__servico,
 #campo__horario,
 #campo__valor {
   display: flex;
@@ -179,8 +178,11 @@ pesquisa__cadastro {
 #campo__autorizacao{
   margin-bottom: 20px;
 }
-#campo__horario,  #campo__servico{
+#campo__horario{
   justify-content: space-evenly;
+}
+#campo__servico {
+  display: block;
 }
 #campo__valor {
   justify-content: center;
@@ -291,7 +293,7 @@ pesquisa__cadastro {
   width: 250px;
 }
 /* inputs da página de serviços*/
-#servico-opcao {
+#servico-opcao, .servico-opcao{
   width: 500px;
   padding: 10px;
 }
@@ -484,3 +486,4 @@ vendas__dados,
 #funao_conteudo {
   display: inline-block;
 }
+

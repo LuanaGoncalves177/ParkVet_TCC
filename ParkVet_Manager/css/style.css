@@ -162,3 +162,9 @@ footer {
 #index-administrativo {
   width: 75%;
 }
+.btn-adicionar {
+  font-size: 30px;
+  color: #557220;
+  background-color: #b5d453;
+  border: none;
+}

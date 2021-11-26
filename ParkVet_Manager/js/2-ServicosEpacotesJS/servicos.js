@@ -7,7 +7,7 @@ botao_adiciona.addEventListener("click", function(event){
 
     var listServicos = document.createElement('input')
     listServicos.setAttribute("list", "servicos_disponiveis")
-    listServicos.classList.add("campo__servico")
+    listServicos.classList.add("servico-opcao")
     div.appendChild(listServicos)
 })
 
