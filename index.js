@@ -9,6 +9,7 @@ conexao.connect(erro => {
         console.log("Conectado com sucesso")
 
         const app = customExpress()
+        
         app.listen(4000,() => console.log("Deu Certo"))
 
     }
