@@ -8,6 +8,7 @@
     <link rel="icon" href="../imagens/LogoPetVet.png" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/tutor&pet.css">
+    <link rel="stylesheet" href="../css/produtos.css">
   </head>
   <body>
     <main>
@@ -35,12 +36,59 @@
         </ul>
       </nav>
       
-      <section class="vendas">
-        <h2 class="pagina-titulo">Produtos</h2>
-        <img src="../imagens/vendas.jpg" id ="imagem-venda" alt="">
-        <div id="botoes">
-            <button class="btn-botoes"><a href="#">Comprar</a></button>
+      <section class="produtos">
+        <nav>
+          <ul class="nav_produtos">
+            <li><a href="#cachorro">Cachorros</a></li>
+            <li><a href="#gato">Gatos</a></li>
+          </ul>
+        </nav>
+        <div class="secao-cachorro" id="cachorro">
+          <div></div>
+          <div>
+            <img src="../imagens/cachorro.png" alt="" id="foto-perfil">
+            <h2 class="secao__titulo">Cachorros </h2>
+          </div>
+          <div id="itens">
+            <div>
+              <img src="../imagens/raçao-cachorro.png" id="item" alt="">
+              <h3>Ração</h3>
+              <img src="../imagens/peticos-cachorros.png" id="item" alt="">
+              <h3>Pestiscos</h3>
+            </div>
+            <div>
+              <img src="../imagens/antipulgas-cachorro.png" id="item" alt="">
+              <h3>Antipulgas</h3>
+              <img src="../imagens/casinhas-cachorro.png" id="item" alt="">
+              <h3>Casinhas</h3>
+            </div>
+          </div>
         </div>
+
+        <div class="secao-gato" id="gato">
+          <div>
+            <img src="../imagens/gato.png" alt="" id="foto-perfil">
+            <h2 class="secao__titulo">Gatos</h2>
+          </div>
+          <div id="itens">
+            <div>
+              <img src="../imagens/ração-gatos.png" id="item" alt="">
+              <h3>Ração</h3>
+              <img src="../imagens/arranhadores-gatos.png" id="item" alt="">
+              <h3>Aranhadores</h3>
+            </div>
+            <div>
+              <img src="../imagens/antipulgas-gatos.png" id="item" alt="">
+              <h3>Antipulgas</h3>
+              <img src="../imagens/areia-gatos.png" id="item" alt="">
+              <h3>Areia</h3>
+            </div>
+          </div>
+        </div>
+        <div id="botoes">
+          <button class="btn-botoes"><a href="#">Comprar</a></button>
+      </div>
+      
       </section>
 
       <footer>
