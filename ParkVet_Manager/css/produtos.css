@@ -1,0 +1,27 @@
+.secao-cachorro, .secao-gato {
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 20px 0;
+  border-color: brown;
+}
+#foto-perfil{
+  width: 300px;
+  height: auto;
+}
+#itens {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../imagens/fundo-vendas.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#item {
+  width: 200px;
+  height: 200px;
+}
+h2{
+  font-size: 50px;
+  font-weight: 400;
+  text-decoration: none;
+}
