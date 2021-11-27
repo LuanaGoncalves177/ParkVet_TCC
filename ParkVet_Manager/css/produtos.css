@@ -3,7 +3,7 @@
  align-items: center;
  justify-content: center;
  margin: 20px 0;
- padding: 2%;
+ padding: 1%;
 }
 #foto-perfil{
   width: 300px;
@@ -25,4 +25,10 @@
   font-weight: 400;
   text-decoration: none;
   color: #557220;;
+}
+.btn-botoes {
+  margin: 10px;
+}
+.pagina-titulo {
+  color: #a0c91c; ;
 }
