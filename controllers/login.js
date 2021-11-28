@@ -10,28 +10,49 @@ module.exports = app => {
         secret: "cookie_secret",
         resave: true,
         saveUninitialized:true}));
-    app.engine('html', require ('ejs').renderFile);
-    app.set('view engine', 'html');
-    app.use('/ParkVet_Manager', express.static("ParkVet_Manager"));
-    app.set('ParkVet_Manager', path.join(__dirname, '/ParkVet_Manager'))
+    
+    app.engine('html', require('ejs').renderFile);
+    app.set('view engine','html')
+    app.use('/Public', express.static(path.join(__dirname, 'Public')))
+    app.set('index', path.join(__dirname,'/Views'))
 
     var login = "001"
     var password = "12345"
     
-    app.post('/manager', (req, res) => {
-        if(req.body.senha == password && req.body.id == login){
-            req.session.login = login
-        }
-        res.render("manager")
+    //app.get('/', (req, res)=> {
+    //    res.render('index')
+    //})
+
+    //fazer o redirecionamento para /manager ou /administrador 
+
+    app.get('/manager', (req, res)=> {
+        res.render('manager')
     })
 
-    app.get('/',(req, res)=> {
+    app.post('/manager', (req, res) => {
+        if(req.body.senha == password && req.body.login == login){
+            //app.use(passport.session())
+            
+            req.session.login = login
+        }
+        res.render("cadastro")
+    })
+
+    app.get('/manager/:id',(req, res)=> {
         if(req.session.login){
-            res.render('./1-Cadastro/cadastro')
+            var userRoute = require('/user/:id')
+            app.use('/manager', userRoute)
+            res.render("cadastro")
         }else{
             res.render('manager')
         }
+
+    //app.get('/manager/cadastro', (req, res)=>{
+      //  res.render(cadastro)
+    //})
+    
     })      
+
 }
     
 
