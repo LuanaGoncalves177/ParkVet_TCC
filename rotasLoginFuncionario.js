@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router();
 const session = require('express-session')
-
+const path = require('path')
 
 var login = "001"
 var password = "12345"
@@ -17,7 +17,7 @@ router.get('/login', (req, res)=> {
 router.post('/login', (req, res) => {
     if(req.body.senha == password && req.body.id == login){
         req.session.login = login
-        res.render("cadastro")
+        res.render(path.join(__dirname, "/1-Cadastro/cadastro"))
         
     }else{
         res.render("manager")
