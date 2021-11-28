@@ -1,24 +1,36 @@
 const express = require('express')
-//const session = require('express-session')
 const path = require('path')
-const bp = require('body-parser')
-const bodyParser = require('body-parser')
+const body = require('body-parser')
+const session = require('express-session')
+
 
 module.exports = app => {
-    app.use(bodyParser.urlencoded({extended:true}))
+    app.use(body.urlencoded({extended:true}));
+    app.use(session({
+        secret: "cookie_secret",
+        resave: true,
+        saveUninitialized:true}));
     app.engine('html', require ('ejs').renderFile);
     app.set('view engine', 'html');
-    app.use(express.static("ParkVet_Manager"));
+    app.use('/ParkVet_Manager', express.static("ParkVet_Manager"));
     app.set('ParkVet_Manager', path.join(__dirname, '/ParkVet_Manager'))
 
+    var login = "001"
+    var password = "12345"
     
-    app.get('/', (req, res) => {
-       res.render("index")
+    app.post('/manager', (req, res) => {
+        if(req.body.senha == password && req.body.id == login){
+            req.session.login = login
+        }
+        res.render("manager")
     })
 
-    app.get('/manager.html', (req,res) => {
-        
-        //res.sendFile(__dirname + "/ParkVet_TCC/ParkVet_Manager/manager.html")
+    app.get('/',(req, res)=> {
+        if(req.session.login){
+            res.render('./1-Cadastro/cadastro')
+        }else{
+            res.render('manager')
+        }
     })      
 }
     
