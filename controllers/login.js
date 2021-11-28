@@ -6,6 +6,9 @@ const session = require('express-session')
 
 let rotasLoginFuncionario = require('../rotasLoginFuncionario')
 let rotaCadastramento = require('../rotaCadastramento')
+let rotaServicoEpacotes = require('../rotaServicosEpacotes')
+let rotaAgenda = require("../rotaAgenda")
+let rotaAtualizarInfo = require("../rotaAtualizarInfo")
 
 module.exports = app => {
     app.use(body.urlencoded({extended:true}));
@@ -26,8 +29,10 @@ module.exports = app => {
     })
 
     app.use('/manager', rotasLoginFuncionario)
-    app.use('/cadastro', rotaCadastramento)
-
+    app.use('/manager/cadastro', rotaCadastramento)
+    app.use('/manager/', rotaServicoEpacotes)
+    app.use('/manager', rotaAgenda)
+    app.use('/manager', rotaAtualizarInfo)
 
 }
     

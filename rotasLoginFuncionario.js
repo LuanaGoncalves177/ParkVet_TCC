@@ -17,7 +17,7 @@ router.get('/login', (req, res)=> {
 router.post('/login', (req, res) => {
     if(req.body.senha == password && req.body.id == login){
         req.session.login = login
-        res.render(path.join(__dirname, "/1-Cadastro/cadastro"))
+        res.render((__dirname, "./Cadastro/cadastro"))
         
     }else{
         res.render("manager")
