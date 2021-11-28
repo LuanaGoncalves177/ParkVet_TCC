@@ -336,6 +336,9 @@ pesquisa__cadastro {
   background-color: #ecfdb8;
   text-align: center;
 }
+#botao-filtrar {
+  margin: 0; 
+}
 .pets-cadastrados__colunas,
 .agenda__colunas,
 .administrativo__colunas {
