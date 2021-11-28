@@ -2,7 +2,6 @@ const express = require('express')
 const path = require('path')
 const body = require('body-parser')
 const session = require('express-session')
-const router = require('express').Router
 
 
 module.exports = app => {
@@ -11,6 +10,7 @@ module.exports = app => {
         secret: "cookie_secret",
         resave: true,
         saveUninitialized:true}));
+    
     app.engine('html', require('ejs').renderFile);
     app.set('view engine','html')
     app.use('/Public', express.static(path.join(__dirname, 'Public')))
@@ -24,29 +24,24 @@ module.exports = app => {
     //})
 
     //fazer o redirecionamento para /manager ou /administrador 
-//-----------------------------
-function Rota(){
-    router.get('/manager', (req, res) =>{
+
+    app.get('/manager', (req, res)=> {
+        res.render('manager')
+    })
+
+    app.post('/manager', (req, res) => {
         if(req.body.senha == password && req.body.login == login){
             //app.use(passport.session())
             
             req.session.login = login
         }
         res.render("cadastro")
-    } )
-    router.use('/cadastro')
-
-}
-
-//----------------------------
-    app.get('/manager', (req, res)=> {
-        res.render('manager')
     })
 
-    app.post('/manager', Rota())
-
-    app.get('/manager', (req, res)=> {
+    app.get('/manager/:id',(req, res)=> {
         if(req.session.login){
+            var userRoute = require('/user/:id')
+            app.use('/manager', userRoute)
             res.render("cadastro")
         }else{
             res.render('manager')
