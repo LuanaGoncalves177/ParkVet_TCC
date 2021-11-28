@@ -21,7 +21,7 @@ botao_pagamento.addEventListener("click", function(event){
         
         if (erros.length == 0){
             //Armazenar infomações
-            location.href= "../3-Agendamentos/agendamento-agendados.html" 
+            location.href= "../Agendamentos/agendamento-agendados.html" 
             //console.log(servicoPet)
         }else{
             alert(erros)

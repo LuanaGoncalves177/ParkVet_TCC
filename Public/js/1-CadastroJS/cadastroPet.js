@@ -9,7 +9,7 @@ var pet = obtemInformacoesDoFormPet();
 var erros = validaDadosPet(pet);
 
 if (erros.length == 0){
-    location.href = "../2-ServiçosEpacotes/servicosEpacotes.html"
+    location.href = "../ServiçosEpacotes/servicosEpacotes.html"
     
 }else{
     
