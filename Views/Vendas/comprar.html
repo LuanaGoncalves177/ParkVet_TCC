@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParkVet - Vendas</title>
+    <link rel="icon" href="../../Public/imagens/LogoPetVet.png" />
+    <link rel="stylesheet" href="../../Public/css/style.css">
+    <link rel="stylesheet" href="../../Public/css/tutor&pet.css">
+   
+  </head>
+  <body>
+    <main>
+      <header class="cabecalho">
+        <a href="../index.html"><img
+          id="cabecalho__logo"
+          src="../../Public/imagens/LogoPetVet.png"
+          alt="Logo do ParkVet"
+        /></a>
+        <div>
+          <h1 class="cabecalho_principal">ParkVet Manager</h1>
+          <p class="cabecalho__subtitulo">
+            O administrador inteligente do seu Pet Shop
+          </p>
+          <p class="cabecalho__titulo">ParkVet - Funcionário</p>
+          
+        </div>
+      </header>
+     
+      
+      <section class="compra formulario__pagamento">
+        <h2 class="pagina-titulo">Realizar Compra</h2>
+        <div class="compra-conteudo">
+          <div class ="campo__nome-id"> 
+            <div id="campo__nome-tutor">
+              <label for="tutor-nome" id="formulario__label">Nome do Cliente</label><br>
+              <input type="text"id="tutor-nome" id="disabledInput" name="nomeTutor" placeholder=" Agusto de Oliverira Souza" class="input__nome">
+            </div>
+        </div>
+        <div>
+          <label for="especie_pet" id="formulario__label">Espécie Pet</label><br>
+          <input type="text" list="especies" id="especie_pet" id="disabledInput" name="nomeTutor" placeholder=" canino" class="input__especie-pet">
+          <datalist id="especies">
+            <option value="Canino"></option>
+            <option value="Felino"></option>
+          </datalist>
+
+        </div>
+        <div class="campo__produto">
+          <div>
+            <label for="produto-nome" id="formulario__label">Produto</label><br>
+            <input type="text"id="produto-nome" list="produtos_disponiveis" id="disabledInput" name="nomeTutor" placeholder=" Antipulgas" class="input__produto">
+            <datalist id="produtos_disponiveis">
+              <option value="Ração"></option>
+              <option value="Antipulgas"></option>
+            </datalist>
+          </div>
+          <div>
+            <label for="produto-nome" id="formulario__label">Quantidade</label><br>
+            <input type="number"id="produto-nome" id="disabledInput" name="nomeTutor" placeholder="1" class="input__quantidade">
+          </div>
+        </div>
+        <div>
+          <div class="campo__produto-preco">
+            <div>
+              <label for="produto-preco" id="formulario__label">Preco</label><br>
+              <input type="text"id="produto-preco" id="disabledInput" name="nomeTutor" placeholder="25,00" class="input-valor-total">
+            </div>
+            <div>
+              <label for="produto-nome" id="formulario__label">Total</label><br>
+            <input type="text"id="produto-nome" id="disabledInput" name="nomeTutor" placeholder="25,00" class="input__produto-total">
+            </div>
+          </div>
+        </div>
+        <div id="campo__forma-de-pagamento">
+          <div>
+            <label for="forma_pagamento" id="formulario__label"
+              >Formas de Pagamentos aceitas: </label
+            ><br />
+            <input list="formas_disponiveis" id="forma_pagamento" />
+            <datalist id="formas_disponiveis">
+              <option value="Dinheiro"></option>
+              <option value="Pix"></option>
+              <option value="Cartão de Débito"></option>
+              <option value="Cartão de Crédito"></option>
+            </datalist>
+          </div>
+        </div>
+        
+      <div id="botoes">
+        <button id="btn-voltar"><a href="./venda.html" >Voltar</a></button>
+        <button class="btn-botoes"><a href="">Salvar</a></button>
+      </div>
+      
+      </section>
+
+      <footer>
+        <img class="footer__logo" src="../../Public/imagens/LogoPetVet.png" alt="" />
+        <p classs="footer__titulo">PetVet Manager 2021</p>
+        <p class="footer__subtitulo">&copy; All rights reserved</p>
+      </footer>
+    </main>
+  </body>
+</html>

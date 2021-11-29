@@ -112,7 +112,7 @@ pesquisa__cadastro {
   color: #557220;
 }
 
-.formulario__cliente{
+.formulario__cliente, .compra-conteudo{
   text-align: left;
   margin: 0 20px;
 }
@@ -126,6 +126,8 @@ pesquisa__cadastro {
 .campo_funcao,
 .campo__servico,
 .campo__pacotes,
+.campo__produto,
+.campo__produto-preco,
 #campo__estoque,
 #campo__label-pesquisa div,
 #campo__horario,
@@ -145,7 +147,7 @@ pesquisa__cadastro {
   display: block;
 }
 
-#campo__id-tutor {
+#campo__id-tutor, .campo__produto :nth-child(2), .campo__produto-preco :nth-child(2)   {
   margin-left: 30px;
 }
 #formulario__label,
@@ -221,6 +223,9 @@ pesquisa__cadastro {
   padding: 10px;
   font-family: 20px;
 }
+#forma_pagamento {
+  width: 100%;
+}
 
 /* 7. Campo de autorização do Cadastro*/
 #autorizacao {
@@ -237,6 +242,7 @@ pesquisa__cadastro {
 .input__id,
 .input__endereco,
 .input__email,
+.input__especie-pet,
 .input__whatsapp,
 .input__telefone,
 .input__pet,
@@ -247,11 +253,14 @@ pesquisa__cadastro {
 .input__preco, 
 .input__salario, 
 .input__funcao, 
-.input-valor-total,
 .input__quantidade, 
-.input__valor, 
+.input_valor, 
+.input-valor-total,
 .input__total,
 .input__pacotes,
+.input__produto,
+.input__produto-total,
+.input__quantidade,
 #input-valor-total, 
 #input__servico, 
 #input-pet-nome,
@@ -299,23 +308,28 @@ pesquisa__cadastro {
 .input__caracteristicas {
   width: 250px;
 }
+.input__especie-pet {
+  width: 55%;
+}
 /* inputs da página de serviços*/
 #servico-opcao, .servico-opcao{
   width: 500px;
   padding: 10px;
 }
-.input__despesa{
-  width: 100%;
-}
 .input__preco{
   width: 50%;
 }
-.input__quantidade, .input__valor {
+.input__quantidade, .input__valor, .input__despesa {
   width: 100%;
 }
 .input__pacotes {
   width: 30%;
-
+}
+.input__quantidade, .input__produto-total{
+  width: 100px;
+}
+.input__produto {
+  width: 90%;
 }
 #data_servico,
 #horario_servico {
@@ -490,7 +504,7 @@ pesquisa__cadastro {
 .funcionario__total,
 .pacotes__total,
 .servico__total,
-vendas__dados,
+.vendas__dados,
 .tfoot__label {
   color: #557220;
   background-color: #ecfdb8;
@@ -501,4 +515,3 @@ vendas__dados,
 #funao_conteudo {
   display: inline-block;
 }
-
