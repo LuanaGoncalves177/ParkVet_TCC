@@ -12,11 +12,7 @@ let rotaServicoEpacotes = require('./rotaServicosEpacotes')
 let rotaAgenda = require("./rotaAgenda")
 let rotaAtualizarInfo = require("./rotaAtualizarInfo")
 let rotaVenda = require('./rotaVenda')
-
-//conexao.connect(erro => {
-//    if(erro){
-//        console.log("ERRO:" + erro)
- //   }else{
+let rotaPagamento = require('./rotaPagamento')
 
         const app = customExpress()
         app.use(body.urlencoded({extended:true}));
@@ -42,11 +38,9 @@ let rotaVenda = require('./rotaVenda')
         app.use('/manager', rotasLoginFuncionario)
         app.use('/manager/cadastro', rotaCadastramento)
         app.use('/manager/', rotaServicoEpacotes)
+        app.use('/manager', rotaPagamento)
         app.use('/manager', rotaAgenda)
         app.use('/manager', rotaAtualizarInfo)
         app.use('/manager', rotaVenda)
         
         app.listen(4000,() => console.log("Deu Certo"))
-
-   // }
-//})
