@@ -25,7 +25,7 @@
 .pesquisa__input {
   font-size: 20px;
   padding: 10px;
-  width: 70%;
+  width: 60%;
   border: none;
   background-color: #ecfdb8;
   margin-right: 5%;
@@ -250,6 +250,7 @@ pesquisa__cadastro {
 #input__servico, 
 #input-pet-nome,
 #servico-cadastrado,
+#filtro-busca,
 #forma_pagamento {
   color: black;
   padding: 10px;
@@ -331,7 +332,8 @@ pesquisa__cadastro {
 
 /*pagina Cadastrados dados do pets*/
 #pets-cadastatos__cabecalho,
-#agendados__cabecalh,
+#agendados__cabecalho,
+#pacote__cabecalho,
 #administrativo__cabecalho {
   background-color: #ecfdb8;
   text-align: center;
@@ -341,23 +343,25 @@ pesquisa__cadastro {
 }
 .pets-cadastrados__colunas,
 .agenda__colunas,
-.administrativo__colunas {
+.administrativo__colunas, 
+.pacote__colunas{
   color: #557220;
   font-size: 22px;
   padding: 10px 30px;
   text-align: center;
   background-color: #e5fe96;
 }
-.agenda__colunas {
+.agenda__colunas, .pacote__colunas{
   text-transform: uppercase;
 }
 #pets-cadastrados,
-#agenda,
+#agenda, #pacote,
 #administrativo {
   margin-bottom: 30px;
   width: 1000px;
 }
 .pets-cadastrados__dados,
+.pacote__dados,
 .agenda__data,
 .agenda__horario,
 .agenda__nomePet,
