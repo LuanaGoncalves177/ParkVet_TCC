@@ -35,7 +35,7 @@ let rotaPagamento = require('./rotaPagamento')
             res.render('index')
         })
     
-        app.use('/manager', rotasLoginFuncionario)
+        app.use('/', rotasLoginFuncionario)
         app.use('/manager/cadastro', rotaCadastramento)
         app.use('/manager/', rotaServicoEpacotes)
         app.use('/manager', rotaPagamento)

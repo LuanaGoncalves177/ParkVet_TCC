@@ -8,6 +8,7 @@ const adicionaPagamento = require('./models/pagamentos')
 router.get('/pagamentos/pagamento-cadastrado', (req, res)=>{
     res.render((__dirname, "./ServiçosEpacotes/pagamento-cadasrado"))
 })
+
 router.post('/pagamentos/pagamento-cadastrado', (req, res)=>{
     idTutor = req.body.idtutor + 0
     total = req.body.total + 0

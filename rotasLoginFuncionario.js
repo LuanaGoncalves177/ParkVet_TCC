@@ -8,14 +8,14 @@ var password = "12345"
 
 //fazer o redirecionamento para /manager ou /administrador 
 
-router.get('/', (req, res)=> {
+router.get('/manager', (req, res)=> {
     res.render('manager')
 })
 
-router.post('/', (req, res) => {
+router.post('/manager', (req, res) => {
     if(req.body.senha == password && req.body.id == login){
         //req.session.login = login
-        res.redirect('./cadastro')
+        res.redirect('manager/cadastro')
     }else{
         res.render("manager")
     }
