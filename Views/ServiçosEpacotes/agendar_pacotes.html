@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParkVet - Pacotes</title>
+    <link rel="icon" href="../../Public/imagens/LogoPetVet.png" />
+    <link rel="stylesheet" href="../../Public/css/style.css"/>
+    <link rel="stylesheet" href="../../Public/css/tutor&pet.css">
+  </head>
+
+  <body>
+    <main>
+      <header class="cabecalho">
+        <a href="./servicosEpacotes.html"><img
+          id="cabecalho__logo"
+          src="../../Public/imagens/LogoPetVet.png"
+          alt="Logo do ParkVet"
+        /></a>
+        <div>
+          <h1 class="cabecalho_principal">ParkVet Manager</h1>
+          <p class="cabecalho__subtitulo">
+            O administrador inteligente do seu Pet Shop
+          </p>
+          <p class="cabecalho__titulo">ParkVet - Funcionário</p>
+        </div>
+      </header>
+      
+      <section class="formulario__cadastro">
+        <h2 class="pagina-titulo"> Agendar Pacote + Adicional </h2>
+        <div class="pacote__conteudo">
+          <div id="campo__horario">
+            <div>
+              <label for="data_servico" id="formulario__label">Data:</label
+              ><br />
+              <input type="date" id="data_servico" />
+            </div>
+            <div>
+              <label for="hora_servico" id="formulario__label">Hora:</label
+              ><br />
+              <input type="time" id="horario_servico" />
+            </div>
+          </div>
+          <div>
+          </div>
+
+          <div class="campo-servico-horario">
+            <div id="campo__servico">
+              <div>
+                <label for="servico_realizar" id="formulario__label"
+                  >Serviço Adicional:</label
+                ><br>
+                <input list="servicos_disponiveis" id="servico-opcao"/>
+                <br>
+                <datalist id="servicos_disponiveis">
+                  <option value="Banho"></option>
+                  <option value="Tosa Higienica"></option>
+                </datalist>
+                <button class="btn-adicionar" id="adiciona">+</button>
+                <br />
+              </div>
+            </div>
+        </div>
+        <div id="botoes">
+          <button class="btn-botoes"><a href="../Agendamentos/agendamento-agendados.html">Concluir</a></button>
+        </div>
+    </section>
+     
+      </section>
+
+
+      <footer>
+        <img class="footer__logo" src="../../Public/imagens/LogoPetVet.png" alt=""/>
+        <p classs="footer__titulo">PetVet Manager 2021</p>
+        <p class="footer__subtitulo">&copy; All rights reserved</p>
+      </footer>
+    </main>
+
+    <script src="../../Public/js/2-ServicosEpacotesJS/pacote.js"></script>
+
+  </body>
+</html>

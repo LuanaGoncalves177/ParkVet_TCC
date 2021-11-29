@@ -63,6 +63,9 @@ main {
   width: 450px; 
   
 }
+.pacote__conteudo {
+  text-align: left;
+}
 
 .formulario__login{
   padding: 10px;
