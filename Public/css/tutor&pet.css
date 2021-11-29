@@ -60,7 +60,10 @@ button a {
   background-color: #e5fe96;
   border-style: none;
   color: #557220;
-  margin: 5% 0; 
+}
+.btn-botoes,
+#btn-voltar{
+  margin: 5% 0;  
 }
 #btn-cadastrar {
   width: 40%;
