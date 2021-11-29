@@ -1,15 +1,23 @@
-const { info } = require("console");
 const express = require("express")
 const moment = require('moment')
 const router = express.Router();
-const path = require('path') 
 //const CadastramentoTutor = require('./models/cadastramentoTutor')
 const body = require("body-parser")
 const tutor = require('./models/cadastramentoTutor'); 
 const adicionaPet = require("./models/cadastramentoPet");
+const Seleciona = require('./models/selecionaTutor')
 
 router.use(body.urlencoded({extended:true}));
 router.use(body.json())
+
+
+//Cadastro
+router.get('/', (req,res)=>{
+    res.render((__dirname, "./Cadastro/cadastro"))
+
+})
+
+router.get('/cadastro/:nomeTutor', Seleciona.selecionaTutor)
 
 //Cadastrar Tutor
 router.get('/cadastro-tutor', (req,res)=>{

@@ -32,36 +32,8 @@ const db = require('../models/bd')
     }, {
         timestamps: false
     })
+
  module.exports = adicionatutor;
 
-   
-//     deleta(id, res){
-//         const sql = 'DELETE FROM Tutor WHERE id=?'
-
-//         conexao.query(sql, id, (erro, resultados) => {
-//             if(erro){
-//                 res.status(400)
-//             }else{
-//                 res.status(200)
-//             }
-//         })
-//     }
-
-//     altera(id, valores,res){
-//         if(valores.data){
-//             valores.data = moment(valores.data,'DD/MM/YYYY').format('YYYY-MM-DD HH:MM:SS')
-//         }
-//         const sql = 'UPDATE Tutor SET ? WHERE id=?'
-
-//         conexao.query(sql, [valores, id], (erro, resultados)=>{
-//             if(erro){
-//                 res.status(400)
-//             }else{
-//                 res.status(200)
-//             }
-
-//         })
-//     }
-// }
-
+    
 

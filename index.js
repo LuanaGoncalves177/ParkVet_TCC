@@ -11,7 +11,7 @@ let rotaCadastramento = require('./rotaCadastramento')
 let rotaServicoEpacotes = require('./rotaServicosEpacotes')
 let rotaAgenda = require("./rotaAgenda")
 let rotaAtualizarInfo = require("./rotaAtualizarInfo")
-
+let rotaVenda = require('./rotaVenda')
 
 //conexao.connect(erro => {
 //    if(erro){
@@ -44,6 +44,7 @@ let rotaAtualizarInfo = require("./rotaAtualizarInfo")
         app.use('/manager/', rotaServicoEpacotes)
         app.use('/manager', rotaAgenda)
         app.use('/manager', rotaAtualizarInfo)
+        app.use('/manager', rotaVenda)
         
         app.listen(4000,() => console.log("Deu Certo"))
 
