@@ -13,10 +13,10 @@ let rotaAgenda = require("./rotaAgenda")
 let rotaAtualizarInfo = require("./rotaAtualizarInfo")
 
 
-conexao.connect(erro => {
-    if(erro){
-        console.log("ERRO:" + erro)
-    }else{
+//conexao.connect(erro => {
+//    if(erro){
+//        console.log("ERRO:" + erro)
+ //   }else{
 
         const app = customExpress()
         app.use(body.urlencoded({extended:true}));
@@ -33,7 +33,7 @@ conexao.connect(erro => {
         app.set(path.join(__dirname,'/Views'))
     
         console.log("Conectado com sucesso")
-        Tabelas.init(conexao)
+        //Tabelas.init(conexao)
         
         app.get('/', (req, res)=>{
             res.render('index')
@@ -47,5 +47,5 @@ conexao.connect(erro => {
         
         app.listen(4000,() => console.log("Deu Certo"))
 
-    }
-})
+   // }
+//})

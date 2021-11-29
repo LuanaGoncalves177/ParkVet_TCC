@@ -32,14 +32,14 @@
         <div class="campo__nome-pet__id-tutor">
           <div id="campo__nome-pet">
             <label for="tutor-nome" id="formulario__label">Nome do Pet</label><br>
-            <input type="text"id="pet-nome" placeholder="Bob" class="input__pet">
+            <input type="text"id="pet-nome" placeholder="Bob" class="input__pet" name="petNome">
           </div>
   
           <div id="campo__id-tutor">
             <label for="tutor-id" id="formulario__label">ID Tutor</label><br>
-            <input type="number"id="tutor-id" placeholder="001" class="input__id"><br>
+            <input type="number"id="tutor-id" placeholder="001" class="input__id" name="idTutor" required><br>
           </div>
-          <img src="../../Public/imagens/lupa.png" id="pesquisa-id-tutor" alt="ppesquisar o ID do Tutor">
+          <img src="../../Public/imagens/lupa.png" id="pesquisa-id-tutor" alt="pesquisar o ID do Tutor">
         
         </div><br>
         
@@ -47,20 +47,16 @@
           <div id="campo__label-pesquisa">
             <label for="pet__raca" id="formulario__label">Raça</label><br>
               <div>
-                <input list="raca" id="pet__raca" placeholder="Bulldog" class="input__pet-raca">
+                <input list="raca" id="pet__raca" placeholder="Bulldog" class="input__pet-raca" name="raca">
                 <datalist id="raca">
                   <option value= "Bulldog">
                   <option value= "Pintcher">
                   <option value= "Pitbull">
                   <option value= "Poodle">
+                  <option value="SRD">
                 </datalist>
               </div>
             </div>
-
-            <div id="id-pet">
-            <label for="tutor-id" id="formulario__label">ID Pet</label><br>
-            <input type="text"id="tutor-id" placeholder="001-01" class="input__id"><br>
-          </div>
           </div>
         </div><br>
 
@@ -69,7 +65,7 @@
             <div id="campo__label-pesquisa">
               <label for="pet-especie" id="formulario__label">Espécie</label><br>
               <div>
-                <input list="especie"id="pet-especie" class="input__caracteristicas" placeholder="Canino">
+                <input list="especie"id="pet-especie" class="input__caracteristicas" placeholder="Canino" name="especie">
                 <datalist id="especie">
                   <option value= "Canino">
                   <option value= "Felino">
@@ -79,7 +75,7 @@
             <div id="campo__label-pesquisa">
               <label for="pet-pelo" id="formulario__label">Pelo</label><br>
               <div>
-                <input list="pelagem"id="pet-pelo" class="input__caracteristicas" placeholder="Curto">
+                <input list="pelagem"id="pet-pelo" class="input__caracteristicas" placeholder="Curto" name="pelo">
                 <datalist id="pelagem">
                   <option value= "Selecionar">
                   <option value="Curto">
@@ -94,7 +90,7 @@
             <div id="campo__label-pesquisa">
               <label for="pet-porte" id="formulario__label">Porte</label><br>
               <div>
-                <input list="portes"id="pet-porte" class="input__caracteristicas" placeholder="Pequeno">
+                <input list="portes"id="pet-porte" class="input__caracteristicas" placeholder="Pequeno" name="pelo">
                   <datalist id="portes">
                     <option value= "Selecionar">
                     <option value="Pequeno">
@@ -106,9 +102,8 @@
             <div id="campo__label-pesquisa">
               <label for="pet-sexo" id="formulario__label">Sexo</label><br>
               <div>
-                <input list="sexos"id="pet-pelo" class="input__caracteristicas" placeholder="Macho">
+                <input list="sexos"id="pet-pelo" class="input__caracteristicas" placeholder="Macho" name="sexo">
                 <datalist id="sexos">
-                  <option value= "Selecionar">
                   <option value="Macho">
                   <option value="Fêmia"> 
                 </datalist>
@@ -119,8 +114,8 @@
       
       
         <div id="botoes">
-          <button id="btn-voltar"><a href="./cadastrar-pets.html" >voltar</a></button>
-          <button class="btn-botoes"><a href="./cadastrar-pets.html">Salvar</a></button>
+          <button id="btn-voltar"><a href="./cadastro-pet" >voltar</a></button>
+          <button class="btn-botoes" type="submit">Salvar</a></button>
         </div>
       </form>
     </section>

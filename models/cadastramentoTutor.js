@@ -1,8 +1,12 @@
- const conexao = require('../infraestrutura/conexao')
- const moment = require('moment')
- const db = require('../models/bd')
+const db = require('../models/bd')
 
     const adicionatutor = db.sequelize.define("tutor", {
+        idTutor:{
+            type: db.Sequelize.INTEGER,
+            primaryKey: true,
+            autoIncrement: true,
+            //field: 'id'
+        },
         nomeTutor:{
             type: db.Sequelize.STRING
         }, 
@@ -13,35 +17,24 @@
             type: db.Sequelize.STRING
         },
         whatsapp: {
-            type: db.Sequelize.INTEGER
+            type: db.Sequelize.BIGINT(50)
         },
         telefoneFixo:{
-            type: db.Sequelize.INTEGER
+            type: db.Sequelize.BIGINT(50)
         },
         autorizacao: {
             type: db.Sequelize.STRING
+        },
+        dataCriacao: {
+            type: db.Sequelize.DATE
         }
+
+    }, {
+        timestamps: false
     })
- module.exports = tutor;
+ module.exports = adicionatutor;
 
-// class CadastramentoTutor{
-
-//     adiciona(info, res){
-//         const dataCriacao = moment().format('YYYY-MM-DD HH:MM:SS')
-        
-    
-//         const cadastramentoDatado = {...info, dataCriacao}
-//         const sql = 'INSERT INTO Tutor ((idTutor int NOT NULL AUTO_INCREMENT, nomeTutor varchar(50) NOT NULL, endereco varchar(30), email varchar(30), whatsApp int NOT NULL, telefoneFixo int, autorizacao varchar(20), dataCriacao datetime NOT NULL, PRIMARY KEY(idTutor)) SET ?'
-//         console.log(cadastramentoDatado)
-//         conexao.query(sql, cadastramentoDatado, (erro,resultados) =>{
-//             if(erro){
-//                 res.status(400)
-//             }
-//         })
-        
-//     }
-    
-    
+   
 //     deleta(id, res){
 //         const sql = 'DELETE FROM Tutor WHERE id=?'
 
@@ -71,5 +64,4 @@
 //     }
 // }
 
-// module.exports = new CadastramentoTutor
 

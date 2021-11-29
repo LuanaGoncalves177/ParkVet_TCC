@@ -1,6 +1,8 @@
 const express = require("express")
 const router = express.Router();
-const path = require('path') 
+const path = require('path'); 
+const adicionaServicoContratado = require("./models/ServicoEpacotes");
+const moment = require('moment')
 
 //Pagina inicial Serviços e pacotes
 router.get('/servicosEpacotes', (req,res)=>{
@@ -13,7 +15,26 @@ router.get('/servicosEpacotes/servicos', (req, res)=> {
 })
 
 router.post('/servicosEpacotes/servicos', (req, res)=> {
+    var dataS = req.body.data
+    var horaS = req.body.horario
+    var dataShoraS = (dataS +" " + horaS)
+    var dataServicoNew = moment(dataS + " " + horaS)
+    console.log(dataShoraS)
+    console.log(dataServicoNew)
+    
 
+    adicionaServicoContratado.create({
+        servicoContratado: req.body.servico,
+        dataServico:dataServicoNew,
+        total:req.body.total,
+        idPet: req.body.idPet, 
+        dataCriacao: moment().format('YYYY-MM-DD')
+    }).then(function(){
+        console.log('Entrou')
+        res.redirect('../agendar')
+    }).catch(function(erro){
+        res.send("Erro:" + erro)
+    })
 })
 
 //Pacotes

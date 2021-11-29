@@ -30,7 +30,7 @@
       <section class="formulario__cadastro">
         <h2 class="formulario__titulo">Serviços</h2>
 
-        <form action="#" class="formulario__cliente">
+        <form class="formulario__cliente" method="post">
           <div class="campo__nome-id">
             <div id="campo__nome-tutor">
               <label for="tutor-nome" id="formulario__label"
@@ -41,17 +41,19 @@
                 id="tutor-nome"
                 placeholder="Agusto de Oliverira Souza"
                 class="input__nome"
+                name="tutorNome"
               />
             </div>
 
             <div id="campo__id-tutor">
-              <label for="tutor-id" id="formulario__label">ID Tutor:</label
+              <label for="tutor-id" id="formulario__label" >ID Tutor:</label
               ><br />
               <input
                 type="number"
                 id="tutor-id"
                 placeholder="001"
                 class="input__id"
+                name='idTutor'
               />
             </div>
             <br />
@@ -63,7 +65,7 @@
               ><br />
               <input
                 list="nomes-dos-pets" id="input-pet-nome"
-                />
+                name="nome-pet"/>
                 <datalist id="nomes-dos-pets">
                 <option value="Bob"></option>
               />
@@ -76,6 +78,7 @@
                 id="pet-id"
                 placeholder="01-001"
                 class="input__id"
+                name="idPet"
               />
             </div>
           </div>
@@ -87,7 +90,7 @@
                 <label for="servico_realizar" id="formulario__label"
                   >Serviço a ser contratado:</label
                 ><br>
-                <input list="servicos_disponiveis" id="servico-opcao"/>
+                <input list="servicos_disponiveis" id="servico-opcao" name="servico"/>
                 <br>
                 <datalist id="servicos_disponiveis">
                   <option value="Banho"></option>
@@ -102,23 +105,23 @@
               <div>
                 <label for="data_servico" id="formulario__label">Data:</label
                 ><br />
-                <input type="date" id="data_servico" />
+                <input type="date" id="data_servico" name="data" />
               </div>
               <div>
                 <label for="hora_servico" id="formulario__label">Hora:</label
                 ><br />
-                <input type="time" id="horario_servico" />
+                <input type="time" id="horario_servico" name="horario" />
               </div>
             </div>
             <div id="campo__valor">
               <label for="total_preco" id="formulario__label">Total:</label>
-              <input type="number" id="input-valor-total" />
+              <input type="number" id="input-valor-total" name='total'/>
             </div>
             
             <div id="botoes">
-              <button id="btn-voltar"><a href="./servicosEpacotes.html">Voltar</a></button>
-              <button class="btn-botoes" id="botao-pagamento"><a href="#">Pagamento</a></button>
-              <button class="btn-botoes" id='prosseguir'><a href="#">Agendar</a></button>
+              <button id="btn-voltar"><a href="./servicosEpacotes">Voltar</a></button>
+              <button class="btn-botoes" id="botao-pagamento" ><a href="../pagamento-cadastrado">Pagamento</a></button>
+              <button class="btn-botoes" id='prosseguir' type="submit">Agendar</a></button>
             </div>
           </div>
         </form>
@@ -131,6 +134,6 @@
       </footer>
     </main>
 
-    <script src="../../Public/js/2-ServicosEpacotesJS/servicos.js"></script>
+    <!-- <script src="../../Public/js/2-ServicosEpacotesJS/servicos.js"></script> -->
   </body>
 </html>
