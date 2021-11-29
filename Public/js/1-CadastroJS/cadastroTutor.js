@@ -10,11 +10,11 @@ botao_cadastrar.addEventListener("click", function(event){
     
     if (erros.length == 0){
         //Armazena.armazenaCliente(new Tutor(tutor));
-        console.log(erros)
-        location.href = "./cadastrar-pets.html";
+        
+        //location.href = "./cadastrar-pets.html";
     }else{
         //exibeErro(erros);
-        alert(erros)
+        console.log(erros)
         return;
     }
 
@@ -67,10 +67,10 @@ function validaNome(nomeTutor){
 }
 
 function validaEndereco(enderecoTutor){
-    if(typeof enderecoTutor == "number" || enderecoTutor == ""){
-        return true;
-    }
-    return false;
+     if(typeof enderecoTutor == "number" || enderecoTutor == ""){
+         return false;
+     }
+    return true;
 }
 
 function validaEmail(email){
@@ -85,8 +85,8 @@ function validaWhatsapp(whatsapp){
 }
 
 function validaTelefone(telefone){
-    if (typeof telefone == "number" || telefone == "") return true;
-    return false;
+    //if (typeof telefone == "number") return true;
+    return true;
 }
 /*
 function exibeErro(erros){

@@ -21,7 +21,7 @@ class Tabelas{
     }
 
     criarTabelaPet(){
-        const sql = 'CREATE TABLE IF NOT EXISTS Pet (idPet int NOT NULL AUTO_INCREMENT, nomePet varchar(50) NOT NULL, raca varchar(30), especie varchar(30), pelo varchar(15), porte varchar(15), sexo varchar(15), dataCriacao datetime NOT NULL, PRIMARY KEY(idPet), FOREIGN KEY (idTutor))'
+        const sql = 'CREATE TABLE IF NOT EXISTS Pet (idPet int NOT NULL AUTO_INCREMENT, nomePet varchar(50) NOT NULL, raca varchar(30), especie varchar(30), pelo varchar(15), porte varchar(15), sexo varchar(15), dataCriacao datetime NOT NULL,idTutor int, PRIMARY KEY(idPet), CONSTRAINT FK_TutorId FOREIGN KEY (idTutor) REFERENCES Tutor(idTutor))'
         
         this.conexao.query(sql,(erro)=>{
             if(erro){
@@ -35,7 +35,7 @@ class Tabelas{
     }
 
     criarTabelaServicoContratado(){
-        const sql = 'CREATE TABLE IF NOT EXISTS ServicoContratado (idServicoContratado int NOT NULL AUTO_INCREMENT, FOREING KEY(idPet), FOREIGN KEY(idTutor), servicoContratado varchar(40), dataServico datetime, total float)'
+        const sql = 'CREATE TABLE IF NOT EXISTS ServicoContratado (idServicoContratado int NOT NULL AUTO_INCREMENT, servicoContratado varchar(40), dataServico datetime, total decimal(15,2), idPet int,PRIMARY KEY(idServicoContratado),CONSTRAINT FK_PetId FOREIGN KEY (idPet) REFERENCES Pet(idPet))'
         
         this.conexao.query(sql,(erro)=>{
             if(erro){
@@ -46,6 +46,8 @@ class Tabelas{
 
         })
     }
+
+    
 }
 
 module.exports = new Tabelas
