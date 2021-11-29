@@ -16,7 +16,7 @@
 .pesquisa__cliente {
   text-align: left;
 }
-.pesquisa__label {
+.pesquisa__label, .pacotes__label {
   color: #557220;
   margin-bottom: 0;
   font-size: 25px;
@@ -63,7 +63,7 @@ button a {
 }
 .btn-botoes,
 #btn-voltar{
-  margin: 5% 0;  
+  margin: 2% 0;  
 }
 #btn-cadastrar {
   width: 40%;
@@ -112,7 +112,7 @@ pesquisa__cadastro {
   color: #557220;
 }
 
-.formulario__cliente {
+.formulario__cliente{
   text-align: left;
   margin: 0 20px;
 }
@@ -125,6 +125,7 @@ pesquisa__cadastro {
 .campo__pet-nome-id,
 .campo_funcao,
 .campo__servico,
+.campo__pacotes,
 #campo__estoque,
 #campo__label-pesquisa div,
 #campo__horario,
@@ -250,6 +251,7 @@ pesquisa__cadastro {
 .input__quantidade, 
 .input__valor, 
 .input__total,
+.input__pacotes,
 #input__servico, 
 #input-pet-nome,
 #servico-cadastrado,
@@ -309,6 +311,10 @@ pesquisa__cadastro {
 }
 .input__quantidade, .input__valor {
   width: 100%;
+}
+.input__pacotes {
+  width: 30%;
+
 }
 #data_servico,
 #horario_servico {
