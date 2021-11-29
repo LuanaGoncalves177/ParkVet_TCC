@@ -467,18 +467,16 @@ pesquisa__cadastro {
   margin: 0 250px;
 }
 
-#imagens__servicosEpacotes {
-  width: 300px;
-
-}
 #imagens__servicosEpacotes{
-  width: 250px;
+  width: 275px;
+  height: auto;
 }
 #imagens__servicosEpacotes a:hover {
   border: #557220;
 }
 #imagens__pacotes {
-  width: 350px;
+  width: 250px;
+  height: auto;
 }
 .pacotes__conteudo{
   display: flex;
