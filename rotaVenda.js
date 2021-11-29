@@ -26,7 +26,6 @@ router.post('/venda/comprar', (req,res)=>{
         formasPagamento: req.body.formasPagamento,
         dataCriacao: moment()
     }).then(function(){
-        
         res.redirect('../cadastro')
     }).catch(function(erro){
         res.send("Erro:" + erro)
