@@ -13,7 +13,7 @@
   <body>
     <main>
       <header class="cabecalho">
-        <a href="../index.html"><img
+        <a href="../manager"><img
           id="cabecalho__logo"
           src="../../Public/imagens/LogoPetVet.png"
           alt="Logo do ParkVet"
@@ -30,6 +30,7 @@
      
       
       <section class="compra formulario__pagamento">
+        <form method="post">
         <h2 class="pagina-titulo">Realizar Compra</h2>
         <div class="compra-conteudo">
           <div class ="campo__nome-id"> 
@@ -40,7 +41,7 @@
         </div>
         <div>
           <label for="especie_pet" id="formulario__label">Espécie Pet</label><br>
-          <input type="text" list="especies" id="especie_pet" id="disabledInput" name="nomeTutor" placeholder=" canino" class="input__especie-pet">
+          <input type="text" list="especies" id="especie_pet" id="disabledInput" name="especie" placeholder=" canino" class="input__especie-pet">
           <datalist id="especies">
             <option value="Canino"></option>
             <option value="Felino"></option>
@@ -50,7 +51,7 @@
         <div class="campo__produto">
           <div>
             <label for="produto-nome" id="formulario__label">Produto</label><br>
-            <input type="text"id="produto-nome" list="produtos_disponiveis" id="disabledInput" name="nomeTutor" placeholder=" Antipulgas" class="input__produto">
+            <input type="text"id="produto-nome" list="produtos_disponiveis" id="disabledInput" name="produto" placeholder=" Antipulgas" class="input__produto">
             <datalist id="produtos_disponiveis">
               <option value="Ração"></option>
               <option value="Antipulgas"></option>
@@ -58,18 +59,18 @@
           </div>
           <div>
             <label for="produto-nome" id="formulario__label">Quantidade</label><br>
-            <input type="number"id="produto-nome" id="disabledInput" name="nomeTutor" placeholder="1" class="input__quantidade">
+            <input type="number"id="produto-nome" id="disabledInput" name="quantidade" placeholder="1" class="input__quantidade">
           </div>
         </div>
         <div>
           <div class="campo__produto-preco">
             <div>
               <label for="produto-preco" id="formulario__label">Preco</label><br>
-              <input type="text"id="produto-preco" id="disabledInput" name="nomeTutor" placeholder="25,00" class="input-valor-total">
+              <input type="text"id="produto-preco" id="disabledInput" name="preco" placeholder="25,00" class="input-valor-total">
             </div>
             <div>
               <label for="produto-nome" id="formulario__label">Total</label><br>
-            <input type="text"id="produto-nome" id="disabledInput" name="nomeTutor" placeholder="25,00" class="input__produto-total">
+            <input type="text"id="produto-nome" id="disabledInput" name="total" placeholder="25,00" class="input__produto-total">
             </div>
           </div>
         </div>
@@ -78,7 +79,7 @@
             <label for="forma_pagamento" id="formulario__label"
               >Formas de Pagamentos aceitas: </label
             ><br />
-            <input list="formas_disponiveis" id="forma_pagamento" />
+            <input list="formas_disponiveis" id="forma_pagamento" name="formasPagamento"/>
             <datalist id="formas_disponiveis">
               <option value="Dinheiro"></option>
               <option value="Pix"></option>
@@ -89,10 +90,10 @@
         </div>
         
       <div id="botoes">
-        <button id="btn-voltar"><a href="./venda.html" >Voltar</a></button>
-        <button class="btn-botoes"><a href="">Salvar</a></button>
+        <button id="btn-voltar"><a href="./venda" >Voltar</a></button>
+        <button class="btn-botoes" type="submit">Salvar</a></button>
       </div>
-      
+    </form>
       </section>
 
       <footer>
