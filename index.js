@@ -13,6 +13,7 @@ let rotaAgenda = require("./rotaAgenda")
 let rotaAtualizarInfo = require("./rotaAtualizarInfo")
 let rotaVenda = require('./rotaVenda')
 let rotaPagamento = require('./rotaPagamento')
+let rotaPacote = require('./rotaPacote')
 
         const app = customExpress()
         app.use(body.urlencoded({extended:true}));
@@ -42,5 +43,8 @@ let rotaPagamento = require('./rotaPagamento')
         app.use('/manager', rotaAgenda)
         app.use('/manager', rotaAtualizarInfo)
         app.use('/manager', rotaVenda)
+        app.use('/manager', rotaPacote)
         
         app.listen(4000,() => console.log("Deu Certo"))
+
+module.exports = app
