@@ -2,7 +2,7 @@ const { render } = require("ejs");
 const express = require("express")
 const moment = require('moment')
 const router = express.Router();
-const adicionaPagamento = require('./models/pagamentos')
+const adicionaPagamento = require('../models/pagamentos')
 
 //Pagamentos
 router.get('/pagamentos/pagamento-cadastrado', (req, res)=>{

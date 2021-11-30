@@ -3,9 +3,9 @@ const moment = require('moment')
 const router = express.Router();
 //const CadastramentoTutor = require('./models/cadastramentoTutor')
 const body = require("body-parser")
-const tutor = require('./models/cadastramentoTutor'); 
-const adicionaPet = require("./models/cadastramentoPet");
-const Seleciona = require('./models/selecionaTutor')
+const tutor = require('../models/cadastramentoTutor'); 
+const adicionaPet = require("../models/cadastramentoPet");
+const Seleciona = require('../models/selecionaTutor')
 
 router.use(body.urlencoded({extended:true}));
 router.use(body.json())
