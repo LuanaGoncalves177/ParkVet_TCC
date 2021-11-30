@@ -248,9 +248,12 @@ pesquisa__cadastro {
 
 /* 8. Todos os inputs das páginas */
 .input__nome,
-.input__id,
+.input__nome-cadastro,
 .input__endereco,
+.input__endereco-cadastro,
+.input__id,
 .input__email,
+.input__email-cadastro,
 .input__especie-pet,
 .input__whatsapp,
 .input__telefone,
@@ -283,12 +286,14 @@ pesquisa__cadastro {
 }
 
 /* 9. Pecularidades dos inputs */
-.input__nome, #input-pet-nome{
-  width: 700px;
+.input__nome, .input__nome-cadastro, #input-pet-nome{
+  width: 200%;
 }
-
+.input__endereco-cadastro, .input__email-cadastro {
+  width: 72%;
+}
 .input__endereco {
-  width: 800px;
+  width: 100px;
 }
 .input__email {
   width: 850px;
