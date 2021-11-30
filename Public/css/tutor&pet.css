@@ -131,6 +131,7 @@ pesquisa__cadastro {
 #campo__estoque,
 #campo__label-pesquisa div,
 #campo__horario,
+#campo__horario-agendar-pacote,
 #campo__valor {
   display: flex;
 }
@@ -181,11 +182,19 @@ pesquisa__cadastro {
 #campo__horario,
 #campo__servico,
 #campo__valor, 
+#campo__horario-agendar-pacote,
 #campo__autorizacao{
   margin-bottom: 20px;
 }
 #campo__horario{
   justify-content: space-evenly;
+}
+#campo__horario-agendar-pacote {
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 60px;
+ 
 }
 #campo__servico {
   display: block;
