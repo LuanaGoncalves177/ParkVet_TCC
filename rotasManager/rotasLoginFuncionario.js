@@ -9,7 +9,7 @@ var password = "12345"
 //fazer o redirecionamento para /manager ou /administrador 
 
 router.get('/manager', (req, res)=> {
-    res.render('manager')
+    res.render((__dirname, "./manager"))
 })
 
 router.post('/manager', (req, res) => {
@@ -17,7 +17,7 @@ router.post('/manager', (req, res) => {
         //req.session.login = login
         res.redirect('manager/cadastro')
     }else{
-        res.render("manager")
+        res.render((__dirname, "./manager"))
     }
 })
 

@@ -2,16 +2,16 @@ const express = require("express")
 const router = express.Router();
 const moment = require('moment')
 
-const adicionaCompra = require('./models/comprar')
+const adicionaCompra = require('../models/comprar')
 
 //Venda
 router.get('/venda', (req, res)=>{
-    res.render((__dirname, "./Vendas/venda"))
+    res.render((__dirname, "../Vendas/venda"))
 })
 
 //Compra
 router.get('/venda/comprar', (req, res)=>{
-    res.render((__dirname, "./Vendas/comprar"))
+    res.render((__dirname, "../Vendas/comprar"))
 })
 
 router.post('/venda/comprar', (req,res)=>{
