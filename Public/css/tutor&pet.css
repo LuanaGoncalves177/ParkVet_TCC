@@ -319,10 +319,10 @@ pesquisa__cadastro {
 .input__preco{
   width: 50%;
 }
-.input__quantidade, .input__valor, .input__despesa {
+.input__quantidade, .input__despesa {
   width: 100%;
 }
-.input__pacotes {
+.input__pacotes, .input__valor {
   width: 30%;
 }
 .input__quantidade, .input__produto-total{
