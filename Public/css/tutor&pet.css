@@ -73,7 +73,7 @@ pesquisa__cadastro {
   padding: 50%;
 }
 #botoes,
-#botoes__centralizados {
+#botoes__centralizados, .dados-tutor-contedudo {
   display: flex;
 }
 #botoes {
@@ -139,7 +139,7 @@ pesquisa__cadastro {
 .campo__dados-tutor {
   margin-bottom: 50px;
 }
-.campos, .campo__dados-tutor > #contato  {
+.campos  {
   margin-left: 100px;
 }
 
@@ -148,7 +148,7 @@ pesquisa__cadastro {
   display: block;
 }
 
-#campo__id-tutor, .campo__produto :nth-child(2), .campo__produto-preco :nth-child(2)   {
+#campo__id-tutor, .campo__produto :nth-child(2), .campo__produto-preco :nth-child(2), #telefone{
   margin-left: 30px;
 }
 #formulario__label,
@@ -286,14 +286,14 @@ pesquisa__cadastro {
 }
 
 /* 9. Pecularidades dos inputs */
-.input__nome, .input__nome-cadastro, #input-pet-nome{
+.input__nome, #input-pet-nome{
   width: 200%;
 }
-.input__endereco-cadastro, .input__email-cadastro {
+.input__endereco-cadastro, .input__email-cadastro, .input__nome-cadastro  {
   width: 72%;
 }
 .input__endereco {
-  width: 100px;
+  width: 600px;
 }
 .input__email {
   width: 850px;
@@ -304,13 +304,12 @@ pesquisa__cadastro {
   color: rgb(247, 238, 238);
   text-align: center;
   border: none;
-  margin-left: 20px;
 }
 .input__whatsapp,
 .input__telefone {
   width: 200px;
 }
-.input__dados-tutor, #input__servico {
+.input__dados-tutor, #input__servico, .input__nome  {
   width: 600px;
 }
 /* 9.1. inputs dos pets */
