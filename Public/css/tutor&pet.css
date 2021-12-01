@@ -262,6 +262,7 @@ pesquisa__cadastro {
 .input__telefone,
 .input__pet,
 .input__pet-raca,
+.input__pet-nome,
 .input__caracteristicas,
 .input__dados-tutor,
 .input__despesa,
@@ -313,7 +314,7 @@ pesquisa__cadastro {
 .input__telefone {
   width: 200px;
 }
-.input__dados-tutor, #input__servico, .input__nome  {
+.input__dados-tutor, #input__servico, .input__nome, .input__pet-nome {
   width: 600px;
 }
 /* 9.1. inputs dos pets */
