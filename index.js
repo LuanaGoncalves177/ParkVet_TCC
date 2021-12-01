@@ -6,7 +6,7 @@ const body = require("body-parser")
 const session = require("express-session")
 const express = require('express')
 const path = require('path')
-const cors = require('cors')
+
 //------------------------------- IMPORTANDO ROTAS -------------------------------------------
 let rotasLoginFuncionario = require('./rotasManager/rotasLoginFuncionario')
 let rotaCadastramento = require('./rotasManager/rotaCadastramento')
@@ -19,7 +19,6 @@ let rotaPacote = require('./rotasManager/rotaPacote')
 
 //----------------------------- CONEXAO DO SERVIDOR E CONFIGURAÇÃO----------------------------------
 const app = customExpress()
-app.use(cors())
 app.use(body.urlencoded({extended:true}));
 app.use(body.json()) //Converte tudo o que chega do boby em json
 
