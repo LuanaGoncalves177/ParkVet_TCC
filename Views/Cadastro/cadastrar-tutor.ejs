@@ -32,7 +32,7 @@
     <section class="formulario__cadastro">
       <h2 class="formulario__titulo">Cadastro de Tutores</h2>
 
-      <form class="formulario__cliente" id="formulario-tutor" method="POST">
+      <form action="./cadastro-tutor" class="formulario__cliente" id="formulario-tutor" method="POST">
 
         <div> 
           <label for="tutor-nome" id="formulario__label">Nome do Tutor</label><br>
@@ -63,7 +63,7 @@
           </div>
           <div id="telefone">
             <label for="tutor-telefone" id="formulario__label">Telefone Fixo</label><br>
-            <input type="text"id="tutor-telefone" name="telefoneTutor" placeholder="(61) 3333-3333" class="input__telefone">
+            <input type="text"id="tutor-telefone" name="telefoneTutor" placeholder="(61) 3333-3333" class="input__telefone" required>
           </div>
         </div>
         <div id="campo__autorizacao">
@@ -72,6 +72,7 @@
               pacotes e produtos da Parkvet </label>
         </div>
         <div id="botoes">
+          <%=erro%>
           <button id="btn-voltar"><a href="./">Voltar</a></button>
           <button class="btn-botoes" id="botao-cadastrar-pet" type="submit">Cadastrar</button>
           

@@ -5,7 +5,8 @@ const router = express.Router();
 const body = require("body-parser")
 const tutor = require('../models/cadastramentoTutor'); 
 const adicionaPet = require("../models/cadastramentoPet");
-const Seleciona = require('../models/selecionaTutor')
+const Seleciona = require('../models/selecionaTutor');
+const { text } = require("body-parser");
 
 router.use(body.urlencoded({extended:true}));
 router.use(body.json())
@@ -21,7 +22,7 @@ router.get('/cadastro/:nomeTutor', Seleciona.selecionaTutor)
 
 //Cadastrar Tutor
 router.get('/cadastro-tutor', (req,res)=>{
-    res.render((__dirname, "./Cadastro/cadastrar-tutor"))
+    res.render((__dirname, "./Cadastro/cadastrar-tutor.ejs"),{erro: ""})
 })
 
 router.post('/cadastro-tutor', (req,res)=>{
@@ -35,14 +36,19 @@ router.post('/cadastro-tutor', (req,res)=>{
         dataCriacao: moment().format('YYYY-MM-DD') 
     }).then(function(){
         res.redirect('./cadastro-pet')
-    }).catch(function(erro){
-        res.send("Erro:" + erro)
+    }).catch(function(err){
+        res.render((__dirname, "./Cadastro/cadastrar-tutor.ejs"),{erro: 'Erro: ' + err})
     })
 })
 
 //Cadastrar Pet
 router.get('/cadastro-pet', (req, res)=>{
-    res.render((__dirname, "./Cadastro/cadastrar-pets"))
+    const idUltimotutor = Seleciona.buscaIdTutor
+    //const id = JSON.stringify(idUltimotutor)
+    console.log(typeof{idUltimotutor})
+    //console.log(id)
+    res.send(idUltimotutor)
+    //res.render((__dirname, "./Cadastro/cadastrar-pets"), {idUltimotutor})
 })
 router.post('/cadastro-pet', (req, res)=>{
     adicionaPet.create({

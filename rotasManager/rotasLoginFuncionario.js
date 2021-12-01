@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router();
 const session = require('express-session')
-const path = require('path')
+const flash = require('flash')
 
 var login = "001"
 var password = "12345"
@@ -10,7 +10,7 @@ var password = "12345"
 
 router.get('/manager', (req, res)=> {
     try {
-        res.render((__dirname, "./manager"))
+        res.render((__dirname, "./manager.ejs"),{erro: ""})
         
     } catch (error) {
         res.send(error)
@@ -23,7 +23,8 @@ router.post('/manager', (req, res) => {
         //req.session.login = login
         res.redirect('manager/cadastro')
     }else{
-        res.render((__dirname, "./manager"))
+        //flash("Error", "Login invalido")
+        res.render((__dirname, "./manager.ejs"), {erro: "Login invalido"})
     }
 })
 

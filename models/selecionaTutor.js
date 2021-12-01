@@ -1,5 +1,6 @@
 const { Sequelize } = require('../models/bd')
 const db = require('../models/bd')
+const {QueryTypes} = require('sequelize')
 
     class Seleciona{
         
@@ -15,8 +16,26 @@ const db = require('../models/bd')
             } catch (error) {
                 
             }
+        }
+
+        async buscaIdTutor(){
+            try{
+                const idtutor = await parkvet.tutors.query(
+                    ' SELECT * FROM tutors WHERE id=(SELECT max(idTutor) FROM tutors)',
+                    {
+                        replacements: { status: ['active', 'inactive'] },
+                        type: QueryTypes.SELECT
+                })
+                const idTutorJson = JSON.parse()
+                return idtutor.json()
+            } catch (error) {
+                return error
+            }
+
+                
+        }
     }
 
-}
+
 
 module.exports = Seleciona

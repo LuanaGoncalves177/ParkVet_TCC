@@ -6,7 +6,7 @@ const body = require("body-parser")
 const session = require("express-session")
 const express = require('express')
 const path = require('path')
-
+const flash = require('flash')
 //------------------------------- IMPORTANDO ROTAS -------------------------------------------
 let rotasLoginFuncionario = require('./rotasManager/rotasLoginFuncionario')
 let rotaCadastramento = require('./rotasManager/rotaCadastramento')
@@ -21,6 +21,7 @@ let rotaPacote = require('./rotasManager/rotaPacote')
 const app = customExpress()
 app.use(body.urlencoded({extended:true}));
 app.use(body.json()) //Converte tudo o que chega do boby em json
+//app.use(flash())
 
 //SESSÃO DE LOGIN
 app.use(session({
@@ -36,7 +37,7 @@ app.set(path.join(__dirname,'/Views'))
 
 //------------ROTA INICIAL DO SITE
 app.get('/', (req, res)=>{
-    res.render('index')
+    res.render('index.ejs')
 })
 
 //--------------------------------------- ROTAS DO MANAGER
