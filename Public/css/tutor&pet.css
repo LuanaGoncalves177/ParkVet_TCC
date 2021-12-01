@@ -455,6 +455,7 @@ pesquisa__cadastro {
 .clientes__nome, 
 .clientes__id, 
 .clientes__produtos,
+.clientes__excluir,
 .clientes__servicos,
 .clientes__pacotes,
 .clientes__total,
