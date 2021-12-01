@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../imagens/cadeado.png" />
-    <link rel="stylesheet" href="../css/style.css"/>
-    <link rel="stylesheet" href="../css/tutor&pet.css">
-    <link rel="stylesheet" href="../css/administrativo.css">
+    <link rel="icon" href="../../Public/imagens/cadeado.png" />
+    <link rel="stylesheet" href="../../Public/css/style.css"/>
+    <link rel="stylesheet" href="../../Public/css/tutor&pet.css">
+    <link rel="stylesheet" href="../../Public/css/administrativo.css">
     <title>ParkVet - Administrativo - Serviços & Pacotes</title>
   </head>
   <body>
     <main>
       <header class="cabecalho">
-        <a href="./2-ServiçosEpacotes.html"><img
+        <a href="./ServiçosEpacotes.html"><img
           id="cabecalho__logo"
-          src="../imagens/LogoPetVet.png"
+          src="../../Public/imagens/LogoPetVet.png"
           alt="Logo do ParkVet"
         /></a>
         <div>
@@ -36,29 +36,28 @@
               <tr>
                 <td class="administrativo__colunas">Serviço</td>
                 <td class="administrativo__colunas">ID Serviço</td>
-                <td class="administrativo__colunas"> </td>
-                <td class="administrativo__colunas"> </td>
+                <td class="administrativo__colunas"></td>
               </tr>
             </thead>
             <tbody>
                   <tr>
                   <td class="servico__nome">Banho</td>
                   <td class="servico__id">1</td>
-                  <td class="administrativo__botoes"><a href="./adicionar_servicos.html"><img src="../imagens/adicao.png" id="botao-atualizar"  alt=""></a></td>
-                  <td class="administrativo__botoes"><a href="#"><img src="../imagens/excluir.png" id="imagem_tabela-excluir" alt=""></a></td>
+                  <td class="funcionario__inicio"><img src="../../Public/imagens/excluir.png" 
+                    alt="editar funcionario" id="imagem_tabela-excluir"></td>
                   </tr>
                   
                   <tr>
                   <td class="servico__nome">Tosa</td>
                   <td class="servico__id">2</td>
-                  <td class="administrativo__botoes"><a href="./adicionar_servicos.html"><img src="../imagens/adicao.png" id="botao-atualizar"  alt=""></a></td>
-                  <td class="administrativo__botoes"><a href="#"><img src="../imagens/excluir.png" id="imagem_tabela-excluir" alt=""></a></td>
+                  <td class="funcionario__inicio"><img src="../../Public/imagens/excluir.png" 
+                    alt="editar funcionario" id="imagem_tabela-excluir"></td>
                   </tr>
                   <tr>
                   <td class="servico__nome">Taxi-Dog</td>
                   <td class="servico__id">3</td>
-                  <td class="administrativo__botoes"><a href="./adicionar_servicos.html"><img src="../imagens/adicao.png" id="botao-atualizar"  alt=""></a></td>
-                  <td class="administrativo__botoes"><a href="#"><img src="../imagens/excluir.png" id="imagem_tabela-excluir" alt=""></a></td>
+                  <td class="funcionario__inicio"><img src="../../Public/imagens/excluir.png" 
+                    alt="editar funcionario" id="imagem_tabela-excluir"></td>
                   </tr>
                   <tfoot>
                       <td class="tfoot__label">Total de Serviços: </td>
@@ -66,6 +65,10 @@
                   </tfoot>
             </tbody>
           </table>
+
+          <div >
+            <button class="formulario__button"><a href="./cadastrar_servicos.html">Cadastrar</a></button>
+          </div>
           
           <h3 class="formulario__titulo">Pacotes Disponíveis</h3>
           <table id="administrativo">
@@ -100,8 +103,7 @@
 
       <footer>
         <img class="footer__logo" src="../imagens/LogoPetVet.png" alt="" />
-       
-        <p classs="footer__titulo">PetVet Manager 2021</p>
+        <p classs="footer__titulo">ParkVet Manager 2021</p>
         <p class="footer__subtitulo">&copy; All rights reserved</p>
       </footer>
     </main>

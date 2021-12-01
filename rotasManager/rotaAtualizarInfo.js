@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router();
 const path = require('path'); 
-const cadastramentoTutor = require("./models/cadastramentoTutor");
+const cadastramentoTutor = require("../models/cadastramentoTutor");
 
 
 //é a mesma pagina de cadastro. Ver o que é melhor fazer 

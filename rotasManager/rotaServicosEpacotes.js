@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router();
 const path = require('path'); 
-const adicionaServicoContratado = require("./models/ServicoEpacotes");
+const adicionaServicoContratado = require("../models/ServicoEpacotes");
 const moment = require('moment')
 
 //Pagina inicial Serviços e pacotes
@@ -30,7 +30,7 @@ router.post('/servicosEpacotes/servicos', (req, res)=> {
         idPet: req.body.idPet, 
         dataCriacao: moment().format('YYYY-MM-DD')
     }).then(function(){
-        console.log('Entrou')
+        
         res.redirect('../agendar')
     }).catch(function(erro){
         res.send("Erro:" + erro)

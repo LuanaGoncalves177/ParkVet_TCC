@@ -9,13 +9,14 @@ var express = require('express')
 //var methodOverride = require('method-override');
 var session = require('express-session');
 var app = express();
+//var app = require('../../index')
 var mysql      = require('mysql');
 var bodyParser=require("body-parser");
 var connection = mysql.createConnection({
               host     : 'localhost',
               user     : 'root',
               password : 'admin',
-              database : 'testdb2'
+              database : 'parkvet'
             });
  
 connection.connect();

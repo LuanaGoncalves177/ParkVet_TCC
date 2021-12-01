@@ -40,8 +40,8 @@
                 placeholder=" Agusto de Oliverira Souza"
                 class="input__nome"
               />
-            </div>
 
+            </div>
             <div id="campo__id-tutor">
               <label for="tutor-id" id="formulario__label">ID Tutor</label
               ><br />
@@ -49,34 +49,38 @@
                 type="number"
                 id="tutor-id"
                 placeholder="001"
-                class="input__id"
+                class="input__id" disabled
               />
             </div>
-            <br />
+            <br/>
           </div>
 
           <div class="campo__dados-tutor">
-            <div>
-              <label for="tutor-dados-endereco" id="formulario__label"
-                >Endereço</label
-              ><br />
-              <input
-                type="text"
-                id="tutor-dados-endereco"
-                placeholder="Quadra 307 Bloco B Apartamento 102"
-                class="input__dados-tutor"
-              />
+            <div class="dados-tutor-contedudo">  
+              <div>
+                <label for="tutor-dados-endereco" id="formulario__label"
+                  >Endereço</label
+                ><br>
+                <div></div>
+                <input
+                  type="text"
+                  id="tutor-dados-endereco"
+                  placeholder="Quadra 307 Bloco B Apartamento 102"
+                  class="input__dados-tutor"
+                />
+              </div>
+               <div id="telefone">
+                <label for="tutor-whatsapp" id="formulario__label">Contato</label
+                ><br />
+                <input
+                  type="text"
+                  id="tutor-whatsapp"
+                 placeholder="(61) 99999-9999"
+                  class="input__whatsapp"
+                />
+              </div>
             </div>
-            <div id="contato">
-              <label for="tutor-whatsapp" id="formulario__label">Contato</label
-              ><br />
-              <input
-                type="text"
-                id="tutor-whatsapp"
-                placeholder="(61) 99999-9999"
-                class="input__whatsapp"
-              />
-            </div>
+           
           </div>
 
           <div id="campo__botao">
@@ -167,7 +171,7 @@
 
       <footer>
         <img class="footer__logo" src="../../Public/imagens/LogoPetVet.png" alt="" />
-        <p classs="footer__titulo">PetVet Manager 2021</p>
+        <p classs="footer__titulo">ParkVet Manager 2021</p>
         <p class="footer__subtitulo">&copy; All rights reserved</p>
       </footer>
     </main>
